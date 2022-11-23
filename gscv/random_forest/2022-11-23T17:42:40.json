@@ -1,0 +1,136 @@
+{
+    "scoring": "f1",
+    "estimator": "RandomForestClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "n_estimators": [
+            18,
+            20,
+            22
+        ],
+        "criterion": [
+            "entropy"
+        ],
+        "max_depth": [
+            null
+        ],
+        "min_samples_split": [
+            5,
+            7
+        ],
+        "min_samples_leaf": [
+            2
+        ],
+        "max_features": [
+            "log2"
+        ],
+        "bootstrap": [
+            false
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "1",
+    "best_score_": 0.7847801701907586,
+    "best_params_": {
+        "bootstrap": false,
+        "criterion": "entropy",
+        "max_depth": null,
+        "max_features": "log2",
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_estimators": 20
+    },
+    "best_estimator_": "RandomForestClassifier(bootstrap=False, criterion='entropy',\n                       max_features='log2', min_samples_leaf=2,\n                       min_samples_split=5, n_estimators=20)",
+    "refit_time_": 0.013031959533691406,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.01186633 0.01326234 0.01404114 0.01150901 0.01279712 0.01387432]",
+        "std_fit_time": "[0.0003834  0.00037801 0.00027747 0.00015828 0.00020531 0.00032762]",
+        "mean_score_time": "[0.00189273 0.0020524  0.00201945 0.00181036 0.00198548 0.00203571]",
+        "std_score_time": "[1.35057509e-04 1.02868165e-04 1.26905567e-04 4.39735649e-05\n 6.46865283e-05 8.90933066e-05]",
+        "param_bootstrap": "[False False False False False False]",
+        "param_criterion": "['entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy']",
+        "param_max_depth": "[None None None None None None]",
+        "param_max_features": "['log2' 'log2' 'log2' 'log2' 'log2' 'log2']",
+        "param_min_samples_leaf": "[2 2 2 2 2 2]",
+        "param_min_samples_split": "[5 5 5 7 7 7]",
+        "param_n_estimators": "[18 20 22 18 20 22]",
+        "params": [
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 5,
+                "n_estimators": 18
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 5,
+                "n_estimators": 20
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 5,
+                "n_estimators": 22
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 7,
+                "n_estimators": 18
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 7,
+                "n_estimators": 20
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 7,
+                "n_estimators": 22
+            }
+        ],
+        "split0_test_score": "[0.72727273 0.71111111 0.75555556 0.69565217 0.71111111 0.72727273]",
+        "split1_test_score": "[0.7826087  0.85106383 0.75555556 0.7826087  0.7826087  0.8       ]",
+        "split2_test_score": "[0.85106383 0.83333333 0.85106383 0.7755102  0.83333333 0.80851064]",
+        "split3_test_score": "[0.91304348 0.91304348 0.91304348 0.91304348 0.91304348 0.88888889]",
+        "split4_test_score": "[0.7        0.7        0.75       0.7        0.73170732 0.68421053]",
+        "split5_test_score": "[0.66666667 0.68292683 0.68292683 0.66666667 0.65       0.63414634]",
+        "split6_test_score": "[0.76190476 0.73170732 0.71428571 0.7        0.73170732 0.69767442]",
+        "split7_test_score": "[0.79069767 0.79069767 0.79069767 0.79069767 0.79069767 0.77272727]",
+        "split8_test_score": "[0.78947368 0.78947368 0.8        0.82051282 0.78947368 0.82051282]",
+        "split9_test_score": "[0.82608696 0.84444444 0.81818182 0.8        0.81818182 0.8       ]",
+        "mean_test_score": "[0.78088185 0.78478017 0.78313105 0.76446917 0.77518644 0.76339436]",
+        "std_test_score": "[0.06886938 0.07254303 0.06360937 0.07087326 0.06949259 0.07239678]",
+        "rank_test_score": "[3 1 2 5 4 6]"
+    },
+    "n_splits_": 10
+}
