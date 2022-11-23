@@ -1,0 +1,892 @@
+,Survived,Pclass,Sex,Age,SibSp,Parch,Fare,Embarked,Title,Age_true,AgeGroup,Familysize,Ticketsize,FareGroup,CabinLvl
+0,0,3,male,22.0,1,0,7.25,S,Mr,True,Young Adults,1,1,Very Cheap,XX
+1,1,1,female,38.0,1,0,71.2833,C,Mrs,True,Middle-aged,1,1,Expensive,C
+2,1,3,female,26.0,0,0,7.925,S,Ms,True,Adults,0,1,Cheap,XX
+3,1,1,female,35.0,1,0,53.1,S,Mrs,True,Middle-aged,1,2,Expensive,C
+4,0,3,male,35.0,0,0,8.05,S,Mr,True,Middle-aged,0,1,Cheap,XX
+5,0,3,male,32.0,0,0,8.4583,Q,Mr,False,Adults,0,1,Cheap,XX
+6,0,1,male,54.0,0,0,51.8625,S,Mr,True,Seniors,0,1,Expensive,E
+7,0,3,male,2.0,3,1,21.075,S,Master,True,Kids,4,4,Normal,XX
+8,1,3,female,27.0,0,2,11.1333,S,Mrs,True,Adults,2,3,Normal,XX
+9,1,2,female,14.0,1,0,30.0708,C,Mrs,True,Teenagers,1,2,Average,XX
+10,1,3,female,4.0,1,1,16.7,S,Ms,True,Kids,2,2,Normal,G
+11,1,1,female,58.0,0,0,26.55,S,Ms,True,Seniors,0,1,Average,C
+12,0,3,male,20.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+13,0,3,male,39.0,1,5,31.275,S,Mr,True,Middle-aged,6,7,Average,XX
+14,0,3,female,14.0,0,0,7.8542,S,Ms,True,Teenagers,0,1,Cheap,XX
+15,1,2,female,55.0,0,0,16.0,S,Mrs,True,Seniors,0,1,Normal,XX
+16,0,3,male,2.0,4,1,29.125,Q,Master,True,Kids,5,5,Average,XX
+17,1,2,male,32.0,0,0,13.0,S,Mr,False,Adults,0,1,Normal,XX
+18,0,3,female,31.0,1,0,18.0,S,Mrs,True,Adults,1,1,Normal,XX
+19,1,3,female,35.0,0,0,7.225,C,Mrs,False,Middle-aged,0,1,Very Cheap,XX
+20,0,2,male,35.0,0,0,26.0,S,Mr,True,Middle-aged,0,2,Average,XX
+21,1,2,male,34.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,D
+22,1,3,female,15.0,0,0,8.0292,Q,Ms,True,Teenagers,0,1,Cheap,XX
+23,1,1,male,28.0,0,0,35.5,S,Mr,True,Adults,0,1,Average,A
+24,0,3,female,8.0,3,1,21.075,S,Ms,True,Kids,4,4,Normal,XX
+25,1,3,female,38.0,1,5,31.3875,S,Mrs,True,Middle-aged,6,4,Average,XX
+26,0,3,male,32.0,0,0,7.225,C,Mr,False,Adults,0,1,Very Cheap,XX
+27,0,1,male,19.0,3,2,263.0,S,Mr,True,Young Adults,5,4,Very Expensive,C
+28,1,3,female,22.0,0,0,7.8792,Q,Ms,False,Young Adults,0,1,Cheap,XX
+29,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+30,0,1,male,40.0,0,0,27.7208,C,Noble,True,Middle-aged,0,1,Average,XX
+31,1,1,female,35.0,1,0,146.5208,C,Mrs,False,Middle-aged,1,2,Very Expensive,B
+32,1,3,female,22.0,0,0,7.75,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+33,0,2,male,66.0,0,0,10.5,S,Mr,True,Seniors,0,1,Cheap,XX
+34,0,1,male,28.0,1,0,82.1708,C,Mr,True,Adults,1,2,Expensive,XX
+35,0,1,male,42.0,1,0,52.0,S,Mr,True,Middle-aged,1,2,Expensive,XX
+36,1,3,male,32.0,0,0,7.2292,C,Mr,False,Adults,0,1,Very Cheap,XX
+37,0,3,male,21.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+38,0,3,female,18.0,2,0,18.0,S,Ms,True,Young Adults,2,2,Normal,XX
+39,1,3,female,14.0,1,0,11.2417,C,Ms,True,Teenagers,1,2,Normal,XX
+40,0,3,female,40.0,1,0,9.475,S,Mrs,True,Middle-aged,1,1,Cheap,XX
+41,0,2,female,27.0,1,0,21.0,S,Mrs,True,Adults,1,2,Normal,XX
+42,0,3,male,32.0,0,0,7.8958,C,Mr,False,Adults,0,1,Cheap,XX
+43,1,2,female,3.0,1,2,41.5792,C,Ms,True,Kids,3,3,Expensive,XX
+44,1,3,female,19.0,0,0,7.8792,Q,Ms,True,Young Adults,0,1,Cheap,XX
+45,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+46,0,3,male,32.0,1,0,15.5,Q,Mr,False,Adults,1,1,Normal,XX
+47,1,3,female,22.0,0,0,7.75,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+48,0,3,male,32.0,2,0,21.6792,C,Mr,False,Adults,2,1,Normal,XX
+49,0,3,female,18.0,1,0,17.8,S,Mrs,True,Young Adults,1,2,Normal,XX
+50,0,3,male,7.0,4,1,39.6875,S,Master,True,Kids,5,6,Average,XX
+51,0,3,male,21.0,0,0,7.8,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+52,1,1,female,49.0,1,0,76.7292,C,Mrs,True,Middle-aged,1,3,Expensive,D
+53,1,2,female,29.0,1,0,26.0,S,Mrs,True,Adults,1,1,Average,XX
+54,0,1,male,65.0,0,1,61.9792,C,Mr,True,Seniors,1,1,Expensive,B
+55,1,1,male,32.0,0,0,35.5,S,Mr,False,Adults,0,1,Average,C
+56,1,2,female,21.0,0,0,10.5,S,Ms,True,Young Adults,0,1,Cheap,XX
+57,0,3,male,28.0,0,0,7.2292,C,Mr,False,Adults,0,1,Very Cheap,XX
+58,1,2,female,5.0,1,2,27.75,S,Ms,True,Kids,3,3,Average,XX
+59,0,3,male,11.0,5,2,46.9,S,Master,True,Kids,7,6,Expensive,XX
+60,0,3,male,22.0,0,0,7.2292,C,Mr,True,Young Adults,0,1,Very Cheap,XX
+61,1,1,female,38.0,0,0,80.0,S,Ms,True,Middle-aged,0,2,Expensive,B
+62,0,1,male,45.0,1,0,83.475,S,Mr,True,Middle-aged,1,2,Expensive,C
+63,0,3,male,4.0,3,2,27.9,S,Master,True,Kids,5,6,Average,XX
+64,0,1,male,32.0,0,0,27.7208,C,Mr,False,Adults,0,1,Average,XX
+65,1,3,male,4.0,1,1,15.2458,C,Master,False,Kids,2,2,Normal,XX
+66,1,2,female,29.0,0,0,10.5,S,Mrs,True,Adults,0,1,Cheap,F
+67,0,3,male,19.0,0,0,8.1583,S,Mr,True,Young Adults,0,1,Cheap,XX
+68,1,3,female,17.0,4,2,7.925,S,Ms,True,Teenagers,6,1,Cheap,XX
+69,0,3,male,26.0,2,0,8.6625,S,Mr,True,Adults,2,1,Cheap,XX
+70,0,2,male,32.0,0,0,10.5,S,Mr,True,Adults,0,1,Cheap,XX
+71,0,3,female,16.0,5,2,46.9,S,Ms,True,Teenagers,7,6,Expensive,XX
+72,0,2,male,21.0,0,0,73.5,S,Mr,True,Young Adults,0,5,Expensive,XX
+73,0,3,male,26.0,1,0,14.4542,C,Mr,True,Adults,1,1,Normal,XX
+74,1,3,male,32.0,0,0,56.4958,S,Mr,True,Adults,0,7,Expensive,XX
+75,0,3,male,25.0,0,0,7.65,S,Mr,True,Adults,0,1,Very Cheap,F
+76,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+77,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+78,1,2,male,0.0,0,2,29.0,S,Master,True,Kids,2,2,Average,XX
+79,1,3,female,30.0,0,0,12.475,S,Ms,True,Adults,0,2,Normal,XX
+80,0,3,male,22.0,0,0,9.0,S,Mr,True,Young Adults,0,1,Cheap,XX
+81,1,3,male,29.0,0,0,9.5,S,Mr,True,Adults,0,1,Cheap,XX
+82,1,3,female,22.0,0,0,7.7875,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+83,0,1,male,28.0,0,0,47.1,S,Mr,True,Adults,0,1,Expensive,XX
+84,1,2,female,17.0,0,0,10.5,S,Ms,True,Teenagers,0,1,Cheap,XX
+85,1,3,female,33.0,3,0,15.85,S,Mrs,True,Adults,3,2,Normal,XX
+86,0,3,male,16.0,1,3,34.375,S,Mr,True,Teenagers,4,4,Average,XX
+87,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+88,1,1,female,23.0,3,2,263.0,S,Ms,True,Young Adults,5,4,Very Expensive,C
+89,0,3,male,24.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+90,0,3,male,29.0,0,0,8.05,S,Mr,True,Adults,0,1,Cheap,XX
+91,0,3,male,20.0,0,0,7.8542,S,Mr,True,Young Adults,0,1,Cheap,XX
+92,0,1,male,46.0,1,0,61.175,S,Mr,True,Middle-aged,1,1,Expensive,E
+93,0,3,male,26.0,1,2,20.575,S,Mr,True,Adults,3,2,Normal,XX
+94,0,3,male,59.0,0,0,7.25,S,Mr,True,Seniors,0,1,Very Cheap,XX
+95,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+96,0,1,male,71.0,0,0,34.6542,C,Mr,True,Seniors,0,1,Average,A
+97,1,1,male,23.0,0,1,63.3583,C,Mr,True,Young Adults,1,1,Expensive,D
+98,1,2,female,34.0,0,1,23.0,S,Mrs,True,Adults,1,2,Normal,XX
+99,0,2,male,34.0,1,0,26.0,S,Mr,True,Adults,1,2,Average,XX
+100,0,3,female,28.0,0,0,7.8958,S,Ms,True,Adults,0,1,Cheap,XX
+101,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+102,0,1,male,21.0,0,1,77.2875,S,Mr,True,Young Adults,1,2,Expensive,D
+103,0,3,male,33.0,0,0,8.6542,S,Mr,True,Adults,0,1,Cheap,XX
+104,0,3,male,37.0,2,0,7.925,S,Mr,True,Middle-aged,2,1,Cheap,XX
+105,0,3,male,28.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+106,1,3,female,21.0,0,0,7.65,S,Ms,True,Young Adults,0,1,Very Cheap,XX
+107,1,3,male,32.0,0,0,7.775,S,Mr,False,Adults,0,1,Very Cheap,XX
+108,0,3,male,38.0,0,0,7.8958,S,Mr,True,Middle-aged,0,1,Cheap,XX
+109,1,3,female,22.0,1,0,24.15,Q,Ms,False,Young Adults,1,3,Average,XX
+110,0,1,male,47.0,0,0,52.0,S,Mr,True,Middle-aged,0,2,Expensive,C
+111,0,3,female,14.0,1,0,14.4542,C,Ms,False,Teenagers,1,2,Normal,XX
+112,0,3,male,22.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+113,0,3,female,20.0,1,0,9.825,S,Ms,True,Young Adults,1,1,Cheap,XX
+114,0,3,female,17.0,0,0,14.4583,C,Ms,True,Teenagers,0,2,Normal,XX
+115,0,3,male,21.0,0,0,7.925,S,Mr,True,Young Adults,0,1,Cheap,XX
+116,0,3,male,70.0,0,0,7.75,Q,Mr,False,Seniors,0,1,Very Cheap,XX
+117,0,2,male,29.0,1,0,21.0,S,Mr,True,Adults,1,2,Normal,XX
+118,0,1,male,24.0,0,1,247.5208,C,Mr,True,Young Adults,1,2,Very Expensive,B
+119,0,3,female,2.0,4,2,31.275,S,Ms,True,Kids,6,7,Average,XX
+120,0,2,male,21.0,2,0,73.5,S,Mr,True,Young Adults,2,5,Expensive,XX
+121,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+122,0,2,male,32.0,1,0,30.0708,C,Mr,False,Adults,1,2,Average,XX
+123,1,2,female,32.0,0,0,13.0,S,Ms,False,Adults,0,1,Normal,E
+124,0,1,male,54.0,0,1,77.2875,S,Mr,True,Seniors,1,2,Expensive,D
+125,1,3,male,12.0,1,0,11.2417,C,Master,True,Teenagers,1,2,Normal,XX
+126,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+127,1,3,male,24.0,0,0,7.1417,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+128,1,3,female,22.0,1,1,22.3583,C,Ms,False,Young Adults,2,2,Normal,F
+129,0,3,male,45.0,0,0,6.975,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+130,0,3,male,33.0,0,0,7.8958,C,Mr,True,Adults,0,1,Cheap,XX
+131,0,3,male,20.0,0,0,7.05,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+132,0,3,female,47.0,1,0,14.5,S,Mrs,True,Middle-aged,1,1,Normal,XX
+133,1,2,female,29.0,1,0,26.0,S,Mrs,True,Adults,1,1,Average,XX
+134,0,2,male,25.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+135,0,2,male,23.0,0,0,15.0458,C,Mr,True,Young Adults,0,1,Normal,XX
+136,1,1,female,19.0,0,2,26.2833,S,Ms,True,Young Adults,2,1,Average,D
+137,0,1,male,37.0,1,0,53.1,S,Mr,True,Middle-aged,1,2,Expensive,C
+138,0,3,male,16.0,0,0,9.2167,S,Mr,True,Teenagers,0,2,Cheap,XX
+139,0,1,male,24.0,0,0,79.2,C,Mr,True,Young Adults,0,2,Expensive,B
+140,0,3,female,35.0,0,2,15.2458,C,Mrs,False,Middle-aged,2,2,Normal,XX
+141,1,3,female,22.0,0,0,7.75,S,Ms,True,Young Adults,0,1,Very Cheap,XX
+142,1,3,female,24.0,1,0,15.85,S,Mrs,True,Young Adults,1,2,Normal,XX
+143,0,3,male,19.0,0,0,6.75,Q,Mr,True,Young Adults,0,1,Very Cheap,XX
+144,0,2,male,18.0,0,0,11.5,S,Mr,True,Young Adults,0,1,Normal,XX
+145,0,2,male,19.0,1,1,36.75,S,Mr,True,Young Adults,2,2,Average,XX
+146,1,3,male,27.0,0,0,7.7958,S,Mr,True,Adults,0,1,Very Cheap,XX
+147,0,3,female,9.0,2,2,34.375,S,Ms,True,Kids,4,4,Average,XX
+148,0,2,male,36.0,0,2,26.0,S,Mr,False,Middle-aged,2,3,Average,F
+149,0,2,male,42.0,0,0,13.0,S,Noble,True,Middle-aged,0,1,Normal,XX
+150,0,2,male,51.0,0,0,12.525,S,Noble,True,Seniors,0,1,Normal,XX
+151,1,1,female,22.0,1,0,66.6,S,Mrs,True,Young Adults,1,2,Expensive,C
+152,0,3,male,55.0,0,0,8.05,S,Mr,False,Seniors,0,1,Cheap,XX
+153,0,3,male,40.0,0,2,14.5,S,Mr,False,Middle-aged,2,1,Normal,XX
+154,0,3,male,32.0,0,0,7.3125,S,Mr,False,Adults,0,1,Very Cheap,XX
+155,0,1,male,51.0,0,1,61.3792,C,Mr,True,Seniors,1,1,Expensive,XX
+156,1,3,female,16.0,0,0,7.7333,Q,Ms,True,Teenagers,0,1,Very Cheap,XX
+157,0,3,male,30.0,0,0,8.05,S,Mr,True,Adults,0,1,Cheap,XX
+158,0,3,male,32.0,0,0,8.6625,S,Mr,False,Adults,0,1,Cheap,XX
+159,0,3,male,4.0,8,2,69.55,S,Master,False,Kids,10,7,Expensive,XX
+160,0,3,male,44.0,0,1,16.1,S,Mr,True,Middle-aged,1,1,Normal,XX
+161,1,2,female,40.0,0,0,15.75,S,Mrs,True,Middle-aged,0,1,Normal,XX
+162,0,3,male,26.0,0,0,7.775,S,Mr,True,Adults,0,1,Very Cheap,XX
+163,0,3,male,17.0,0,0,8.6625,S,Mr,True,Teenagers,0,1,Cheap,XX
+164,0,3,male,1.0,4,1,39.6875,S,Master,True,Kids,5,6,Average,XX
+165,1,3,male,9.0,0,2,20.525,S,Master,True,Kids,2,3,Normal,XX
+166,1,1,female,35.0,0,1,55.0,S,Mrs,False,Middle-aged,1,2,Expensive,E
+167,0,3,female,45.0,1,4,27.9,S,Mrs,True,Middle-aged,5,6,Average,XX
+168,0,1,male,32.0,0,0,25.925,S,Mr,False,Adults,0,1,Average,XX
+169,0,3,male,28.0,0,0,56.4958,S,Mr,True,Adults,0,7,Expensive,XX
+170,0,1,male,61.0,0,0,33.5,S,Mr,True,Seniors,0,1,Average,B
+171,0,3,male,4.0,4,1,29.125,Q,Master,True,Kids,5,5,Average,XX
+172,1,3,female,1.0,1,1,11.1333,S,Ms,True,Kids,2,3,Normal,XX
+173,0,3,male,21.0,0,0,7.925,S,Mr,True,Young Adults,0,1,Cheap,XX
+174,0,1,male,56.0,0,0,30.6958,C,Mr,True,Seniors,0,1,Average,A
+175,0,3,male,18.0,1,1,7.8542,S,Mr,True,Young Adults,2,1,Cheap,XX
+176,0,3,male,4.0,3,1,25.4667,S,Master,False,Kids,4,4,Average,XX
+177,0,1,female,50.0,0,0,28.7125,C,Ms,True,Seniors,0,1,Average,C
+178,0,2,male,30.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+179,0,3,male,36.0,0,0,0.0,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+180,0,3,female,22.0,8,2,69.55,S,Ms,False,Young Adults,10,7,Expensive,XX
+181,0,2,male,32.0,0,0,15.05,C,Mr,False,Adults,0,1,Normal,XX
+182,0,3,male,9.0,4,2,31.3875,S,Master,True,Kids,6,4,Average,XX
+183,1,2,male,1.0,2,1,39.0,S,Master,True,Kids,3,2,Average,F
+184,1,3,female,4.0,0,2,22.025,S,Ms,True,Kids,2,1,Normal,XX
+185,0,1,male,32.0,0,0,50.0,S,Mr,False,Adults,0,1,Expensive,A
+186,1,3,female,35.0,1,0,15.5,Q,Mrs,False,Middle-aged,1,2,Normal,XX
+187,1,1,male,45.0,0,0,26.55,S,Mr,True,Middle-aged,0,1,Average,XX
+188,0,3,male,40.0,1,1,15.5,Q,Mr,True,Middle-aged,2,2,Normal,XX
+189,0,3,male,36.0,0,0,7.8958,S,Mr,True,Middle-aged,0,1,Cheap,XX
+190,1,2,female,32.0,0,0,13.0,S,Mrs,True,Adults,0,1,Normal,XX
+191,0,2,male,19.0,0,0,13.0,S,Mr,True,Young Adults,0,1,Normal,XX
+192,1,3,female,19.0,1,0,7.8542,S,Ms,True,Young Adults,1,1,Cheap,XX
+193,1,2,male,3.0,1,1,26.0,S,Master,True,Kids,2,3,Average,F
+194,1,1,female,44.0,0,0,27.7208,C,Mrs,True,Middle-aged,0,1,Average,B
+195,1,1,female,58.0,0,0,146.5208,C,Ms,True,Seniors,0,2,Very Expensive,B
+196,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+197,0,3,male,42.0,0,1,8.4042,S,Mr,True,Middle-aged,1,1,Cheap,XX
+198,1,3,female,22.0,0,0,7.75,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+199,0,2,female,24.0,0,0,13.0,S,Ms,True,Young Adults,0,1,Normal,XX
+200,0,3,male,28.0,0,0,9.5,S,Mr,True,Adults,0,1,Cheap,XX
+201,0,3,male,32.0,8,2,69.55,S,Mr,False,Adults,10,7,Expensive,XX
+202,0,3,male,34.0,0,0,6.4958,S,Mr,True,Adults,0,1,Very Cheap,XX
+203,0,3,male,45.0,0,0,7.225,C,Mr,False,Middle-aged,0,1,Very Cheap,XX
+204,1,3,male,18.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+205,0,3,female,2.0,0,1,10.4625,S,Ms,True,Kids,1,2,Cheap,G
+206,0,3,male,32.0,1,0,15.85,S,Mr,True,Adults,1,2,Normal,XX
+207,1,3,male,26.0,0,0,18.7875,C,Mr,True,Adults,0,2,Normal,XX
+208,1,3,female,16.0,0,0,7.75,Q,Ms,True,Teenagers,0,1,Very Cheap,XX
+209,1,1,male,40.0,0,0,31.0,C,Mr,True,Middle-aged,0,1,Average,A
+210,0,3,male,24.0,0,0,7.05,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+211,1,2,female,35.0,0,0,21.0,S,Ms,True,Middle-aged,0,1,Normal,XX
+212,0,3,male,22.0,0,0,7.25,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+213,0,2,male,30.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+214,0,3,male,32.0,1,0,7.75,Q,Mr,False,Adults,1,1,Very Cheap,XX
+215,1,1,female,31.0,1,0,113.275,C,Ms,True,Adults,1,3,Very Expensive,D
+216,1,3,female,27.0,0,0,7.925,S,Ms,True,Adults,0,1,Cheap,XX
+217,0,2,male,42.0,1,0,27.0,S,Mr,True,Middle-aged,1,2,Average,XX
+218,1,1,female,32.0,0,0,76.2917,C,Ms,True,Adults,0,1,Expensive,D
+219,0,2,male,30.0,0,0,10.5,S,Mr,True,Adults,0,1,Cheap,XX
+220,1,3,male,16.0,0,0,8.05,S,Mr,True,Teenagers,0,1,Cheap,XX
+221,0,2,male,27.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+222,0,3,male,51.0,0,0,8.05,S,Mr,True,Seniors,0,1,Cheap,XX
+223,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+224,1,1,male,38.0,1,0,90.0,S,Mr,True,Middle-aged,1,2,Expensive,C
+225,0,3,male,22.0,0,0,9.35,S,Mr,True,Young Adults,0,1,Cheap,XX
+226,1,2,male,19.0,0,0,10.5,S,Mr,True,Young Adults,0,1,Cheap,XX
+227,0,3,male,20.0,0,0,7.25,S,Mr,False,Young Adults,0,1,Very Cheap,XX
+228,0,2,male,18.0,0,0,13.0,S,Mr,True,Young Adults,0,1,Normal,XX
+229,0,3,female,22.0,3,1,25.4667,S,Ms,False,Young Adults,4,4,Average,XX
+230,1,1,female,35.0,1,0,83.475,S,Mrs,True,Middle-aged,1,2,Expensive,C
+231,0,3,male,29.0,0,0,7.775,S,Mr,True,Adults,0,1,Very Cheap,XX
+232,0,2,male,59.0,0,0,13.5,S,Mr,True,Seniors,0,1,Normal,XX
+233,1,3,female,5.0,4,2,31.3875,S,Ms,True,Kids,6,4,Average,XX
+234,0,2,male,24.0,0,0,10.5,S,Mr,True,Young Adults,0,1,Cheap,XX
+235,0,3,female,22.0,0,0,7.55,S,Ms,False,Young Adults,0,1,Very Cheap,XX
+236,0,2,male,44.0,1,0,26.0,S,Mr,True,Middle-aged,1,1,Average,XX
+237,1,2,female,8.0,0,2,26.25,S,Ms,True,Kids,2,3,Average,XX
+238,0,2,male,19.0,0,0,10.5,S,Mr,True,Young Adults,0,1,Cheap,XX
+239,0,2,male,33.0,0,0,12.275,S,Mr,True,Adults,0,1,Normal,XX
+240,0,3,female,22.0,1,0,14.4542,C,Ms,False,Young Adults,1,2,Normal,XX
+241,1,3,female,22.0,1,0,15.5,Q,Ms,False,Young Adults,1,2,Normal,XX
+242,0,2,male,29.0,0,0,10.5,S,Mr,True,Adults,0,1,Cheap,XX
+243,0,3,male,22.0,0,0,7.125,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+244,0,3,male,30.0,0,0,7.225,C,Mr,True,Adults,0,1,Very Cheap,XX
+245,0,1,male,44.0,2,0,90.0,Q,Noble,True,Middle-aged,2,2,Expensive,C
+246,0,3,female,25.0,0,0,7.775,S,Ms,True,Adults,0,1,Very Cheap,XX
+247,1,2,female,24.0,0,2,14.5,S,Mrs,True,Young Adults,2,2,Normal,XX
+248,1,1,male,37.0,1,1,52.5542,S,Mr,True,Middle-aged,2,2,Expensive,D
+249,0,2,male,54.0,1,0,26.0,S,Noble,True,Seniors,1,2,Average,XX
+250,0,3,male,32.0,0,0,7.25,S,Mr,False,Adults,0,1,Very Cheap,XX
+251,0,3,female,29.0,1,1,10.4625,S,Mrs,True,Adults,2,2,Cheap,G
+252,0,1,male,62.0,0,0,26.55,S,Mr,True,Seniors,0,1,Average,C
+253,0,3,male,30.0,1,0,16.1,S,Mr,True,Adults,1,2,Normal,XX
+254,0,3,female,41.0,0,2,20.2125,S,Mrs,True,Middle-aged,2,2,Normal,XX
+255,1,3,female,29.0,0,2,15.2458,C,Mrs,True,Adults,2,1,Normal,XX
+256,1,1,female,35.0,0,0,79.2,C,Mrs,False,Middle-aged,0,1,Expensive,XX
+257,1,1,female,30.0,0,0,86.5,S,Ms,True,Adults,0,3,Expensive,B
+258,1,1,female,35.0,0,0,512.3292,C,Ms,True,Middle-aged,0,3,Very Expensive,XX
+259,1,2,female,50.0,0,1,26.0,S,Mrs,True,Seniors,1,2,Average,XX
+260,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+261,1,3,male,3.0,4,2,31.3875,S,Master,True,Kids,6,4,Average,XX
+262,0,1,male,52.0,1,1,79.65,S,Mr,True,Seniors,2,3,Expensive,E
+263,0,1,male,40.0,0,0,84.1546875,S,Mr,True,Middle-aged,0,1,Expensive,B
+264,0,3,female,22.0,0,0,7.75,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+265,0,2,male,36.0,0,0,10.5,S,Mr,True,Middle-aged,0,1,Cheap,XX
+266,0,3,male,16.0,4,1,39.6875,S,Mr,True,Teenagers,5,6,Average,XX
+267,1,3,male,25.0,1,0,7.775,S,Mr,True,Adults,1,1,Very Cheap,XX
+268,1,1,female,58.0,0,1,153.4625,S,Mrs,True,Seniors,1,3,Very Expensive,C
+269,1,1,female,35.0,0,0,135.6333,S,Ms,True,Middle-aged,0,3,Very Expensive,C
+270,0,1,male,32.0,0,0,31.0,S,Mr,False,Adults,0,2,Average,XX
+271,1,3,male,25.0,0,0,0.0,S,Mr,True,Adults,0,1,Very Cheap,XX
+272,1,2,female,41.0,0,1,19.5,S,Mrs,True,Middle-aged,1,2,Normal,XX
+273,0,1,male,37.0,0,1,29.7,C,Mr,True,Middle-aged,1,1,Average,C
+274,1,3,female,22.0,0,0,7.75,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+275,1,1,female,63.0,1,0,77.9583,S,Ms,True,Seniors,1,3,Expensive,D
+276,0,3,female,45.0,0,0,7.75,S,Ms,True,Middle-aged,0,1,Very Cheap,XX
+277,0,2,male,32.0,0,0,20.662183152173913,S,Mr,False,Adults,0,3,Normal,XX
+278,0,3,male,7.0,4,1,29.125,Q,Master,True,Kids,5,5,Average,XX
+279,1,3,female,35.0,1,1,20.25,S,Mrs,True,Middle-aged,2,2,Normal,XX
+280,0,3,male,65.0,0,0,7.75,Q,Mr,True,Seniors,0,1,Very Cheap,XX
+281,0,3,male,28.0,0,0,7.8542,S,Mr,True,Adults,0,1,Cheap,XX
+282,0,3,male,16.0,0,0,9.5,S,Mr,True,Teenagers,0,1,Cheap,XX
+283,1,3,male,19.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+284,0,1,male,32.0,0,0,26.0,S,Mr,False,Adults,0,1,Average,A
+285,0,3,male,33.0,0,0,8.6625,C,Mr,True,Adults,0,1,Cheap,XX
+286,1,3,male,30.0,0,0,9.5,S,Mr,True,Adults,0,1,Cheap,XX
+287,0,3,male,22.0,0,0,7.8958,S,Mr,True,Young Adults,0,1,Cheap,XX
+288,1,2,male,42.0,0,0,13.0,S,Mr,True,Middle-aged,0,1,Normal,XX
+289,1,3,female,22.0,0,0,7.75,Q,Ms,True,Young Adults,0,1,Very Cheap,XX
+290,1,1,female,26.0,0,0,78.85,S,Ms,True,Adults,0,2,Expensive,XX
+291,1,1,female,19.0,1,0,91.0792,C,Mrs,True,Young Adults,1,2,Expensive,B
+292,0,2,male,36.0,0,0,12.875,C,Mr,True,Middle-aged,0,1,Normal,D
+293,0,3,female,24.0,0,0,8.85,S,Ms,True,Young Adults,0,1,Cheap,XX
+294,0,3,male,24.0,0,0,7.8958,S,Mr,True,Young Adults,0,1,Cheap,XX
+295,0,1,male,32.0,0,0,27.7208,C,Mr,False,Adults,0,1,Average,XX
+296,0,3,male,23.0,0,0,7.2292,C,Mr,False,Young Adults,0,1,Very Cheap,XX
+297,0,1,female,2.0,1,2,151.55,S,Ms,True,Kids,3,4,Very Expensive,C
+298,1,1,male,32.0,0,0,30.5,S,Mr,False,Adults,0,1,Average,C
+299,1,1,female,50.0,0,1,247.5208,C,Mrs,True,Seniors,1,2,Very Expensive,B
+300,1,3,female,22.0,0,0,7.75,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+301,1,3,male,32.0,2,0,23.25,Q,Mr,False,Adults,2,2,Average,XX
+302,0,3,male,19.0,0,0,0.0,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+303,1,2,female,22.0,0,0,12.35,Q,Ms,False,Young Adults,0,1,Normal,E
+304,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+305,1,1,male,0.0,1,2,151.55,S,Master,True,Kids,3,4,Very Expensive,C
+306,1,1,female,22.0,0,0,110.8833,C,Ms,False,Young Adults,0,4,Very Expensive,XX
+307,1,1,female,17.0,1,0,108.9,C,Mrs,True,Teenagers,1,2,Very Expensive,C
+308,0,2,male,30.0,1,0,24.0,C,Mr,True,Adults,1,2,Average,XX
+309,1,1,female,30.0,0,0,56.9292,C,Ms,True,Adults,0,2,Expensive,E
+310,1,1,female,24.0,0,0,83.1583,C,Ms,True,Young Adults,0,2,Expensive,C
+311,1,1,female,18.0,2,2,262.375,C,Ms,True,Young Adults,4,2,Very Expensive,B
+312,0,2,female,26.0,1,1,26.0,S,Mrs,True,Adults,2,1,Average,XX
+313,0,3,male,28.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+314,0,2,male,43.0,1,1,26.25,S,Mr,True,Middle-aged,2,3,Average,XX
+315,1,3,female,26.0,0,0,7.8542,S,Ms,True,Adults,0,1,Cheap,XX
+316,1,2,female,24.0,1,0,26.0,S,Mrs,True,Young Adults,1,2,Average,XX
+317,0,2,male,54.0,0,0,14.0,S,Noble,True,Seniors,0,1,Normal,XX
+318,1,1,female,31.0,0,2,164.8667,S,Ms,True,Adults,2,2,Very Expensive,C
+319,1,1,female,40.0,1,1,134.5,C,Mrs,True,Middle-aged,2,2,Very Expensive,E
+320,0,3,male,22.0,0,0,7.25,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+321,0,3,male,27.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+322,1,2,female,30.0,0,0,12.35,Q,Ms,True,Adults,0,1,Normal,XX
+323,1,2,female,22.0,1,1,29.0,S,Mrs,True,Young Adults,2,2,Average,XX
+324,0,3,male,32.0,8,2,69.55,S,Mr,False,Adults,10,7,Expensive,XX
+325,1,1,female,36.0,0,0,135.6333,C,Ms,True,Middle-aged,0,3,Very Expensive,C
+326,0,3,male,61.0,0,0,6.2375,S,Mr,True,Seniors,0,1,Very Cheap,XX
+327,1,2,female,36.0,0,0,13.0,S,Mrs,True,Middle-aged,0,1,Normal,D
+328,1,3,female,31.0,1,1,20.525,S,Mrs,True,Adults,2,3,Normal,XX
+329,1,1,female,16.0,0,1,57.9792,C,Ms,True,Teenagers,1,2,Expensive,B
+330,1,3,female,22.0,2,0,23.25,Q,Ms,False,Young Adults,2,2,Average,XX
+331,0,1,male,45.0,0,0,28.5,S,Mr,False,Middle-aged,0,1,Average,C
+332,0,1,male,38.0,0,1,153.4625,S,Mr,True,Middle-aged,1,3,Very Expensive,C
+333,0,3,male,16.0,2,0,18.0,S,Mr,True,Teenagers,2,2,Normal,XX
+334,1,1,female,35.0,1,0,133.65,S,Mrs,False,Middle-aged,1,2,Very Expensive,XX
+335,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+336,0,1,male,29.0,1,0,66.6,S,Mr,True,Adults,1,2,Expensive,C
+337,1,1,female,41.0,0,0,134.5,C,Ms,True,Middle-aged,0,2,Very Expensive,E
+338,1,3,male,45.0,0,0,8.05,S,Mr,True,Middle-aged,0,1,Cheap,XX
+339,0,1,male,45.0,0,0,35.5,S,Mr,True,Middle-aged,0,1,Average,T
+340,1,2,male,2.0,1,1,26.0,S,Master,True,Kids,2,3,Average,F
+341,1,1,female,24.0,3,2,263.0,S,Ms,True,Young Adults,5,4,Very Expensive,C
+342,0,2,male,28.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+343,0,2,male,25.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+344,0,2,male,36.0,0,0,13.0,S,Mr,True,Middle-aged,0,1,Normal,XX
+345,1,2,female,24.0,0,0,13.0,S,Ms,True,Young Adults,0,1,Normal,F
+346,1,2,female,40.0,0,0,13.0,S,Ms,True,Middle-aged,0,1,Normal,XX
+347,1,3,female,35.0,1,0,16.1,S,Mrs,False,Middle-aged,1,1,Normal,XX
+348,1,3,male,3.0,1,1,15.9,S,Master,True,Kids,2,2,Normal,XX
+349,0,3,male,42.0,0,0,8.6625,S,Mr,True,Middle-aged,0,1,Cheap,XX
+350,0,3,male,23.0,0,0,9.225,S,Mr,True,Young Adults,0,1,Cheap,XX
+351,0,1,male,32.0,0,0,35.0,S,Mr,False,Adults,0,1,Average,C
+352,0,3,male,15.0,1,1,7.2292,C,Mr,True,Teenagers,2,1,Very Cheap,XX
+353,0,3,male,25.0,1,0,17.8,S,Mr,True,Adults,1,2,Normal,XX
+354,0,3,male,32.0,0,0,7.225,C,Mr,False,Adults,0,1,Very Cheap,XX
+355,0,3,male,28.0,0,0,9.5,S,Mr,True,Adults,0,1,Cheap,XX
+356,1,1,female,22.0,0,1,55.0,S,Ms,True,Young Adults,1,2,Expensive,E
+357,0,2,female,38.0,0,0,13.0,S,Ms,True,Middle-aged,0,1,Normal,XX
+358,1,3,female,22.0,0,0,7.8792,Q,Ms,False,Young Adults,0,1,Cheap,XX
+359,1,3,female,22.0,0,0,7.8792,Q,Ms,False,Young Adults,0,1,Cheap,XX
+360,0,3,male,40.0,1,4,27.9,S,Mr,True,Middle-aged,5,6,Average,XX
+361,0,2,male,29.0,1,0,27.7208,C,Mr,True,Adults,1,1,Average,XX
+362,0,3,female,45.0,0,1,14.4542,C,Mrs,True,Middle-aged,1,2,Normal,XX
+363,0,3,male,35.0,0,0,7.05,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+364,0,3,male,32.0,1,0,15.5,Q,Mr,False,Adults,1,2,Normal,XX
+365,0,3,male,30.0,0,0,7.25,S,Mr,True,Adults,0,1,Very Cheap,XX
+366,1,1,female,60.0,1,0,75.25,C,Mrs,True,Seniors,1,1,Expensive,D
+367,1,3,female,35.0,0,0,7.2292,C,Mrs,False,Middle-aged,0,1,Very Cheap,XX
+368,1,3,female,22.0,0,0,7.75,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+369,1,1,female,24.0,0,0,69.3,C,Mrs,True,Young Adults,0,2,Expensive,B
+370,1,1,male,25.0,1,0,55.4417,C,Mr,True,Adults,1,1,Expensive,E
+371,0,3,male,18.0,1,0,6.4958,S,Mr,True,Young Adults,1,1,Very Cheap,XX
+372,0,3,male,19.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+373,0,1,male,22.0,0,0,135.6333,C,Mr,True,Young Adults,0,3,Very Expensive,XX
+374,0,3,female,3.0,3,1,21.075,S,Ms,True,Kids,4,4,Normal,XX
+375,1,1,female,35.0,1,0,82.1708,C,Mrs,False,Middle-aged,1,2,Expensive,XX
+376,1,3,female,22.0,0,0,7.25,S,Ms,True,Young Adults,0,1,Very Cheap,XX
+377,0,1,male,27.0,0,2,211.5,C,Mr,True,Adults,2,1,Very Expensive,C
+378,0,3,male,20.0,0,0,4.0125,C,Mr,True,Young Adults,0,1,Very Cheap,XX
+379,0,3,male,19.0,0,0,7.775,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+380,1,1,female,42.0,0,0,227.525,C,Ms,True,Middle-aged,0,4,Very Expensive,XX
+381,1,3,female,1.0,0,2,15.7417,C,Ms,True,Kids,2,2,Normal,XX
+382,0,3,male,32.0,0,0,7.925,S,Mr,True,Adults,0,1,Cheap,XX
+383,1,1,female,35.0,1,0,52.0,S,Mrs,True,Middle-aged,1,2,Expensive,XX
+384,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+385,0,2,male,18.0,0,0,73.5,S,Mr,True,Young Adults,0,5,Expensive,XX
+386,0,3,male,1.0,5,2,46.9,S,Master,True,Kids,7,6,Expensive,XX
+387,1,2,female,36.0,0,0,13.0,S,Ms,True,Middle-aged,0,1,Normal,XX
+388,0,3,male,32.0,0,0,7.7292,Q,Mr,False,Adults,0,1,Very Cheap,XX
+389,1,2,female,17.0,0,0,12.0,C,Ms,True,Teenagers,0,1,Normal,XX
+390,1,1,male,36.0,1,2,120.0,S,Mr,True,Middle-aged,3,4,Very Expensive,B
+391,1,3,male,21.0,0,0,7.7958,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+392,0,3,male,28.0,2,0,7.925,S,Mr,True,Adults,2,1,Cheap,XX
+393,1,1,female,23.0,1,0,113.275,C,Ms,True,Young Adults,1,3,Very Expensive,D
+394,1,3,female,24.0,0,2,16.7,S,Mrs,True,Young Adults,2,2,Normal,G
+395,0,3,male,22.0,0,0,7.7958,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+396,0,3,female,31.0,0,0,7.8542,S,Ms,True,Adults,0,1,Cheap,XX
+397,0,2,male,46.0,0,0,26.0,S,Mr,True,Middle-aged,0,2,Average,XX
+398,0,2,male,23.0,0,0,10.5,S,Noble,True,Young Adults,0,1,Cheap,XX
+399,1,2,female,28.0,0,0,12.65,S,Mrs,True,Adults,0,1,Normal,XX
+400,1,3,male,39.0,0,0,7.925,S,Mr,True,Middle-aged,0,1,Cheap,XX
+401,0,3,male,26.0,0,0,8.05,S,Mr,True,Adults,0,1,Cheap,XX
+402,0,3,female,21.0,1,0,9.825,S,Ms,True,Young Adults,1,1,Cheap,XX
+403,0,3,male,28.0,1,0,15.85,S,Mr,True,Adults,1,2,Normal,XX
+404,0,3,female,20.0,0,0,8.6625,S,Ms,True,Young Adults,0,1,Cheap,XX
+405,0,2,male,34.0,1,0,21.0,S,Mr,True,Adults,1,1,Normal,XX
+406,0,3,male,51.0,0,0,7.75,S,Mr,True,Seniors,0,1,Very Cheap,XX
+407,1,2,male,3.0,1,1,18.75,S,Master,True,Kids,2,3,Normal,XX
+408,0,3,male,21.0,0,0,7.775,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+409,0,3,female,22.0,3,1,25.4667,S,Ms,False,Young Adults,4,4,Average,XX
+410,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+411,0,3,male,32.0,0,0,6.8583,Q,Mr,False,Adults,0,1,Very Cheap,XX
+412,1,1,female,33.0,1,0,90.0,Q,Ms,True,Adults,1,2,Expensive,C
+413,0,2,male,32.0,0,0,20.662183152173913,S,Mr,False,Adults,0,3,Normal,XX
+414,1,3,male,44.0,0,0,7.925,S,Mr,True,Middle-aged,0,1,Cheap,XX
+415,0,3,female,35.0,0,0,8.05,S,Mrs,False,Middle-aged,0,1,Cheap,XX
+416,1,2,female,34.0,1,1,32.5,S,Mrs,True,Adults,2,1,Average,XX
+417,1,2,female,18.0,0,2,13.0,S,Ms,True,Young Adults,2,1,Normal,XX
+418,0,2,male,30.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+419,0,3,female,10.0,0,2,24.15,S,Ms,True,Kids,2,3,Average,XX
+420,0,3,male,32.0,0,0,7.8958,C,Mr,False,Adults,0,1,Cheap,XX
+421,0,3,male,21.0,0,0,7.7333,Q,Mr,True,Young Adults,0,1,Very Cheap,XX
+422,0,3,male,29.0,0,0,7.875,S,Mr,True,Adults,0,1,Cheap,XX
+423,0,3,female,28.0,1,1,14.4,S,Mrs,True,Adults,2,2,Normal,XX
+424,0,3,male,18.0,1,1,20.2125,S,Mr,True,Young Adults,2,2,Normal,XX
+425,0,3,male,32.0,0,0,7.25,S,Mr,False,Adults,0,1,Very Cheap,XX
+426,1,2,female,28.0,1,0,26.0,S,Mrs,True,Adults,1,1,Average,XX
+427,1,2,female,19.0,0,0,26.0,S,Ms,True,Young Adults,0,2,Average,XX
+428,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+429,1,3,male,32.0,0,0,8.05,S,Mr,True,Adults,0,1,Cheap,E
+430,1,1,male,28.0,0,0,26.55,S,Mr,True,Adults,0,1,Average,C
+431,1,3,female,35.0,1,0,16.1,S,Mrs,False,Middle-aged,1,2,Normal,XX
+432,1,2,female,42.0,1,0,26.0,S,Mrs,True,Middle-aged,1,1,Average,XX
+433,0,3,male,17.0,0,0,7.125,S,Mr,True,Teenagers,0,1,Very Cheap,XX
+434,0,1,male,50.0,1,0,55.9,S,Mr,True,Seniors,1,2,Expensive,E
+435,1,1,female,14.0,1,2,120.0,S,Ms,True,Teenagers,3,4,Very Expensive,B
+436,0,3,female,21.0,2,2,34.375,S,Ms,True,Young Adults,4,4,Average,XX
+437,1,2,female,24.0,2,3,18.75,S,Mrs,True,Young Adults,5,3,Normal,XX
+438,0,1,male,64.0,1,4,263.0,S,Mr,True,Seniors,5,4,Very Expensive,C
+439,0,2,male,31.0,0,0,10.5,S,Mr,True,Adults,0,1,Cheap,XX
+440,1,2,female,45.0,1,1,26.25,S,Mrs,True,Middle-aged,2,3,Average,XX
+441,0,3,male,20.0,0,0,9.5,S,Mr,True,Young Adults,0,1,Cheap,XX
+442,0,3,male,25.0,1,0,7.775,S,Mr,True,Adults,1,1,Very Cheap,XX
+443,1,2,female,28.0,0,0,13.0,S,Ms,True,Adults,0,1,Normal,XX
+444,1,3,male,32.0,0,0,8.1125,S,Mr,False,Adults,0,1,Cheap,XX
+445,1,1,male,4.0,0,2,81.8583,S,Master,True,Kids,2,1,Expensive,A
+446,1,2,female,13.0,0,1,19.5,S,Ms,True,Teenagers,1,2,Normal,XX
+447,1,1,male,34.0,0,0,26.55,S,Mr,True,Adults,0,1,Average,XX
+448,1,3,female,5.0,2,1,19.2583,C,Ms,True,Kids,3,4,Normal,XX
+449,1,1,male,52.0,0,0,30.5,S,Noble,True,Seniors,0,1,Average,C
+450,0,2,male,36.0,1,2,27.75,S,Mr,True,Middle-aged,3,3,Average,XX
+451,0,3,male,32.0,1,0,19.9667,S,Mr,False,Adults,1,1,Normal,XX
+452,0,1,male,30.0,0,0,27.75,C,Mr,True,Adults,0,1,Average,C
+453,1,1,male,49.0,1,0,89.1042,C,Mr,True,Middle-aged,1,2,Expensive,C
+454,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+455,1,3,male,29.0,0,0,7.8958,C,Mr,True,Adults,0,1,Cheap,XX
+456,0,1,male,65.0,0,0,26.55,S,Mr,True,Seniors,0,1,Average,E
+457,1,1,female,35.0,1,0,51.8625,S,Mrs,False,Middle-aged,1,1,Expensive,D
+458,1,2,female,50.0,0,0,10.5,S,Ms,True,Seniors,0,1,Cheap,XX
+459,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+460,1,1,male,48.0,0,0,26.55,S,Mr,True,Middle-aged,0,1,Average,E
+461,0,3,male,34.0,0,0,8.05,S,Mr,True,Adults,0,1,Cheap,XX
+462,0,1,male,47.0,0,0,38.5,S,Mr,True,Middle-aged,0,1,Average,E
+463,0,2,male,48.0,0,0,13.0,S,Mr,True,Middle-aged,0,1,Normal,XX
+464,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+465,0,3,male,38.0,0,0,7.05,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+466,0,2,male,32.0,0,0,20.662183152173913,S,Mr,False,Adults,0,3,Normal,XX
+467,0,1,male,56.0,0,0,26.55,S,Mr,True,Seniors,0,1,Average,XX
+468,0,3,male,32.0,0,0,7.725,Q,Mr,False,Adults,0,1,Very Cheap,XX
+469,1,3,female,0.0,2,1,19.2583,C,Ms,True,Kids,3,4,Normal,XX
+470,0,3,male,32.0,0,0,7.25,S,Mr,False,Adults,0,1,Very Cheap,XX
+471,0,3,male,38.0,0,0,8.6625,S,Mr,True,Middle-aged,0,1,Cheap,XX
+472,1,2,female,33.0,1,2,27.75,S,Mrs,True,Adults,3,3,Average,XX
+473,1,2,female,23.0,0,0,13.7917,C,Mrs,True,Young Adults,0,1,Normal,D
+474,0,3,female,22.0,0,0,9.8375,S,Ms,True,Young Adults,0,1,Cheap,XX
+475,0,1,male,32.0,0,0,52.0,S,Mr,False,Adults,0,2,Expensive,A
+476,0,2,male,34.0,1,0,21.0,S,Mr,True,Adults,1,2,Normal,XX
+477,0,3,male,29.0,1,0,7.0458,S,Mr,True,Adults,1,1,Very Cheap,XX
+478,0,3,male,22.0,0,0,7.5208,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+479,1,3,female,2.0,0,1,12.2875,S,Ms,True,Kids,1,1,Normal,XX
+480,0,3,male,9.0,5,2,46.9,S,Master,True,Kids,7,6,Expensive,XX
+481,0,2,male,32.0,0,0,20.662183152173913,S,Mr,False,Adults,0,1,Normal,XX
+482,0,3,male,50.0,0,0,8.05,S,Mr,True,Seniors,0,1,Cheap,XX
+483,1,3,female,63.0,0,0,9.5875,S,Mrs,True,Seniors,0,1,Cheap,XX
+484,1,1,male,25.0,1,0,91.0792,C,Mr,True,Adults,1,2,Expensive,B
+485,0,3,female,22.0,3,1,25.4667,S,Ms,False,Young Adults,4,4,Average,XX
+486,1,1,female,35.0,1,0,90.0,S,Mrs,True,Middle-aged,1,2,Expensive,C
+487,0,1,male,58.0,0,0,29.7,C,Mr,True,Seniors,0,1,Average,B
+488,0,3,male,30.0,0,0,8.05,S,Mr,True,Adults,0,1,Cheap,XX
+489,1,3,male,9.0,1,1,15.9,S,Master,True,Kids,2,2,Normal,XX
+490,0,3,male,32.0,1,0,19.9667,S,Mr,False,Adults,1,1,Normal,XX
+491,0,3,male,21.0,0,0,7.25,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+492,0,1,male,55.0,0,0,30.5,S,Mr,True,Seniors,0,1,Average,C
+493,0,1,male,71.0,0,0,49.5042,C,Mr,True,Seniors,0,1,Expensive,XX
+494,0,3,male,21.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+495,0,3,male,32.0,0,0,14.4583,C,Mr,False,Adults,0,2,Normal,XX
+496,1,1,female,54.0,1,0,78.2667,C,Ms,True,Seniors,1,2,Expensive,D
+497,0,3,male,32.0,0,0,15.1,S,Mr,False,Adults,0,1,Normal,XX
+498,0,1,female,25.0,1,2,151.55,S,Mrs,True,Adults,3,4,Very Expensive,C
+499,0,3,male,24.0,0,0,7.7958,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+500,0,3,male,17.0,0,0,8.6625,S,Mr,True,Teenagers,0,1,Cheap,XX
+501,0,3,female,21.0,0,0,7.75,Q,Ms,True,Young Adults,0,1,Very Cheap,XX
+502,0,3,female,22.0,0,0,7.6292,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+503,0,3,female,37.0,0,0,9.5875,S,Ms,True,Middle-aged,0,1,Cheap,XX
+504,1,1,female,16.0,0,0,86.5,S,Ms,True,Teenagers,0,3,Expensive,B
+505,0,1,male,18.0,1,0,108.9,C,Mr,True,Young Adults,1,2,Very Expensive,C
+506,1,2,female,33.0,0,2,26.0,S,Mrs,True,Adults,2,2,Average,XX
+507,1,1,male,32.0,0,0,26.55,S,Mr,False,Adults,0,1,Average,XX
+508,0,3,male,28.0,0,0,22.525,S,Mr,True,Adults,0,1,Normal,XX
+509,1,3,male,26.0,0,0,56.4958,S,Mr,True,Adults,0,7,Expensive,XX
+510,1,3,male,29.0,0,0,7.75,Q,Mr,True,Adults,0,1,Very Cheap,XX
+511,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+512,1,1,male,36.0,0,0,26.2875,S,Mr,True,Middle-aged,0,1,Average,E
+513,1,1,female,54.0,1,0,59.4,C,Mrs,True,Seniors,1,1,Expensive,XX
+514,0,3,male,24.0,0,0,7.4958,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+515,0,1,male,47.0,0,0,34.0208,S,Mr,True,Middle-aged,0,1,Average,D
+516,1,2,female,34.0,0,0,10.5,S,Mrs,True,Adults,0,1,Cheap,F
+517,0,3,male,32.0,0,0,24.15,Q,Mr,False,Adults,0,3,Average,XX
+518,1,2,female,36.0,1,0,26.0,S,Mrs,True,Middle-aged,1,1,Average,XX
+519,0,3,male,32.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+520,1,1,female,30.0,0,0,93.5,S,Ms,True,Adults,0,2,Expensive,B
+521,0,3,male,22.0,0,0,7.8958,S,Mr,True,Young Adults,0,1,Cheap,XX
+522,0,3,male,32.0,0,0,7.225,C,Mr,False,Adults,0,1,Very Cheap,XX
+523,1,1,female,44.0,0,1,57.9792,C,Mrs,True,Middle-aged,1,2,Expensive,B
+524,0,3,male,32.0,0,0,7.2292,C,Mr,False,Adults,0,1,Very Cheap,XX
+525,0,3,male,40.0,0,0,7.75,Q,Mr,False,Middle-aged,0,1,Very Cheap,XX
+526,1,2,female,50.0,0,0,10.5,S,Ms,True,Seniors,0,1,Cheap,XX
+527,0,1,male,32.0,0,0,221.7792,S,Mr,False,Adults,0,1,Very Expensive,C
+528,0,3,male,39.0,0,0,7.925,S,Mr,True,Middle-aged,0,1,Cheap,XX
+529,0,2,male,23.0,2,1,11.5,S,Mr,True,Young Adults,3,1,Normal,XX
+530,1,2,female,2.0,1,1,26.0,S,Ms,True,Kids,2,2,Average,XX
+531,0,3,male,32.0,0,0,7.2292,C,Mr,False,Adults,0,1,Very Cheap,XX
+532,0,3,male,17.0,1,1,7.2292,C,Mr,True,Teenagers,2,1,Very Cheap,XX
+533,1,3,female,35.0,0,2,22.3583,C,Mrs,False,Middle-aged,2,2,Normal,XX
+534,0,3,female,30.0,0,0,8.6625,S,Ms,True,Adults,0,1,Cheap,XX
+535,1,2,female,7.0,0,2,26.25,S,Ms,True,Kids,2,3,Average,XX
+536,0,1,male,45.0,0,0,26.55,S,Noble,True,Middle-aged,0,1,Average,B
+537,1,1,female,30.0,0,0,106.425,C,Ms,True,Adults,0,2,Very Expensive,XX
+538,0,3,male,32.0,0,0,14.5,S,Mr,False,Adults,0,1,Normal,XX
+539,1,1,female,22.0,0,2,49.5,C,Ms,True,Young Adults,2,1,Expensive,B
+540,1,1,female,36.0,0,2,71.0,S,Ms,True,Middle-aged,2,2,Expensive,B
+541,0,3,female,9.0,4,2,31.275,S,Ms,True,Kids,6,7,Average,XX
+542,0,3,female,11.0,4,2,31.275,S,Ms,True,Kids,6,7,Average,XX
+543,1,2,male,32.0,1,0,26.0,S,Mr,True,Adults,1,2,Average,XX
+544,0,1,male,50.0,1,0,106.425,C,Mr,True,Seniors,1,2,Very Expensive,C
+545,0,1,male,64.0,0,0,26.0,S,Mr,True,Seniors,0,1,Average,XX
+546,1,2,female,19.0,1,0,26.0,S,Mrs,True,Young Adults,1,2,Average,XX
+547,1,2,male,32.0,0,0,13.8625,C,Mr,False,Adults,0,1,Normal,XX
+548,0,3,male,33.0,1,1,20.525,S,Mr,True,Adults,2,3,Normal,XX
+549,1,2,male,8.0,1,1,36.75,S,Master,True,Kids,2,2,Average,XX
+550,1,1,male,17.0,0,2,110.8833,C,Mr,True,Teenagers,2,4,Very Expensive,C
+551,0,2,male,27.0,0,0,26.0,S,Mr,True,Adults,0,1,Average,XX
+552,0,3,male,32.0,0,0,7.8292,Q,Mr,False,Adults,0,1,Cheap,XX
+553,1,3,male,22.0,0,0,7.225,C,Mr,True,Young Adults,0,1,Very Cheap,XX
+554,1,3,female,22.0,0,0,7.775,S,Ms,True,Young Adults,0,1,Very Cheap,XX
+555,0,1,male,62.0,0,0,26.55,S,Mr,True,Seniors,0,1,Average,XX
+556,1,1,female,48.0,1,0,39.6,C,Noble,True,Middle-aged,1,1,Average,A
+557,0,1,male,32.0,0,0,227.525,C,Mr,False,Adults,0,4,Very Expensive,XX
+558,1,1,female,39.0,1,1,79.65,S,Mrs,True,Middle-aged,2,3,Expensive,E
+559,1,3,female,36.0,1,0,17.4,S,Mrs,True,Middle-aged,1,1,Normal,XX
+560,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+561,0,3,male,40.0,0,0,7.8958,S,Mr,True,Middle-aged,0,1,Cheap,XX
+562,0,2,male,28.0,0,0,13.5,S,Mr,True,Adults,0,1,Normal,XX
+563,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+564,0,3,female,22.0,0,0,8.05,S,Ms,False,Young Adults,0,1,Cheap,XX
+565,0,3,male,24.0,2,0,24.15,S,Mr,True,Young Adults,2,2,Average,XX
+566,0,3,male,19.0,0,0,7.8958,S,Mr,True,Young Adults,0,1,Cheap,XX
+567,0,3,female,29.0,0,4,21.075,S,Mrs,True,Adults,4,4,Normal,XX
+568,0,3,male,32.0,0,0,7.2292,C,Mr,False,Adults,0,1,Very Cheap,XX
+569,1,3,male,32.0,0,0,7.8542,S,Mr,True,Adults,0,1,Cheap,XX
+570,1,2,male,62.0,0,0,10.5,S,Mr,True,Seniors,0,1,Cheap,XX
+571,1,1,female,53.0,2,0,51.4792,S,Mrs,True,Seniors,2,1,Expensive,C
+572,1,1,male,36.0,0,0,26.3875,S,Mr,True,Middle-aged,0,1,Average,E
+573,1,3,female,22.0,0,0,7.75,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+574,0,3,male,16.0,0,0,8.05,S,Mr,True,Teenagers,0,1,Cheap,XX
+575,0,3,male,19.0,0,0,14.5,S,Mr,True,Young Adults,0,2,Normal,XX
+576,1,2,female,34.0,0,0,13.0,S,Ms,True,Adults,0,1,Normal,XX
+577,1,1,female,39.0,1,0,55.9,S,Mrs,True,Middle-aged,1,2,Expensive,E
+578,0,3,female,35.0,1,0,14.4583,C,Mrs,False,Middle-aged,1,1,Normal,XX
+579,1,3,male,32.0,0,0,7.925,S,Mr,True,Adults,0,1,Cheap,XX
+580,1,2,female,25.0,1,1,30.0,S,Ms,True,Adults,2,1,Average,XX
+581,1,1,female,39.0,1,1,110.8833,C,Mrs,True,Middle-aged,2,4,Very Expensive,C
+582,0,2,male,54.0,0,0,26.0,S,Mr,True,Seniors,0,2,Average,XX
+583,0,1,male,36.0,0,0,40.125,C,Mr,True,Middle-aged,0,1,Average,A
+584,0,3,male,32.0,0,0,8.7125,C,Mr,False,Adults,0,1,Cheap,XX
+585,1,1,female,18.0,0,2,79.65,S,Ms,True,Young Adults,2,3,Expensive,E
+586,0,2,male,47.0,0,0,15.0,S,Mr,True,Middle-aged,0,1,Normal,XX
+587,1,1,male,60.0,1,1,79.2,C,Mr,True,Seniors,2,1,Expensive,B
+588,0,3,male,22.0,0,0,8.05,S,Mr,True,Young Adults,0,1,Cheap,XX
+589,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+590,0,3,male,35.0,0,0,7.125,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+591,1,1,female,52.0,1,0,78.2667,C,Mrs,True,Seniors,1,2,Expensive,D
+592,0,3,male,47.0,0,0,7.25,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+593,0,3,female,22.0,0,2,7.75,Q,Ms,False,Young Adults,2,1,Very Cheap,XX
+594,0,2,male,37.0,1,0,26.0,S,Mr,True,Middle-aged,1,1,Average,XX
+595,0,3,male,36.0,1,1,24.15,S,Mr,True,Middle-aged,2,3,Average,XX
+596,1,2,female,22.0,0,0,33.0,S,Ms,False,Young Adults,0,3,Average,XX
+597,0,3,male,49.0,0,0,0.0,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+598,0,3,male,32.0,0,0,7.225,C,Mr,False,Adults,0,1,Very Cheap,XX
+599,1,1,male,49.0,1,0,56.9292,C,Noble,True,Middle-aged,1,2,Expensive,A
+600,1,2,female,24.0,2,1,27.0,S,Mrs,True,Young Adults,3,2,Average,XX
+601,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+602,0,1,male,32.0,0,0,42.4,S,Mr,False,Adults,0,1,Expensive,XX
+603,0,3,male,44.0,0,0,8.05,S,Mr,True,Middle-aged,0,1,Cheap,XX
+604,1,1,male,35.0,0,0,26.55,C,Mr,True,Middle-aged,0,1,Average,XX
+605,0,3,male,36.0,1,0,15.55,S,Mr,True,Middle-aged,1,1,Normal,XX
+606,0,3,male,30.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+607,1,1,male,27.0,0,0,30.5,S,Mr,True,Adults,0,1,Average,XX
+608,1,2,female,22.0,1,2,41.5792,C,Mrs,True,Young Adults,3,3,Expensive,XX
+609,1,1,female,40.0,0,0,153.4625,S,Ms,True,Middle-aged,0,3,Very Expensive,C
+610,0,3,female,39.0,1,5,31.275,S,Mrs,True,Middle-aged,6,7,Average,XX
+611,0,3,male,32.0,0,0,7.05,S,Mr,False,Adults,0,1,Very Cheap,XX
+612,1,3,female,22.0,1,0,15.5,Q,Ms,False,Young Adults,1,2,Normal,XX
+613,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+614,0,3,male,35.0,0,0,8.05,S,Mr,True,Middle-aged,0,1,Cheap,XX
+615,1,2,female,24.0,1,2,65.0,S,Ms,True,Young Adults,3,2,Expensive,XX
+616,0,3,male,34.0,1,1,14.4,S,Mr,True,Adults,2,2,Normal,XX
+617,0,3,female,26.0,1,0,16.1,S,Mrs,True,Adults,1,2,Normal,XX
+618,1,2,female,4.0,2,1,39.0,S,Ms,True,Kids,3,2,Average,F
+619,0,2,male,26.0,0,0,10.5,S,Mr,True,Adults,0,1,Cheap,XX
+620,0,3,male,27.0,1,0,14.4542,C,Mr,True,Adults,1,2,Normal,XX
+621,1,1,male,42.0,1,0,52.5542,S,Mr,True,Middle-aged,1,1,Expensive,D
+622,1,3,male,20.0,1,1,15.7417,C,Mr,True,Young Adults,2,2,Normal,XX
+623,0,3,male,21.0,0,0,7.8542,S,Mr,True,Young Adults,0,1,Cheap,XX
+624,0,3,male,21.0,0,0,16.1,S,Mr,True,Young Adults,0,2,Normal,XX
+625,0,1,male,61.0,0,0,32.3208,S,Mr,True,Seniors,0,1,Average,D
+626,0,2,male,57.0,0,0,12.35,Q,Noble,True,Seniors,0,1,Normal,XX
+627,1,1,female,21.0,0,0,77.9583,S,Ms,True,Young Adults,0,3,Expensive,D
+628,0,3,male,26.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+629,0,3,male,32.0,0,0,7.7333,Q,Mr,False,Adults,0,1,Very Cheap,XX
+630,1,1,male,80.0,0,0,30.0,S,Mr,True,Seniors,0,1,Average,A
+631,0,3,male,51.0,0,0,7.0542,S,Mr,True,Seniors,0,1,Very Cheap,XX
+632,1,1,male,32.0,0,0,30.5,C,Noble,True,Adults,0,1,Average,B
+633,0,1,male,32.0,0,0,84.1546875,S,Mr,False,Adults,0,1,Expensive,XX
+634,0,3,female,9.0,3,2,27.9,S,Ms,True,Kids,5,6,Average,XX
+635,1,2,female,28.0,0,0,13.0,S,Ms,True,Adults,0,1,Normal,XX
+636,0,3,male,32.0,0,0,7.925,S,Mr,True,Adults,0,1,Cheap,XX
+637,0,2,male,31.0,1,1,26.25,S,Mr,True,Adults,2,3,Average,XX
+638,0,3,female,41.0,0,5,39.6875,S,Mrs,True,Middle-aged,5,6,Average,XX
+639,0,3,male,32.0,1,0,16.1,S,Mr,False,Adults,1,2,Normal,XX
+640,0,3,male,20.0,0,0,7.8542,S,Mr,True,Young Adults,0,1,Cheap,XX
+641,1,1,female,24.0,0,0,69.3,C,Ms,True,Young Adults,0,2,Expensive,B
+642,0,3,female,2.0,3,2,27.9,S,Ms,True,Kids,5,6,Average,XX
+643,1,3,male,32.0,0,0,56.4958,S,Mr,False,Adults,0,7,Expensive,XX
+644,1,3,female,0.0,2,1,19.2583,C,Ms,True,Kids,3,4,Normal,XX
+645,1,1,male,48.0,1,0,76.7292,C,Mr,True,Middle-aged,1,3,Expensive,D
+646,0,3,male,19.0,0,0,7.8958,S,Mr,True,Young Adults,0,1,Cheap,XX
+647,1,1,male,56.0,0,0,35.5,C,Noble,True,Seniors,0,1,Average,A
+648,0,3,male,32.0,0,0,7.55,S,Mr,False,Adults,0,1,Very Cheap,XX
+649,1,3,female,23.0,0,0,7.55,S,Ms,True,Young Adults,0,1,Very Cheap,XX
+650,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+651,1,2,female,18.0,0,1,23.0,S,Ms,True,Young Adults,1,2,Normal,XX
+652,0,3,male,21.0,0,0,8.4333,S,Mr,True,Young Adults,0,1,Cheap,XX
+653,1,3,female,22.0,0,0,7.8292,Q,Ms,False,Young Adults,0,1,Cheap,XX
+654,0,3,female,18.0,0,0,6.75,Q,Ms,True,Young Adults,0,1,Very Cheap,XX
+655,0,2,male,24.0,2,0,73.5,S,Mr,True,Young Adults,2,5,Expensive,XX
+656,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+657,0,3,female,32.0,1,1,15.5,Q,Mrs,True,Adults,2,2,Normal,XX
+658,0,2,male,23.0,0,0,13.0,S,Mr,True,Young Adults,0,1,Normal,XX
+659,0,1,male,58.0,0,2,113.275,C,Mr,True,Seniors,2,3,Very Expensive,D
+660,1,1,male,50.0,2,0,133.65,S,Noble,True,Seniors,2,2,Very Expensive,XX
+661,0,3,male,40.0,0,0,7.225,C,Mr,True,Middle-aged,0,1,Very Cheap,XX
+662,0,1,male,47.0,0,0,25.5875,S,Mr,True,Middle-aged,0,1,Average,E
+663,0,3,male,36.0,0,0,7.4958,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+664,1,3,male,20.0,1,0,7.925,S,Mr,True,Young Adults,1,1,Cheap,XX
+665,0,2,male,32.0,2,0,73.5,S,Mr,True,Adults,2,5,Expensive,XX
+666,0,2,male,25.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+667,0,3,male,32.0,0,0,7.775,S,Mr,False,Adults,0,1,Very Cheap,XX
+668,0,3,male,43.0,0,0,8.05,S,Mr,True,Middle-aged,0,1,Cheap,XX
+669,1,1,female,35.0,1,0,52.0,S,Mrs,False,Middle-aged,1,2,Expensive,C
+670,1,2,female,40.0,1,1,39.0,S,Mrs,True,Middle-aged,2,2,Average,XX
+671,0,1,male,31.0,1,0,52.0,S,Mr,True,Adults,1,1,Expensive,B
+672,0,2,male,70.0,0,0,10.5,S,Mr,True,Seniors,0,1,Cheap,XX
+673,1,2,male,31.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+674,0,2,male,32.0,0,0,20.662183152173913,S,Mr,False,Adults,0,1,Normal,XX
+675,0,3,male,18.0,0,0,7.775,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+676,0,3,male,24.0,0,0,8.05,S,Mr,False,Young Adults,0,1,Cheap,XX
+677,1,3,female,18.0,0,0,9.8417,S,Ms,True,Young Adults,0,1,Cheap,XX
+678,0,3,female,43.0,1,6,46.9,S,Mrs,True,Middle-aged,7,6,Expensive,XX
+679,1,1,male,36.0,0,1,512.3292,C,Mr,True,Middle-aged,1,3,Very Expensive,B
+680,0,3,female,22.0,0,0,8.1375,Q,Ms,False,Young Adults,0,1,Cheap,XX
+681,1,1,male,27.0,0,0,76.7292,C,Mr,True,Adults,0,3,Expensive,D
+682,0,3,male,20.0,0,0,9.225,S,Mr,True,Young Adults,0,1,Cheap,XX
+683,0,3,male,14.0,5,2,46.9,S,Mr,True,Teenagers,7,6,Expensive,XX
+684,0,2,male,60.0,1,1,39.0,S,Mr,True,Seniors,2,2,Average,XX
+685,0,2,male,25.0,1,2,41.5792,C,Mr,True,Adults,3,3,Expensive,XX
+686,0,3,male,14.0,4,1,39.6875,S,Mr,True,Teenagers,5,6,Average,XX
+687,0,3,male,19.0,0,0,10.1708,S,Mr,True,Young Adults,0,1,Cheap,XX
+688,0,3,male,18.0,0,0,7.7958,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+689,1,1,female,15.0,0,1,211.3375,S,Ms,True,Teenagers,1,3,Very Expensive,B
+690,1,1,male,31.0,1,0,57.0,S,Mr,True,Adults,1,2,Expensive,B
+691,1,3,female,4.0,0,1,13.4167,C,Ms,True,Kids,1,1,Normal,XX
+692,1,3,male,32.0,0,0,56.4958,S,Mr,False,Adults,0,7,Expensive,XX
+693,0,3,male,25.0,0,0,7.225,C,Mr,True,Adults,0,1,Very Cheap,XX
+694,0,1,male,60.0,0,0,26.55,S,Noble,True,Seniors,0,1,Average,XX
+695,0,2,male,52.0,0,0,13.5,S,Mr,True,Seniors,0,1,Normal,XX
+696,0,3,male,44.0,0,0,8.05,S,Mr,True,Middle-aged,0,1,Cheap,XX
+697,1,3,female,22.0,0,0,7.7333,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+698,0,1,male,49.0,1,1,110.8833,C,Mr,True,Middle-aged,2,4,Very Expensive,C
+699,0,3,male,42.0,0,0,7.65,S,Mr,True,Middle-aged,0,1,Very Cheap,F
+700,1,1,female,18.0,1,0,227.525,C,Mrs,True,Young Adults,1,4,Very Expensive,C
+701,1,1,male,35.0,0,0,26.2875,S,Mr,True,Middle-aged,0,1,Average,E
+702,0,3,female,18.0,0,1,14.4542,C,Ms,True,Young Adults,1,2,Normal,XX
+703,0,3,male,25.0,0,0,7.7417,Q,Mr,True,Adults,0,1,Very Cheap,XX
+704,0,3,male,26.0,1,0,7.8542,S,Mr,True,Adults,1,1,Cheap,XX
+705,0,2,male,39.0,0,0,26.0,S,Mr,True,Middle-aged,0,2,Average,XX
+706,1,2,female,45.0,0,0,13.5,S,Mrs,True,Middle-aged,0,1,Normal,XX
+707,1,1,male,42.0,0,0,26.2875,S,Mr,True,Middle-aged,0,1,Average,E
+708,1,1,female,22.0,0,0,151.55,S,Ms,True,Young Adults,0,4,Very Expensive,XX
+709,1,3,male,4.0,1,1,15.2458,C,Master,False,Kids,2,2,Normal,XX
+710,1,1,female,24.0,0,0,49.5042,C,Ms,True,Young Adults,0,1,Expensive,C
+711,0,1,male,32.0,0,0,26.55,S,Mr,False,Adults,0,1,Average,C
+712,1,1,male,48.0,1,0,52.0,S,Mr,True,Middle-aged,1,2,Expensive,C
+713,0,3,male,29.0,0,0,9.4833,S,Mr,True,Adults,0,1,Cheap,XX
+714,0,2,male,52.0,0,0,13.0,S,Mr,True,Seniors,0,2,Normal,XX
+715,0,3,male,19.0,0,0,7.65,S,Mr,True,Young Adults,0,1,Very Cheap,F
+716,1,1,female,38.0,0,0,227.525,C,Ms,True,Middle-aged,0,4,Very Expensive,C
+717,1,2,female,27.0,0,0,10.5,S,Ms,True,Adults,0,1,Cheap,E
+718,0,3,male,32.0,0,0,15.5,Q,Mr,False,Adults,0,1,Normal,XX
+719,0,3,male,33.0,0,0,7.775,S,Mr,True,Adults,0,1,Very Cheap,XX
+720,1,2,female,6.0,0,1,33.0,S,Ms,True,Kids,1,3,Average,XX
+721,0,3,male,17.0,1,0,7.0542,S,Mr,True,Teenagers,1,1,Very Cheap,XX
+722,0,2,male,34.0,0,0,13.0,S,Mr,True,Adults,0,1,Normal,XX
+723,0,2,male,50.0,0,0,13.0,S,Mr,True,Seniors,0,1,Normal,XX
+724,1,1,male,27.0,1,0,53.1,S,Mr,True,Adults,1,2,Expensive,E
+725,0,3,male,20.0,0,0,8.6625,S,Mr,True,Young Adults,0,1,Cheap,XX
+726,1,2,female,30.0,3,0,21.0,S,Mrs,True,Adults,3,2,Normal,XX
+727,1,3,female,22.0,0,0,7.7375,Q,Ms,False,Young Adults,0,1,Very Cheap,XX
+728,0,2,male,25.0,1,0,26.0,S,Mr,True,Adults,1,1,Average,XX
+729,0,3,female,25.0,1,0,7.925,S,Ms,True,Adults,1,1,Cheap,XX
+730,1,1,female,29.0,0,0,211.3375,S,Ms,True,Adults,0,3,Very Expensive,B
+731,0,3,male,11.0,0,0,18.7875,C,Mr,True,Kids,0,2,Normal,XX
+732,0,2,male,32.0,0,0,20.662183152173913,S,Mr,False,Adults,0,1,Normal,XX
+733,0,2,male,23.0,0,0,13.0,S,Mr,True,Young Adults,0,1,Normal,XX
+734,0,2,male,23.0,0,0,13.0,S,Mr,True,Young Adults,0,1,Normal,XX
+735,0,3,male,28.0,0,0,16.1,S,Mr,False,Adults,0,2,Normal,XX
+736,0,3,female,48.0,1,3,34.375,S,Mrs,True,Middle-aged,4,4,Average,XX
+737,1,1,male,35.0,0,0,512.3292,C,Mr,True,Middle-aged,0,3,Very Expensive,B
+738,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+739,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+740,1,1,male,32.0,0,0,30.0,S,Mr,False,Adults,0,1,Average,D
+741,0,1,male,36.0,1,0,78.85,S,Mr,True,Middle-aged,1,2,Expensive,C
+742,1,1,female,21.0,2,2,262.375,C,Ms,True,Young Adults,4,2,Very Expensive,B
+743,0,3,male,24.0,1,0,16.1,S,Mr,True,Young Adults,1,1,Normal,XX
+744,1,3,male,31.0,0,0,7.925,S,Mr,True,Adults,0,1,Cheap,XX
+745,0,1,male,70.0,1,1,71.0,S,Noble,True,Seniors,2,2,Expensive,B
+746,0,3,male,16.0,1,1,20.25,S,Mr,True,Teenagers,2,2,Normal,XX
+747,1,2,female,30.0,0,0,13.0,S,Ms,True,Adults,0,1,Normal,XX
+748,0,1,male,19.0,1,0,53.1,S,Mr,True,Young Adults,1,1,Expensive,D
+749,0,3,male,31.0,0,0,7.75,Q,Mr,True,Adults,0,1,Very Cheap,XX
+750,1,2,female,4.0,1,1,23.0,S,Ms,True,Kids,2,1,Normal,XX
+751,1,3,male,6.0,0,1,12.475,S,Master,True,Kids,1,2,Normal,E
+752,0,3,male,33.0,0,0,9.5,S,Mr,True,Adults,0,1,Cheap,XX
+753,0,3,male,23.0,0,0,7.8958,S,Mr,True,Young Adults,0,1,Cheap,XX
+754,1,2,female,48.0,1,2,65.0,S,Mrs,True,Middle-aged,3,2,Expensive,XX
+755,1,2,male,0.0,1,1,14.5,S,Master,True,Kids,2,2,Normal,XX
+756,0,3,male,28.0,0,0,7.7958,S,Mr,True,Adults,0,1,Very Cheap,XX
+757,0,2,male,18.0,0,0,11.5,S,Mr,True,Young Adults,0,1,Normal,XX
+758,0,3,male,34.0,0,0,8.05,S,Mr,True,Adults,0,1,Cheap,XX
+759,1,1,female,33.0,0,0,86.5,S,Ms,True,Adults,0,3,Expensive,B
+760,0,3,male,32.0,0,0,14.5,S,Mr,False,Adults,0,2,Normal,XX
+761,0,3,male,41.0,0,0,7.125,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+762,1,3,male,20.0,0,0,7.2292,C,Mr,True,Young Adults,0,1,Very Cheap,XX
+763,1,1,female,36.0,1,2,120.0,S,Mrs,True,Middle-aged,3,4,Very Expensive,B
+764,0,3,male,16.0,0,0,7.775,S,Mr,True,Teenagers,0,1,Very Cheap,XX
+765,1,1,female,51.0,1,0,77.9583,S,Mrs,True,Seniors,1,3,Expensive,D
+766,0,1,male,49.0,0,0,39.6,C,Noble,False,Middle-aged,0,1,Average,XX
+767,0,3,female,30.0,0,0,7.75,Q,Ms,False,Adults,0,1,Very Cheap,XX
+768,0,3,male,32.0,1,0,24.15,Q,Mr,False,Adults,1,3,Average,XX
+769,0,3,male,32.0,0,0,8.3625,S,Mr,True,Adults,0,1,Cheap,XX
+770,0,3,male,24.0,0,0,9.5,S,Mr,True,Young Adults,0,1,Cheap,XX
+771,0,3,male,48.0,0,0,7.8542,S,Mr,True,Middle-aged,0,1,Cheap,XX
+772,0,2,female,57.0,0,0,10.5,S,Mrs,True,Seniors,0,2,Cheap,E
+773,0,3,male,32.0,0,0,7.225,C,Mr,False,Adults,0,1,Very Cheap,XX
+774,1,2,female,54.0,1,3,23.0,S,Mrs,True,Seniors,4,1,Normal,XX
+775,0,3,male,18.0,0,0,7.75,S,Mr,True,Young Adults,0,1,Very Cheap,XX
+776,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,F
+777,1,3,female,5.0,0,0,12.475,S,Ms,True,Kids,0,2,Normal,XX
+778,0,3,male,32.0,0,0,7.7375,Q,Mr,False,Adults,0,1,Very Cheap,XX
+779,1,1,female,43.0,0,1,211.3375,S,Mrs,True,Middle-aged,1,3,Very Expensive,B
+780,1,3,female,13.0,0,0,7.2292,C,Ms,True,Teenagers,0,1,Very Cheap,XX
+781,1,1,female,17.0,1,0,57.0,S,Mrs,True,Teenagers,1,2,Expensive,B
+782,0,1,male,29.0,0,0,30.0,S,Mr,True,Adults,0,1,Average,D
+783,0,3,male,32.0,1,2,23.45,S,Mr,False,Adults,3,2,Average,XX
+784,0,3,male,25.0,0,0,7.05,S,Mr,True,Adults,0,1,Very Cheap,XX
+785,0,3,male,25.0,0,0,7.25,S,Mr,True,Adults,0,1,Very Cheap,XX
+786,1,3,female,18.0,0,0,7.4958,S,Ms,True,Young Adults,0,1,Very Cheap,XX
+787,0,3,male,8.0,4,1,29.125,Q,Master,True,Kids,5,5,Average,XX
+788,1,3,male,1.0,1,2,20.575,S,Master,True,Kids,3,2,Normal,XX
+789,0,1,male,46.0,0,0,79.2,C,Mr,True,Middle-aged,0,2,Expensive,B
+790,0,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+791,0,2,male,16.0,0,0,26.0,S,Mr,True,Teenagers,0,2,Average,XX
+792,0,3,female,22.0,8,2,69.55,S,Ms,False,Young Adults,10,7,Expensive,XX
+793,0,1,male,32.0,0,0,30.6958,C,Mr,False,Adults,0,1,Average,XX
+794,0,3,male,25.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+795,0,2,male,39.0,0,0,13.0,S,Mr,True,Middle-aged,0,1,Normal,XX
+796,1,1,female,49.0,0,0,25.9292,S,Noble,True,Middle-aged,0,1,Average,D
+797,1,3,female,31.0,0,0,8.6833,S,Mrs,True,Adults,0,1,Cheap,XX
+798,0,3,male,30.0,0,0,7.2292,C,Mr,True,Adults,0,1,Very Cheap,XX
+799,0,3,female,30.0,1,1,24.15,S,Mrs,True,Adults,2,3,Average,XX
+800,0,2,male,34.0,0,0,13.0,S,Mr,True,Adults,0,2,Normal,XX
+801,1,2,female,31.0,1,1,26.25,S,Mrs,True,Adults,2,3,Average,XX
+802,1,1,male,11.0,1,2,120.0,S,Master,True,Kids,3,4,Very Expensive,B
+803,1,3,male,0.0,0,1,8.5167,C,Master,True,Kids,1,1,Cheap,XX
+804,1,3,male,27.0,0,0,6.975,S,Mr,True,Adults,0,1,Very Cheap,XX
+805,0,3,male,31.0,0,0,7.775,S,Mr,True,Adults,0,1,Very Cheap,XX
+806,0,1,male,39.0,0,0,84.1546875,S,Mr,True,Middle-aged,0,1,Expensive,A
+807,0,3,female,18.0,0,0,7.775,S,Ms,True,Young Adults,0,1,Very Cheap,XX
+808,0,2,male,39.0,0,0,13.0,S,Mr,True,Middle-aged,0,1,Normal,XX
+809,1,1,female,33.0,1,0,53.1,S,Mrs,True,Adults,1,2,Expensive,E
+810,0,3,male,26.0,0,0,7.8875,S,Mr,True,Adults,0,1,Cheap,XX
+811,0,3,male,39.0,0,0,24.15,S,Mr,True,Middle-aged,0,2,Average,XX
+812,0,2,male,35.0,0,0,10.5,S,Mr,True,Middle-aged,0,1,Cheap,XX
+813,0,3,female,6.0,4,2,31.275,S,Ms,True,Kids,6,7,Average,XX
+814,0,3,male,30.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+815,0,1,male,32.0,0,0,84.1546875,S,Mr,False,Adults,0,1,Expensive,B
+816,0,3,female,23.0,0,0,7.925,S,Ms,True,Young Adults,0,1,Cheap,XX
+817,0,2,male,31.0,1,1,37.0042,C,Mr,True,Adults,2,2,Average,XX
+818,0,3,male,43.0,0,0,6.45,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+819,0,3,male,10.0,3,2,27.9,S,Master,True,Kids,5,6,Average,XX
+820,1,1,female,52.0,1,1,93.5,S,Mrs,True,Seniors,2,2,Expensive,B
+821,1,3,male,27.0,0,0,8.6625,S,Mr,True,Adults,0,1,Cheap,XX
+822,0,1,male,38.0,0,0,84.1546875,S,Noble,True,Middle-aged,0,1,Expensive,XX
+823,1,3,female,27.0,0,1,12.475,S,Mrs,True,Adults,1,2,Normal,E
+824,0,3,male,2.0,4,1,39.6875,S,Master,True,Kids,5,6,Average,XX
+825,0,3,male,32.0,0,0,6.95,Q,Mr,False,Adults,0,1,Very Cheap,XX
+826,0,3,male,32.0,0,0,56.4958,S,Mr,False,Adults,0,7,Expensive,XX
+827,1,2,male,1.0,0,2,37.0042,C,Master,True,Kids,2,2,Average,XX
+828,1,3,male,32.0,0,0,7.75,Q,Mr,False,Adults,0,1,Very Cheap,XX
+829,1,1,female,62.0,0,0,80.0,S,Mrs,True,Seniors,0,2,Expensive,B
+830,1,3,female,15.0,1,0,14.4542,C,Mrs,True,Teenagers,1,2,Normal,XX
+831,1,2,male,0.0,1,1,18.75,S,Master,True,Kids,2,3,Normal,XX
+832,0,3,male,32.0,0,0,7.2292,C,Mr,False,Adults,0,1,Very Cheap,XX
+833,0,3,male,23.0,0,0,7.8542,S,Mr,True,Young Adults,0,1,Cheap,XX
+834,0,3,male,18.0,0,0,8.3,S,Mr,True,Young Adults,0,1,Cheap,XX
+835,1,1,female,39.0,1,1,83.1583,C,Ms,True,Middle-aged,2,1,Expensive,E
+836,0,3,male,21.0,0,0,8.6625,S,Mr,True,Young Adults,0,1,Cheap,XX
+837,0,3,male,32.0,0,0,8.05,S,Mr,False,Adults,0,1,Cheap,XX
+838,1,3,male,32.0,0,0,56.4958,S,Mr,True,Adults,0,7,Expensive,XX
+839,1,1,male,32.0,0,0,29.7,C,Mr,False,Adults,0,1,Average,C
+840,0,3,male,20.0,0,0,7.925,S,Mr,True,Young Adults,0,1,Cheap,XX
+841,0,2,male,16.0,0,0,10.5,S,Mr,True,Teenagers,0,2,Cheap,XX
+842,1,1,female,30.0,0,0,31.0,C,Ms,True,Adults,0,2,Average,XX
+843,0,3,male,34.0,0,0,6.4375,C,Mr,False,Adults,0,1,Very Cheap,XX
+844,0,3,male,17.0,0,0,8.6625,S,Mr,True,Teenagers,0,1,Cheap,XX
+845,0,3,male,42.0,0,0,7.55,S,Mr,True,Middle-aged,0,1,Very Cheap,XX
+846,0,3,male,32.0,8,2,69.55,S,Mr,False,Adults,10,7,Expensive,XX
+847,0,3,male,35.0,0,0,7.8958,C,Mr,True,Middle-aged,0,1,Cheap,XX
+848,0,2,male,28.0,0,1,33.0,S,Noble,True,Adults,1,3,Average,XX
+849,1,1,female,35.0,1,0,89.1042,C,Mrs,False,Middle-aged,1,2,Expensive,C
+850,0,3,male,4.0,4,2,31.275,S,Master,True,Kids,6,7,Average,XX
+851,0,3,male,74.0,0,0,7.775,S,Mr,True,Seniors,0,1,Very Cheap,XX
+852,0,3,female,9.0,1,1,15.2458,C,Ms,True,Kids,2,2,Normal,XX
+853,1,1,female,16.0,0,1,39.4,S,Ms,True,Teenagers,1,1,Average,D
+854,0,2,female,44.0,1,0,26.0,S,Mrs,True,Middle-aged,1,2,Average,XX
+855,1,3,female,18.0,0,1,9.35,S,Mrs,True,Young Adults,1,1,Cheap,XX
+856,1,1,female,45.0,1,1,164.8667,S,Mrs,True,Middle-aged,2,2,Very Expensive,XX
+857,1,1,male,51.0,0,0,26.55,S,Mr,True,Seniors,0,1,Average,E
+858,1,3,female,24.0,0,3,19.2583,C,Mrs,True,Young Adults,3,4,Normal,XX
+859,0,3,male,32.0,0,0,7.2292,C,Mr,False,Adults,0,1,Very Cheap,XX
+860,0,3,male,41.0,2,0,14.1083,S,Mr,True,Middle-aged,2,1,Normal,XX
+861,0,2,male,21.0,1,0,11.5,S,Mr,True,Young Adults,1,1,Normal,XX
+862,1,1,female,48.0,0,0,25.9292,S,Mrs,True,Middle-aged,0,1,Average,D
+863,0,3,female,22.0,8,2,69.55,S,Ms,False,Young Adults,10,7,Expensive,XX
+864,0,2,male,24.0,0,0,13.0,S,Mr,True,Young Adults,0,1,Normal,XX
+865,1,2,female,42.0,0,0,13.0,S,Mrs,True,Middle-aged,0,1,Normal,XX
+866,1,2,female,27.0,1,0,13.8583,C,Ms,True,Adults,1,1,Normal,XX
+867,0,1,male,31.0,0,0,50.4958,S,Mr,True,Adults,0,1,Expensive,A
+868,0,3,male,32.0,0,0,9.5,S,Mr,False,Adults,0,1,Cheap,XX
+869,1,3,male,4.0,1,1,11.1333,S,Master,True,Kids,2,3,Normal,XX
+870,0,3,male,26.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+871,1,1,female,47.0,1,1,52.5542,S,Mrs,True,Middle-aged,2,2,Expensive,D
+872,0,1,male,33.0,0,0,5.0,S,Mr,True,Adults,0,1,Very Cheap,B
+873,0,3,male,47.0,0,0,9.0,S,Mr,True,Middle-aged,0,1,Cheap,XX
+874,1,2,female,28.0,1,0,24.0,C,Mrs,True,Adults,1,2,Average,XX
+875,1,3,female,15.0,0,0,7.225,C,Ms,True,Teenagers,0,1,Very Cheap,XX
+876,0,3,male,20.0,0,0,9.8458,S,Mr,True,Young Adults,0,2,Cheap,XX
+877,0,3,male,19.0,0,0,7.8958,S,Mr,True,Young Adults,0,1,Cheap,XX
+878,0,3,male,32.0,0,0,7.8958,S,Mr,False,Adults,0,1,Cheap,XX
+879,1,1,female,56.0,0,1,83.1583,C,Mrs,True,Seniors,1,2,Expensive,C
+880,1,2,female,25.0,0,1,26.0,S,Mrs,True,Adults,1,2,Average,XX
+881,0,3,male,33.0,0,0,7.8958,S,Mr,True,Adults,0,1,Cheap,XX
+882,0,3,female,22.0,0,0,10.5167,S,Ms,True,Young Adults,0,1,Normal,XX
+883,0,2,male,28.0,0,0,10.5,S,Mr,True,Adults,0,1,Cheap,XX
+884,0,3,male,25.0,0,0,7.05,S,Mr,True,Adults,0,1,Very Cheap,XX
+885,0,3,female,39.0,0,5,29.125,Q,Mrs,True,Middle-aged,5,5,Average,XX
+886,0,2,male,27.0,0,0,13.0,S,Noble,True,Adults,0,1,Normal,XX
+887,1,1,female,19.0,0,0,30.0,S,Ms,True,Young Adults,0,1,Average,B
+888,0,3,female,22.0,1,2,23.45,S,Ms,False,Young Adults,3,2,Average,XX
+889,1,1,male,26.0,0,0,30.0,C,Mr,True,Adults,0,1,Average,C
+890,0,3,male,32.0,0,0,7.75,Q,Mr,True,Adults,0,1,Very Cheap,XX
