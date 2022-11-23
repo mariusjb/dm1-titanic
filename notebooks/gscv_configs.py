@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.model_selection import KFold
+from sklearn.model_selection import StratifiedKFold
 from sklearn.neural_network import MLPClassifier
 from sklearn.tree import DecisionTreeClassifier
 
@@ -12,7 +12,7 @@ class GSCVConfig:
     name: str
     estimator: object
     param_grid: dict
-    k_fold: KFold
+    k_fold: StratifiedKFold
 
 
 gscv_cfg_dt = GSCVConfig(
@@ -25,7 +25,7 @@ gscv_cfg_dt = GSCVConfig(
         "min_samples_leaf": np.arange(1, 4, 1),
         "max_features": ["sqrt", "log2", None],
     },
-    KFold(n_splits=10, shuffle=True),
+    StratifiedKFold(n_splits=10, shuffle=True),
 )
 
 gscv_cfg_rf = GSCVConfig(
@@ -40,7 +40,7 @@ gscv_cfg_rf = GSCVConfig(
         "max_features": ["sqrt", "log2", None],
         "bootstrap": [True, False],
     },
-    KFold(n_splits=10, shuffle=True),
+    StratifiedKFold(n_splits=10, shuffle=True),
 )
 
 gscv_cfg_gb = GSCVConfig(
@@ -52,18 +52,18 @@ gscv_cfg_gb = GSCVConfig(
         "max_depth": [1, 3, 7],
         "max_features": ['sqrt', 'log2'],
     },
-    KFold(n_splits=10, shuffle=True),
+    StratifiedKFold(n_splits=10, shuffle=True),
 )
 
 gscv_cfg_mlp = GSCVConfig(
     "multilayer_perceptron",
     MLPClassifier(),
     {
-        "hidden_layer_sizes": [(50,), (100,), (500,)],
+        "hidden_layer_sizes": [(10,), (25,), (75,)],
         "activation": ["identity", "logistic", "tanh", "relu"],
         "solver": ["lbfgs", "sgd", "adam"],
         "batch_size": ["auto"],
         "learning_rate": ["constant", "invscaling", "adaptive"],
     },
-    KFold(n_splits=10, shuffle=True),
+    StratifiedKFold(n_splits=10, shuffle=True),
 )
