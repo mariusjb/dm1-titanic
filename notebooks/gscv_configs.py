@@ -6,6 +6,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
+from xgboost import XGBClassifier
 
 
 @dataclass
@@ -76,7 +77,7 @@ gscv_cfg_knn = GSCVConfig(
     {
         "n_neighbors": [3, 5, 10],
         "weights": ["uniform", "distance"],
-        "algorithm": ["auto", "ball_tree", "kd_tree", "brute"]
+        "algorithm": ["auto", "ball_tree", "kd_tree", "brute"],
     },
     StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
@@ -87,7 +88,7 @@ gscv_cfg_sv = GSCVConfig(
     {
         "gamma": ["scale", "auto"],
         "shrinking": [True, False],
-        "class_weight": ["balanced", None]
+        "class_weight": ["balanced", None],
     },
     StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
@@ -96,5 +97,18 @@ gscv_cfg_nb = GSCVConfig(
     "naive_bayes",
     GaussianNB(),
     {},
+    StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
+)
+
+gscv_cfg_xgb = GSCVConfig(
+    "xgboost",
+    XGBClassifier(objective= 'binary:logistic'),
+    {
+        "learning_rate": [0.3, 0.1, 0.01],
+        "max_depth": [5, 10, 25],
+        "colsample_bytree": [0.6, 0.7, 0.8],
+        "n_estimators": [25, 50, 100],
+        "gamma": [0.5, 1, 3],
+    },
     StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
