@@ -34,13 +34,13 @@ gscv_cfg_rf = GSCVConfig(
     "random_forest",
     RandomForestClassifier(),
     {
-        "n_estimators": [10, 100, 200],
-        "criterion": ["gini", "entropy", "log_loss"],
-        "max_depth": [5, 25, 50, None],
-        "min_samples_split": [2, 3, 4, 5],
-        "min_samples_leaf": [1, 2, 3, 4],
-        "max_features": ["sqrt", "log2", None],
-        "bootstrap": [True, False],
+        "n_estimators": [10, 20],
+        "criterion": ["entropy"],
+        "max_depth": [None],
+        "min_samples_split": [5, 7],
+        "min_samples_leaf": [2],
+        "max_features": ["log2"],
+        "bootstrap": [False],
     },
     StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
@@ -102,13 +102,13 @@ gscv_cfg_nb = GSCVConfig(
 
 gscv_cfg_xgb = GSCVConfig(
     "xgboost",
-    XGBClassifier(objective= 'binary:logistic'),
+    XGBClassifier(),
     {
-        "learning_rate": [0.3, 0.1, 0.01],
-        "max_depth": [5, 10, 25],
-        "colsample_bytree": [0.6, 0.7, 0.8],
-        "n_estimators": [25, 50, 100],
-        "gamma": [0.5, 1, 3],
+        "learning_rate": [0.01],
+        "max_depth": [8, 9],
+        "colsample_bytree": [0.55, 0.6, 0.65],
+        "n_estimators": [20, 25, 30],
+        "gamma": [0.45, 0.5, 0.55],
     },
     StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
