@@ -1,11 +1,12 @@
 from dataclasses import dataclass
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+
+from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
 from sklearn.model_selection import StratifiedKFold
-from sklearn.neural_network import MLPClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neural_network import MLPClassifier
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
 
 
@@ -52,7 +53,7 @@ gscv_cfg_gb = GSCVConfig(
         "learning_rate": [0.25, 0.3, 0.35],
         "n_estimators": [23, 25, 27],
         "max_depth": [8],
-        "max_features": ['log2'],
+        "max_features": ["log2"],
     },
     StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )

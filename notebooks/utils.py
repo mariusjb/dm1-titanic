@@ -2,16 +2,16 @@ import json
 import logging
 import os
 from datetime import datetime
+from typing import Union
 
 import dill
 import pandas as pd
 from sklearn.model_selection import GridSearchCV
-from typing import Union
 
 
 def retrieve_latest_train_test() -> Union[pd.DataFrame, pd.DataFrame]:
     dir = f"../data"
-    
+
     def read_data_of_type(type_data: str):
         files = sorted([f for f in os.listdir(dir) if (f.endswith(".csv") and (f.startswith(type_data)))], reverse=True)
         latest = files[0]
@@ -19,15 +19,11 @@ def retrieve_latest_train_test() -> Union[pd.DataFrame, pd.DataFrame]:
 
     return read_data_of_type("train_data"), read_data_of_type("test_data")
 
+
 def run_grid_search_cv(gscv_dct, X_train, y_train):
     gscv = GridSearchCV(
-        estimator=gscv_dct.estimator,
-        param_grid=gscv_dct.param_grid,
-        scoring="f1",
-        error_score=0,
-        cv=gscv_dct.k_fold,
-        verbose=2
-        )
+        estimator=gscv_dct.estimator, param_grid=gscv_dct.param_grid, scoring="f1", error_score=0, cv=gscv_dct.k_fold, verbose=2
+    )
     gscv.fit(X_train, y_train)
     return gscv
 
