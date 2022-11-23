@@ -5,6 +5,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB
 
 
 @dataclass
@@ -88,5 +89,12 @@ gscv_cfg_sv = GSCVConfig(
         "shrinking": [True, False],
         "class_weight": ["balanced", None]
     },
+    StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
+)
+
+gscv_cfg_nb = GSCVConfig(
+    "naive_bayes",
+    GaussianNB(),
+    {},
     StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
