@@ -1,0 +1,84 @@
+{
+    "scoring": "f1",
+    "estimator": "DecisionTreeClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "criterion": [
+            "log_loss"
+        ],
+        "max_depth": [
+            10,
+            15
+        ],
+        "min_samples_split": [
+            2
+        ],
+        "min_samples_leaf": [
+            1
+        ],
+        "max_features": [
+            "sqrt"
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "0",
+    "best_score_": 0.7278120348790507,
+    "best_params_": {
+        "criterion": "log_loss",
+        "max_depth": 10,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "min_samples_split": 2
+    },
+    "best_estimator_": "DecisionTreeClassifier(criterion='log_loss', max_depth=10, max_features='sqrt')",
+    "refit_time_": 0.0008270740509033203,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.0010071  0.00110137]",
+        "std_fit_time": "[0.00010922 0.00012582]",
+        "mean_score_time": "[0.00083458 0.00088916]",
+        "std_score_time": "[7.60491176e-05 1.13262035e-04]",
+        "param_criterion": "['log_loss' 'log_loss']",
+        "param_max_depth": "[10 15]",
+        "param_max_features": "['sqrt' 'sqrt']",
+        "param_min_samples_leaf": "[1 1]",
+        "param_min_samples_split": "[2 2]",
+        "params": [
+            {
+                "criterion": "log_loss",
+                "max_depth": 10,
+                "max_features": "sqrt",
+                "min_samples_leaf": 1,
+                "min_samples_split": 2
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 15,
+                "max_features": "sqrt",
+                "min_samples_leaf": 1,
+                "min_samples_split": 2
+            }
+        ],
+        "split0_test_score": "[0.71111111 0.71428571]",
+        "split1_test_score": "[0.74418605 0.7755102 ]",
+        "split2_test_score": "[0.73076923 0.79166667]",
+        "split3_test_score": "[0.88888889 0.86956522]",
+        "split4_test_score": "[0.64864865 0.63157895]",
+        "split5_test_score": "[0.68085106 0.66666667]",
+        "split6_test_score": "[0.6        0.66666667]",
+        "split7_test_score": "[0.73170732 0.66666667]",
+        "split8_test_score": "[0.76923077 0.71794872]",
+        "split9_test_score": "[0.77272727 0.73170732]",
+        "mean_test_score": "[0.72781203 0.72322628]",
+        "std_test_score": "[0.07420086 0.06856289]",
+        "rank_test_score": "[1 2]"
+    },
+    "n_splits_": 10
+}
