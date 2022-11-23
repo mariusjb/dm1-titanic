@@ -21,7 +21,7 @@ def get_X_and_y(df: pd.DataFrame):
 
 
 def run_grid_search_cv(gscv_dct, X_train, y_train):
-    gscv = GridSearchCV(estimator=gscv_dct.estimator, param_grid=gscv_dct.param_grid, cv=gscv_dct.k_fold, verbose=2)
+    gscv = GridSearchCV(estimator=gscv_dct.estimator, param_grid=gscv_dct.param_grid, scoring="f1", cv=gscv_dct.k_fold, verbose=2)
     gscv.fit(X_train, y_train)
     return gscv
 

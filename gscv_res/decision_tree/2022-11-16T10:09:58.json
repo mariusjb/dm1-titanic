@@ -1,0 +1,2340 @@
+{
+    "scoring": "f1",
+    "estimator": "DecisionTreeClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "KFold(n_splits=10, random_state=None, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": NaN,
+    "return_train_score": false,
+    "param_grid": {
+        "criterion": [
+            "gini",
+            "entropy",
+            "log_loss"
+        ],
+        "max_depth": [
+            5,
+            25,
+            50,
+            null
+        ],
+        "min_samples_split": "[2 3 4]",
+        "min_samples_leaf": "[1 2 3]",
+        "max_features": [
+            "sqrt",
+            "log2",
+            null
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "189",
+    "best_score_": 0.7578711288258412,
+    "best_params_": {
+        "criterion": "entropy",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": "1",
+        "min_samples_split": "2"
+    },
+    "best_estimator_": "DecisionTreeClassifier(criterion='entropy', max_features='sqrt')",
+    "refit_time_": 0.0008959770202636719,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.0012888  0.00094888 0.00086989 0.00093579 0.00089104 0.0009397\n 0.0009269  0.00086966 0.00091858 0.00096881 0.00094125 0.00089614\n 0.0009527  0.00092871 0.00092821 0.00084889 0.00091679 0.00088031\n 0.00116844 0.00131333 0.00128284 0.00110862 0.00110154 0.00106912\n 0.00111744 0.00119066 0.00112751 0.00101466 0.00109074 0.0010139\n 0.00102355 0.00097353 0.0009954  0.00094855 0.00093815 0.00094247\n 0.00102229 0.0010097  0.00108294 0.00089626 0.00091798 0.00095701\n 0.00086071 0.00090158 0.00086386 0.00125084 0.00124407 0.00126507\n 0.00160108 0.00130229 0.00133936 0.00128484 0.00129533 0.00132856\n 0.00103154 0.00100722 0.00104618 0.00108743 0.00098753 0.00094547\n 0.00098455 0.00097675 0.00095122 0.00102639 0.00097845 0.00097339\n 0.00096638 0.00097792 0.00094469 0.00098572 0.0009223  0.00093634\n 0.00131779 0.00137668 0.00136795 0.00128145 0.0014122  0.00134611\n 0.00133042 0.00129809 0.00135787 0.00101347 0.00101347 0.00107322\n 0.00099342 0.00110805 0.00099466 0.00113931 0.00126834 0.00087144\n 0.00111153 0.00105894 0.00098035 0.00098493 0.00099444 0.00095134\n 0.00095601 0.00097046 0.00097277 0.00145502 0.00139472 0.00135202\n 0.00127182 0.00143833 0.00129616 0.00125926 0.00137217 0.0012414\n 0.0009361  0.00085781 0.00084071 0.00088215 0.0009975  0.0008662\n 0.00079913 0.00087762 0.00084321 0.00086179 0.00086052 0.00088882\n 0.0008904  0.00083892 0.00086195 0.00094175 0.00083733 0.00087101\n 0.00114756 0.00113149 0.0011385  0.00113509 0.00104713 0.00111029\n 0.00112746 0.00116415 0.00116279 0.0010576  0.00103428 0.00112629\n 0.00108533 0.00090876 0.00104504 0.0008827  0.00091891 0.00097206\n 0.00096219 0.00096667 0.00092776 0.0008846  0.00089033 0.00088453\n 0.00090582 0.00089912 0.00089877 0.00138273 0.00136311 0.00132806\n 0.00129936 0.00129867 0.00139961 0.00127714 0.00125997 0.00132244\n 0.00096269 0.00093303 0.00092604 0.00088005 0.0008862  0.00092297\n 0.00093212 0.00088682 0.0009294  0.00095901 0.00100734 0.00100856\n 0.00091069 0.00094311 0.00089474 0.00085604 0.00084608 0.00085373\n 0.00131476 0.00131752 0.00136478 0.00138888 0.00132575 0.00131783\n 0.00133522 0.00132067 0.00129833 0.00154219 0.00113108 0.00098333\n 0.00088174 0.00087624 0.00088873 0.00096698 0.00089476 0.00090551\n 0.00101645 0.00094843 0.00092332 0.00098548 0.00093424 0.00091095\n 0.00089121 0.00095875 0.00086963 0.00131726 0.00137312 0.00139916\n 0.00130336 0.00137548 0.00130546 0.00125523 0.00127828 0.00126567\n 0.00082645 0.00079503 0.00078735 0.00078683 0.00083442 0.00089195\n 0.00089271 0.00084493 0.00087216 0.0007966  0.0008065  0.00084643\n 0.0007978  0.00083978 0.00080619 0.00080409 0.00093555 0.00085485\n 0.00116272 0.0010896  0.00107932 0.00105126 0.00109642 0.00115354\n 0.00118148 0.00111752 0.00116758 0.00100222 0.00096188 0.00096793\n 0.00094702 0.0009037  0.00094912 0.00088866 0.00091288 0.00086207\n 0.00105844 0.00097404 0.00095036 0.00096133 0.00093501 0.00098128\n 0.00092375 0.00090146 0.00098026 0.00142074 0.00149076 0.00144823\n 0.00135233 0.00134723 0.00134602 0.0013443  0.00128608 0.0012991\n 0.00102839 0.00097136 0.00092869 0.00095584 0.00092726 0.00092242\n 0.00093172 0.00088406 0.0009681  0.00105872 0.00102289 0.00118248\n 0.00096765 0.00097759 0.00092309 0.00091591 0.0008925  0.00089667\n 0.00156426 0.00160742 0.00151372 0.00128531 0.00128391 0.00128326\n 0.0012641  0.00133595 0.0013406  0.00103748 0.00106866 0.00107601\n 0.00097649 0.00097561 0.00100162 0.00097995 0.00091734 0.00091872\n 0.00097797 0.00098195 0.0010041  0.00101047 0.00098803 0.00098286\n 0.00096898 0.00089943 0.0009449  0.00135493 0.00139096 0.00139966\n 0.00141265 0.00134053 0.00131533 0.00128672 0.00129426 0.00128148]",
+        "std_fit_time": "[3.15777433e-04 1.14421319e-04 5.65356965e-05 8.15656407e-05\n 9.74339493e-05 9.85946703e-05 1.22156990e-04 5.41174673e-05\n 9.18757557e-05 1.67307858e-04 1.08060046e-04 1.06638852e-04\n 1.40873969e-04 1.08857393e-04 8.93534691e-05 6.54251382e-05\n 6.71291251e-05 8.21648020e-05 1.28310216e-04 2.16432632e-04\n 9.08699003e-05 9.00612384e-05 5.69891027e-05 4.51315476e-05\n 7.04245422e-05 9.22721793e-05 7.86581484e-05 7.51192436e-05\n 2.39624157e-04 1.29438946e-04 1.08804661e-04 1.15812450e-04\n 7.29690958e-05 8.44289473e-05 1.27251768e-04 6.71468162e-05\n 6.30066646e-05 4.72700534e-05 1.95783345e-04 2.48792500e-05\n 3.61884612e-05 8.35017975e-05 1.65818193e-05 9.42286359e-05\n 1.12618651e-05 1.14734591e-05 1.09163429e-05 1.62675741e-05\n 4.25430925e-04 8.32900761e-05 7.56399654e-05 5.56478361e-05\n 8.92223359e-05 7.62587108e-05 1.02857058e-04 8.10722177e-05\n 9.75001986e-05 1.84567120e-04 7.59421373e-05 6.69244986e-05\n 1.22389537e-04 6.03574704e-05 8.15786056e-05 1.15808275e-04\n 6.23946888e-05 6.87142902e-05 7.50057461e-05 1.99132731e-04\n 5.24201133e-05 1.18900385e-04 6.99009120e-05 7.25613971e-05\n 1.00979363e-04 1.01872261e-04 1.15287165e-04 5.78946686e-05\n 2.26265683e-04 1.73660630e-04 1.05297252e-04 1.40318893e-04\n 1.28709516e-04 7.96761789e-05 9.44506448e-05 9.02415550e-05\n 1.49149947e-04 2.21104286e-04 1.24138922e-04 3.58125455e-04\n 7.66020720e-04 2.26018927e-05 3.18896350e-04 1.36775494e-04\n 1.24086894e-04 1.28185032e-04 1.38525544e-04 1.09751704e-04\n 1.04220656e-04 1.03739877e-04 1.31381334e-04 1.32870176e-04\n 1.18281399e-04 1.27971838e-04 5.37858998e-05 2.15295219e-04\n 8.33305677e-05 1.12568319e-04 1.54549281e-04 8.76964206e-05\n 8.64273795e-05 8.57605548e-05 3.66040155e-05 1.04843794e-04\n 2.30871552e-04 6.46081313e-05 1.51356557e-05 1.46759679e-04\n 5.63851673e-05 1.04871886e-04 5.37317462e-05 7.08765946e-05\n 8.21259920e-05 5.25274656e-05 7.85268463e-05 1.91646869e-04\n 5.13159646e-05 5.46213843e-05 7.84433213e-05 6.18632401e-05\n 7.34848297e-05 6.95115449e-05 1.28241717e-05 8.09606061e-05\n 8.05062583e-05 1.03495569e-04 9.45042919e-05 7.55294442e-05\n 1.36732066e-04 1.73068406e-04 1.60038506e-04 2.64645052e-05\n 2.07787716e-04 3.12377565e-05 1.13853487e-04 1.36567380e-04\n 2.59054815e-05 4.07094749e-05 1.09719443e-05 2.29457415e-05\n 9.16535721e-06 9.76759920e-06 8.54531601e-05 6.87096368e-05\n 3.10497615e-05 8.10680107e-05 8.66027421e-05 5.96584125e-05\n 7.56812415e-05 5.05788032e-05 2.28460769e-04 4.73560820e-05\n 5.87363949e-05 1.60342443e-04 1.84649918e-05 1.04883582e-05\n 1.13840565e-05 7.89219517e-06 1.21929602e-05 7.98687864e-05\n 8.12277228e-05 2.36840269e-05 7.80931167e-05 1.21524268e-05\n 1.57554078e-04 1.01170462e-04 7.50005925e-05 1.13157740e-04\n 2.32752711e-05 1.25423809e-05 1.37516273e-05 1.16390275e-05\n 4.21776213e-05 4.50442613e-05 1.38375525e-04 1.08360035e-04\n 4.12713786e-05 2.83820671e-05 1.18457524e-04 4.82716141e-05\n 4.43578007e-05 1.50483956e-03 2.95621895e-04 1.07819683e-04\n 1.56352606e-05 1.07800005e-05 1.35043449e-05 9.11927722e-05\n 4.48261739e-05 6.68666997e-05 9.57544372e-05 2.37773978e-05\n 9.52484461e-06 1.63118604e-04 4.83005973e-05 1.15576711e-05\n 1.60223671e-05 9.63290755e-05 1.82965872e-05 4.42799211e-05\n 7.59726741e-05 7.06895005e-05 3.62976216e-05 1.31359065e-04\n 5.37151556e-05 2.27013553e-05 6.28781938e-05 5.27846242e-05\n 4.88935066e-05 1.20037066e-05 9.01096073e-06 8.63312325e-06\n 5.43008246e-05 1.66866520e-04 1.11556919e-04 7.53080059e-05\n 8.98735239e-05 1.14251019e-05 4.41821278e-05 8.24896448e-05\n 1.02944935e-05 7.14119207e-05 1.21224536e-05 1.52584910e-05\n 1.93799727e-04 5.69061998e-05 7.64154272e-05 2.23169087e-05\n 1.40905179e-05 1.29239804e-05 3.51280549e-05 8.38460926e-05\n 2.14770051e-04 1.84287439e-04 1.33620322e-04 9.55912943e-05\n 3.54170298e-05 8.83168713e-05 6.64839474e-05 1.78859069e-05\n 8.62386367e-05 1.90466603e-05 5.54340834e-05 1.39554523e-05\n 1.08671973e-04 3.13150256e-05 3.81996045e-05 9.18927466e-05\n 5.14091550e-05 6.86597326e-05 5.20887852e-05 4.25407165e-05\n 1.20487242e-04 1.01740837e-04 2.45541484e-04 1.16489427e-04\n 9.60005043e-05 1.01569116e-04 6.51156190e-05 9.96474551e-05\n 9.83919593e-05 7.67590680e-05 1.33674483e-04 3.20125755e-05\n 1.13897224e-05 7.44604888e-05 4.88695048e-05 1.92637048e-05\n 8.97198891e-05 2.04384666e-05 1.06026447e-04 1.18111765e-04\n 9.64710071e-05 1.85760269e-04 1.63681055e-04 2.27640408e-04\n 3.34565156e-05 1.74003753e-05 2.61809655e-05 5.74628346e-06\n 2.38070257e-04 3.57703741e-04 3.88361721e-04 2.63130306e-05\n 2.27497929e-05 2.13352526e-05 2.32584625e-05 9.85045742e-05\n 7.96586729e-05 7.20246112e-05 1.16039136e-04 1.43140902e-04\n 4.83777148e-05 6.54830419e-05 8.46427896e-05 8.68701118e-05\n 5.84134472e-05 5.43463842e-05 2.97856189e-05 1.16131593e-04\n 8.44649596e-05 1.46393892e-04 9.52701340e-05 6.01021224e-05\n 8.28480240e-05 4.17691727e-05 1.13821279e-04 2.70902684e-05\n 8.40741430e-05 9.72648573e-05 1.80326248e-04 6.66797734e-05\n 1.21507729e-04 6.60882755e-05 7.69876629e-05 7.30159341e-05]",
+        "mean_score_time": "[0.0013104  0.00084634 0.00083463 0.00087743 0.00086029 0.00092416\n 0.00081949 0.00081506 0.00082724 0.00085173 0.00087595 0.00082028\n 0.0008585  0.00085673 0.0008451  0.00083139 0.000843   0.00087461\n 0.00086894 0.00084829 0.00097277 0.00079606 0.00079496 0.00082064\n 0.00082512 0.00085592 0.00087476 0.00080502 0.00082376 0.00084729\n 0.00088506 0.00081115 0.0008703  0.00084283 0.00080822 0.0008249\n 0.00087786 0.00085266 0.0008544  0.00079396 0.00085025 0.00086031\n 0.00076041 0.00077376 0.00076756 0.00077608 0.00077996 0.00081878\n 0.00096657 0.00084262 0.00087123 0.00087039 0.00083621 0.00086634\n 0.00083613 0.00085278 0.0008384  0.00092247 0.00089655 0.00083425\n 0.00085108 0.00083959 0.0008518  0.00082085 0.00080833 0.00082886\n 0.00081236 0.00080025 0.000846   0.00084112 0.00081432 0.00084035\n 0.00081158 0.00089164 0.00085993 0.0008234  0.00092959 0.00088902\n 0.00087619 0.00084529 0.00087993 0.00079672 0.00084443 0.00089676\n 0.00082228 0.00095747 0.00088608 0.00098145 0.00089591 0.00078931\n 0.00083747 0.00087528 0.00152099 0.00083308 0.00092213 0.00080512\n 0.00084424 0.00085874 0.00083616 0.00100858 0.00085142 0.00085671\n 0.00080671 0.00093002 0.00085089 0.00078957 0.00084538 0.00079713\n 0.00086904 0.00079823 0.00079322 0.00080199 0.00085118 0.00083148\n 0.00075376 0.00077202 0.00081449 0.00079796 0.0008023  0.00082676\n 0.00080209 0.00081213 0.0007822  0.00083077 0.00077717 0.00085075\n 0.00083029 0.00081062 0.00084431 0.00081735 0.00075326 0.00081351\n 0.00085156 0.00083315 0.00083201 0.00085094 0.0008023  0.00132082\n 0.00087302 0.00076828 0.00084615 0.00076346 0.00076718 0.00083351\n 0.00077264 0.00079789 0.00075405 0.00075443 0.00075133 0.00075357\n 0.00076756 0.00078962 0.00082543 0.00084498 0.00080974 0.00078998\n 0.00077734 0.00082986 0.0008101  0.00080216 0.00080817 0.00081489\n 0.00078483 0.00075498 0.00075281 0.00074987 0.00075557 0.00076385\n 0.00082071 0.00077286 0.00078993 0.00076833 0.00076551 0.00079772\n 0.00076041 0.0007792  0.0007618  0.00074835 0.00075173 0.0007447\n 0.00079951 0.00077827 0.00087454 0.00083907 0.00079358 0.00080683\n 0.00086577 0.00083489 0.00081639 0.00094903 0.00114188 0.00077846\n 0.00075226 0.00074596 0.0007534  0.00083845 0.00079577 0.00078125\n 0.00077841 0.00076327 0.00075517 0.00078256 0.00082169 0.00077727\n 0.00077283 0.00079591 0.000757   0.00079873 0.00082989 0.00085049\n 0.00077784 0.0008147  0.00080292 0.00077181 0.00082722 0.00077457\n 0.00079625 0.00074556 0.00074394 0.00074525 0.00081236 0.00077722\n 0.00081444 0.00077827 0.00083663 0.00074964 0.00078118 0.00077212\n 0.00074897 0.0008007  0.00075288 0.00075927 0.00082603 0.00080738\n 0.00083942 0.00078351 0.00076857 0.00075591 0.0007916  0.00083723\n 0.00087757 0.00077677 0.00081503 0.00082996 0.00077074 0.00078378\n 0.00078418 0.00076246 0.00078053 0.00076392 0.00079381 0.00077062\n 0.00085843 0.00078297 0.00079253 0.0007906  0.00080185 0.00085037\n 0.00083539 0.00080249 0.00085485 0.0008419  0.0008642  0.00086794\n 0.00082271 0.00083067 0.00082552 0.00086443 0.00079675 0.00079119\n 0.0007756  0.00080118 0.00076027 0.00081418 0.00080724 0.00077369\n 0.0007834  0.00076334 0.0008045  0.00084906 0.00083234 0.00093141\n 0.00079257 0.00077283 0.00079927 0.00079005 0.00077877 0.00077498\n 0.00120666 0.00103908 0.00082903 0.00078363 0.00078502 0.00077884\n 0.00079603 0.00083647 0.00085421 0.00081275 0.00090346 0.00084257\n 0.00084002 0.00081794 0.00087047 0.0008239  0.00081816 0.00079212\n 0.0007751  0.00076575 0.00083237 0.00080283 0.00080607 0.00084167\n 0.00083141 0.00080333 0.00080044 0.00079167 0.00083244 0.00086515\n 0.00083141 0.00085962 0.00078068 0.00081048 0.00080957 0.00079331]",
+        "std_score_time": "[4.40972262e-04 4.42893940e-05 9.43457022e-05 8.90849864e-05\n 1.33296160e-04 2.32622915e-04 4.93728900e-05 5.36270326e-05\n 4.62134980e-05 1.01670371e-04 1.06781930e-04 5.56437756e-05\n 1.19989550e-04 1.11076409e-04 8.57985754e-05 1.46494838e-04\n 7.75482075e-05 1.25129021e-04 1.14977651e-04 6.83822558e-05\n 1.16836608e-04 4.92858492e-05 3.97390277e-05 1.13604139e-04\n 6.50401164e-05 5.92453619e-05 1.16531334e-04 3.92452117e-05\n 8.38827210e-05 1.12548257e-04 1.11021311e-04 5.10458354e-05\n 9.46604661e-05 9.29273810e-05 5.91857928e-05 4.62610015e-05\n 9.73164362e-05 8.83723509e-05 8.02968290e-05 7.69997855e-05\n 1.43997748e-04 1.46271662e-04 4.28517188e-06 3.12650674e-05\n 5.33674307e-06 6.32276902e-06 1.91410774e-05 6.82468591e-05\n 2.25146163e-04 6.35575638e-05 5.34915661e-05 8.64250117e-05\n 5.55866206e-05 6.28174864e-05 6.84542880e-05 9.33342690e-05\n 5.45086872e-05 7.87858839e-05 1.16130565e-04 8.48357798e-05\n 6.98510329e-05 4.71089110e-05 8.61587513e-05 7.07741406e-05\n 5.30703048e-05 8.75014537e-05 4.19520576e-05 7.23827380e-05\n 9.64549287e-05 7.53806593e-05 8.02869211e-05 9.07834617e-05\n 5.44133672e-05 1.05404193e-04 6.12239043e-05 8.01735570e-05\n 2.36601149e-04 1.36802902e-04 1.00987986e-04 8.02378379e-05\n 9.64363543e-05 4.48159773e-05 7.61998461e-05 1.09595191e-04\n 7.09715246e-05 1.79570677e-04 1.76347225e-04 3.06278120e-04\n 2.22316422e-04 6.86430401e-05 1.17053966e-04 1.28271491e-04\n 2.13690003e-03 1.14685374e-04 2.09401724e-04 6.81960869e-05\n 8.42957200e-05 1.30636926e-04 8.34305918e-05 1.88971957e-04\n 3.90082888e-05 9.62001713e-05 6.60443736e-05 2.29089955e-04\n 8.08116916e-05 4.05681736e-05 7.01773090e-05 5.62667038e-05\n 1.01123491e-04 7.41524710e-05 6.25355163e-05 5.39862850e-05\n 1.15106329e-04 8.43573484e-05 1.21496433e-05 3.67510388e-05\n 8.85274093e-05 7.89892986e-05 6.23430120e-05 8.54313388e-05\n 4.84537651e-05 9.48935327e-05 3.85033531e-05 7.39226984e-05\n 3.07097660e-05 9.96889664e-05 8.73653807e-05 7.45005987e-05\n 7.51938370e-05 7.21319089e-05 7.13282087e-06 7.29514452e-05\n 1.18037571e-04 7.32553839e-05 9.04973017e-05 8.10641716e-05\n 5.80186064e-05 7.66517826e-04 1.59512972e-04 1.05956607e-05\n 7.25253486e-05 1.71677271e-05 2.61789245e-05 9.20739709e-05\n 3.25399089e-05 8.38724031e-05 6.49186254e-06 5.86146149e-06\n 4.88851120e-06 3.68593890e-06 3.26546776e-05 5.45522810e-05\n 1.66818277e-04 8.63327765e-05 6.83321166e-05 3.39896938e-05\n 3.34140385e-05 1.04144557e-04 5.32319656e-05 5.11037586e-05\n 8.06704368e-05 9.22092878e-05 2.63975345e-05 6.58242566e-06\n 5.20522964e-06 4.61547827e-06 5.54286022e-06 2.99163164e-05\n 7.10873731e-05 6.74703517e-06 3.15051546e-05 1.20956961e-05\n 1.64653190e-05 3.90759905e-05 2.39247312e-05 4.13503055e-05\n 1.23747281e-05 2.62000215e-06 4.25428544e-06 5.39716685e-06\n 8.68436328e-05 3.47254103e-05 1.92905692e-04 5.92984009e-05\n 1.23316810e-05 1.54837954e-05 1.19946586e-04 4.00243374e-05\n 1.99847681e-05 3.12667078e-04 7.22884347e-04 3.13551615e-05\n 8.48770142e-06 4.14025378e-06 6.01268778e-06 7.08736312e-05\n 7.97087225e-05 3.65932987e-05 2.88047634e-05 9.97444863e-06\n 6.47972398e-06 4.59763572e-05 1.06292404e-04 1.72715955e-05\n 2.34231542e-05 5.84580818e-05 7.85801740e-06 8.02718534e-05\n 5.47318709e-05 5.79495276e-05 8.77772249e-06 4.99623696e-05\n 9.08455538e-05 1.62081853e-05 9.70674156e-05 1.78240173e-05\n 8.09179486e-05 2.61924268e-06 3.95235878e-06 4.70935540e-06\n 8.11750000e-05 4.08087996e-05 7.62330498e-05 4.63303250e-05\n 1.02947997e-04 7.25811318e-06 9.36692710e-05 4.35722265e-05\n 6.42952626e-06 7.11684211e-05 6.46004368e-06 1.66900498e-05\n 9.65828455e-05 7.35168009e-05 8.36916320e-05 2.02305013e-05\n 6.50511451e-06 8.35571237e-06 3.84662795e-05 8.19275901e-05\n 1.26020168e-04 5.92754812e-05 6.30193344e-05 9.77300673e-05\n 1.86497743e-05 5.36915464e-05 3.74472716e-05 6.66378862e-06\n 2.94266483e-05 8.49483089e-06 4.27816547e-05 4.27326712e-05\n 1.13456498e-04 4.55493064e-05 7.85405553e-05 3.95770533e-05\n 5.46250005e-05 8.24287233e-05 1.05528354e-04 7.91100330e-05\n 8.63862107e-05 6.47328879e-05 1.05620617e-04 7.22140083e-05\n 6.92822444e-05 9.51667373e-05 6.92607614e-05 7.51302340e-05\n 4.34365413e-05 2.58169453e-05 2.74681485e-05 7.84609572e-05\n 1.36006463e-05 4.93099482e-05 6.29381518e-05 8.93255499e-06\n 2.20497360e-05 5.08346207e-06 3.87240584e-05 9.72323933e-05\n 9.06655074e-05 1.01266012e-04 7.66253018e-05 3.59193633e-05\n 7.13390621e-05 1.84976713e-05 8.96796202e-06 7.24984602e-06\n 6.89021489e-04 4.27330527e-04 5.90244474e-05 4.07521450e-06\n 6.87390162e-06 6.60729250e-06 9.03213159e-06 5.61899736e-05\n 5.41447281e-05 5.21480298e-05 1.59558655e-04 6.53968733e-05\n 8.10004482e-05 7.96021796e-05 1.14335369e-04 7.30955009e-05\n 7.59764263e-05 8.61159327e-05 2.33292306e-05 2.65354202e-05\n 9.96077214e-05 5.40374592e-05 6.01449746e-05 5.97014404e-05\n 6.01254408e-05 7.70614583e-05 5.83834527e-05 1.82377746e-05\n 6.64739261e-05 7.78377364e-05 7.52099939e-05 1.00556141e-04\n 4.04529940e-05 7.76559141e-05 7.13635198e-05 3.53532549e-05]",
+        "param_criterion": "['gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'gini' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy'\n 'entropy' 'entropy' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss' 'log_loss'\n 'log_loss' 'log_loss']",
+        "param_max_depth": "[5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 25 25 25 25 25 25\n 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 50 50 50\n 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50\n None None None None None None None None None None None None None None\n None None None None None None None None None None None None None 5 5 5 5\n 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 25 25 25 25 25 25 25 25 25\n 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 50 50 50 50 50 50\n 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 None None\n None None None None None None None None None None None None None None\n None None None None None None None None None None None 5 5 5 5 5 5 5 5 5\n 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 25 25 25 25 25 25 25 25 25 25 25 25\n 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 50 50 50 50 50 50 50 50 50\n 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 None None None None\n None None None None None None None None None None None None None None\n None None None None None None None None None]",
+        "param_max_features": "['sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'log2'\n 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' None None None\n None None None None None None 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2'\n 'log2' 'log2' None None None None None None None None None 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'log2' 'log2' 'log2'\n 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' None None None None None None\n None None None 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2'\n None None None None None None None None None 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'log2' 'log2' 'log2' 'log2' 'log2'\n 'log2' 'log2' 'log2' 'log2' None None None None None None None None None\n 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'log2'\n 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' None None None\n None None None None None None 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2'\n 'log2' 'log2' None None None None None None None None None 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'log2' 'log2' 'log2'\n 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' None None None None None None\n None None None 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2'\n None None None None None None None None None 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'log2' 'log2' 'log2' 'log2' 'log2'\n 'log2' 'log2' 'log2' 'log2' None None None None None None None None None\n 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'log2'\n 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' None None None\n None None None None None None 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2' 'log2'\n 'log2' 'log2' None None None None None None None None None]",
+        "param_min_samples_leaf": "[1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1\n 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1\n 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1\n 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2\n 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2\n 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2\n 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3\n 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3\n 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3]",
+        "param_min_samples_split": "[2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2\n 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3\n 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4\n 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2\n 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3\n 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4\n 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2\n 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3\n 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4 2 3 4]",
+        "params": [
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 5,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 25,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": 50,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "1",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "2",
+                "min_samples_split": "4"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "2"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "3"
+            },
+            {
+                "criterion": "log_loss",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": "3",
+                "min_samples_split": "4"
+            }
+        ],
+        "split0_test_score": "[0.78431373 0.79166667 0.74418605 0.71428571 0.76595745 0.79166667\n 0.7755102  0.71428571 0.67924528 0.7        0.66666667 0.64150943\n 0.75       0.70833333 0.71428571 0.63829787 0.66666667 0.8\n 0.72727273 0.72727273 0.72727273 0.72727273 0.72727273 0.72727273\n 0.72727273 0.72727273 0.72727273 0.86363636 0.69767442 0.74418605\n 0.79069767 0.73913043 0.7826087  0.76595745 0.63157895 0.73170732\n 0.65       0.72727273 0.71111111 0.71428571 0.77272727 0.75\n 0.72340426 0.71428571 0.73913043 0.74418605 0.65       0.79069767\n 0.77272727 0.77272727 0.77272727 0.73913043 0.73913043 0.73913043\n 0.72340426 0.76190476 0.74418605 0.74418605 0.76190476 0.80851064\n 0.75555556 0.57142857 0.81818182 0.7826087  0.8        0.7826087\n 0.76595745 0.7804878  0.73170732 0.69767442 0.79166667 0.78431373\n 0.63414634 0.71428571 0.79069767 0.77272727 0.77272727 0.77272727\n 0.73913043 0.73913043 0.73913043 0.75555556 0.71428571 0.7826087\n 0.76190476 0.65116279 0.68292683 0.82608696 0.69387755 0.8\n 0.79069767 0.7        0.69565217 0.7804878  0.62222222 0.82608696\n 0.79166667 0.8        0.77272727 0.71428571 0.71428571 0.79069767\n 0.77272727 0.77272727 0.77272727 0.73913043 0.73913043 0.73913043\n 0.72340426 0.74418605 0.79069767 0.73469388 0.80851064 0.71428571\n 0.75555556 0.78431373 0.7826087  0.66666667 0.76923077 0.80851064\n 0.7826087  0.71111111 0.75555556 0.74074074 0.80851064 0.80952381\n 0.72727273 0.72727273 0.72727273 0.72727273 0.72727273 0.72727273\n 0.72727273 0.72727273 0.72727273 0.72727273 0.69565217 0.75555556\n 0.60465116 0.82608696 0.69767442 0.8        0.76190476 0.7826087\n 0.73913043 0.69767442 0.76190476 0.7        0.66666667 0.70833333\n 0.72727273 0.7826087  0.73913043 0.8        0.8        0.8\n 0.68292683 0.68292683 0.68292683 0.73913043 0.73913043 0.73913043\n 0.81818182 0.7804878  0.8372093  0.77272727 0.68181818 0.76190476\n 0.75555556 0.63414634 0.74509804 0.68181818 0.75555556 0.84444444\n 0.77272727 0.75555556 0.74418605 0.74418605 0.73469388 0.84444444\n 0.75555556 0.71428571 0.8        0.68292683 0.68292683 0.68292683\n 0.73913043 0.73913043 0.73913043 0.8        0.74418605 0.76595745\n 0.76595745 0.76190476 0.75       0.77272727 0.74418605 0.74418605\n 0.8372093  0.70833333 0.76190476 0.69565217 0.76190476 0.65\n 0.7826087  0.73913043 0.73913043 0.71428571 0.75555556 0.8\n 0.68292683 0.68292683 0.68292683 0.73913043 0.73913043 0.73913043\n 0.76       0.69767442 0.80952381 0.79166667 0.77272727 0.66666667\n 0.74418605 0.74418605 0.75555556 0.55555556 0.71428571 0.77272727\n 0.77272727 0.72727273 0.70833333 0.55813953 0.7804878  0.79166667\n 0.72727273 0.72727273 0.72727273 0.72727273 0.72727273 0.72727273\n 0.72727273 0.72727273 0.72727273 0.7755102  0.74418605 0.69565217\n 0.69767442 0.72340426 0.76190476 0.71428571 0.71111111 0.71794872\n 0.74418605 0.71428571 0.77272727 0.73170732 0.77272727 0.69565217\n 0.7826087  0.79069767 0.72727273 0.71428571 0.75555556 0.8\n 0.68292683 0.68292683 0.68292683 0.73913043 0.73913043 0.73913043\n 0.74418605 0.65       0.8372093  0.68085106 0.69767442 0.79069767\n 0.71111111 0.81818182 0.68       0.74418605 0.7826087  0.73170732\n 0.8        0.75       0.74418605 0.72727273 0.77272727 0.63414634\n 0.8        0.74418605 0.8        0.68292683 0.68292683 0.68292683\n 0.73913043 0.73913043 0.73913043 0.72727273 0.68292683 0.81818182\n 0.75555556 0.77272727 0.79166667 0.7826087  0.66666667 0.69565217\n 0.66666667 0.79069767 0.7826087  0.73913043 0.81632653 0.75555556\n 0.71428571 0.72727273 0.68292683 0.74418605 0.77272727 0.8\n 0.68292683 0.68292683 0.68292683 0.73913043 0.73913043 0.73913043]",
+        "split1_test_score": "[0.66666667 0.75       0.77777778 0.73913043 0.76923077 0.68421053\n 0.72727273 0.69767442 0.71428571 0.6        0.53658537 0.71111111\n 0.66666667 0.65       0.58536585 0.72727273 0.71428571 0.63157895\n 0.73170732 0.73170732 0.73170732 0.73170732 0.73170732 0.73170732\n 0.73170732 0.73170732 0.73170732 0.65116279 0.71428571 0.63414634\n 0.68292683 0.66666667 0.69767442 0.75       0.68181818 0.73684211\n 0.66666667 0.66666667 0.76190476 0.71111111 0.68292683 0.7\n 0.71428571 0.71794872 0.69767442 0.77272727 0.76190476 0.74418605\n 0.71428571 0.71428571 0.71428571 0.71428571 0.71428571 0.74418605\n 0.74418605 0.63414634 0.71794872 0.71428571 0.75       0.69767442\n 0.72727273 0.71111111 0.61538462 0.71428571 0.71794872 0.8\n 0.65       0.75       0.61538462 0.73170732 0.68292683 0.71428571\n 0.77272727 0.76190476 0.74418605 0.74418605 0.71428571 0.71428571\n 0.71428571 0.71428571 0.74418605 0.74418605 0.74418605 0.61538462\n 0.65       0.7        0.73170732 0.76190476 0.76190476 0.7\n 0.69767442 0.73170732 0.76923077 0.7        0.61538462 0.66666667\n 0.65       0.71428571 0.71428571 0.76190476 0.76190476 0.74418605\n 0.71428571 0.71428571 0.71428571 0.72727273 0.69767442 0.74418605\n 0.2962963  0.73170732 0.64864865 0.68181818 0.72727273 0.72727273\n 0.54054054 0.55813953 0.66666667 0.57142857 0.58536585 0.7027027\n 0.68181818 0.7        0.66666667 0.42424242 0.72340426 0.61111111\n 0.63157895 0.63157895 0.63157895 0.63157895 0.63157895 0.63157895\n 0.63157895 0.63157895 0.63157895 0.68181818 0.65       0.80952381\n 0.66666667 0.75       0.76190476 0.74418605 0.69767442 0.74418605\n 0.76190476 0.65       0.69767442 0.7        0.75       0.73170732\n 0.68292683 0.54545455 0.76190476 0.74418605 0.74418605 0.74418605\n 0.71428571 0.71428571 0.71428571 0.71428571 0.71428571 0.74418605\n 0.68292683 0.72727273 0.72727273 0.76923077 0.73913043 0.65\n 0.73170732 0.66666667 0.73170732 0.68181818 0.74418605 0.71428571\n 0.69767442 0.68292683 0.71794872 0.64705882 0.72340426 0.73170732\n 0.74418605 0.74418605 0.74418605 0.71428571 0.71428571 0.71428571\n 0.74418605 0.71428571 0.74418605 0.68181818 0.74418605 0.71794872\n 0.7        0.68181818 0.68292683 0.74418605 0.66666667 0.69767442\n 0.73170732 0.58536585 0.61538462 0.71428571 0.68421053 0.72727273\n 0.63157895 0.71794872 0.64864865 0.74418605 0.74418605 0.74418605\n 0.71428571 0.74418605 0.74418605 0.69767442 0.74418605 0.69767442\n 0.74418605 0.66666667 0.58536585 0.72222222 0.62222222 0.62857143\n 0.66666667 0.7027027  0.5625     0.66666667 0.69387755 0.69767442\n 0.72727273 0.72727273 0.68421053 0.45714286 0.48484848 0.68421053\n 0.63157895 0.63157895 0.63157895 0.63157895 0.63157895 0.63157895\n 0.63157895 0.63157895 0.63157895 0.66666667 0.72727273 0.65116279\n 0.58823529 0.63157895 0.71794872 0.76190476 0.68292683 0.66666667\n 0.71794872 0.72727273 0.66666667 0.66666667 0.69767442 0.72727273\n 0.72727273 0.71794872 0.7        0.77272727 0.74418605 0.74418605\n 0.71428571 0.74418605 0.71428571 0.74418605 0.71428571 0.69767442\n 0.71111111 0.68292683 0.75       0.61538462 0.76190476 0.73684211\n 0.64864865 0.72727273 0.68292683 0.66666667 0.73170732 0.69767442\n 0.65       0.71428571 0.65       0.76190476 0.68181818 0.74418605\n 0.77272727 0.74418605 0.74418605 0.71428571 0.71428571 0.74418605\n 0.71428571 0.69767442 0.74418605 0.66666667 0.71428571 0.75\n 0.65116279 0.63414634 0.7        0.7        0.69767442 0.69767442\n 0.69767442 0.63414634 0.66666667 0.71428571 0.68085106 0.73170732\n 0.7        0.56410256 0.66666667 0.77272727 0.74418605 0.74418605\n 0.74418605 0.71428571 0.71428571 0.72727273 0.69767442 0.71428571]",
+        "split2_test_score": "[0.74576271 0.78571429 0.80769231 0.74509804 0.71186441 0.70833333\n 0.77192982 0.625      0.75471698 0.72340426 0.78571429 0.84\n 0.64       0.64150943 0.67857143 0.74074074 0.77777778 0.73333333\n 0.85714286 0.87272727 0.85714286 0.87272727 0.87272727 0.87272727\n 0.87272727 0.87272727 0.87272727 0.77777778 0.66666667 0.72\n 0.74074074 0.8        0.68085106 0.67924528 0.78571429 0.76923077\n 0.71428571 0.73076923 0.65454545 0.71698113 0.76363636 0.75\n 0.76363636 0.76923077 0.73684211 0.76923077 0.74509804 0.74509804\n 0.7755102  0.7755102  0.8        0.83018868 0.80769231 0.80769231\n 0.81481481 0.74074074 0.77777778 0.80769231 0.72       0.84615385\n 0.78431373 0.81481481 0.8        0.82142857 0.7037037  0.72\n 0.74509804 0.78571429 0.77777778 0.78431373 0.81481481 0.76923077\n 0.76923077 0.74509804 0.76       0.7755102  0.8        0.7755102\n 0.83018868 0.85185185 0.83018868 0.73076923 0.74074074 0.77777778\n 0.79245283 0.77777778 0.77777778 0.65306122 0.70588235 0.76\n 0.70588235 0.75471698 0.80769231 0.83636364 0.7755102  0.81481481\n 0.76923077 0.77777778 0.72       0.75471698 0.74509804 0.76\n 0.7755102  0.7755102  0.7755102  0.85185185 0.83018868 0.83018868\n 0.77192982 0.78571429 0.75       0.76       0.69387755 0.69090909\n 0.55813953 0.69230769 0.48780488 0.77192982 0.78431373 0.625\n 0.69230769 0.72       0.67924528 0.76666667 0.74576271 0.67924528\n 0.87272727 0.87272727 0.87272727 0.87272727 0.87272727 0.87272727\n 0.87272727 0.87272727 0.87272727 0.76363636 0.74074074 0.75471698\n 0.72       0.76923077 0.70588235 0.80701754 0.83018868 0.8\n 0.76363636 0.81481481 0.84615385 0.8        0.76363636 0.81481481\n 0.69230769 0.80769231 0.76       0.79245283 0.75471698 0.75471698\n 0.82352941 0.8        0.8        0.80769231 0.80769231 0.83018868\n 0.75471698 0.74074074 0.78571429 0.76923077 0.77777778 0.77777778\n 0.74509804 0.65306122 0.84615385 0.77777778 0.75471698 0.70588235\n 0.77777778 0.71698113 0.81632653 0.76923077 0.65217391 0.76363636\n 0.77777778 0.76923077 0.76923077 0.82352941 0.8        0.82352941\n 0.83018868 0.83018868 0.80769231 0.81481481 0.78571429 0.76363636\n 0.70588235 0.80701754 0.76       0.77777778 0.74509804 0.69387755\n 0.79245283 0.69230769 0.77192982 0.83636364 0.76       0.83018868\n 0.83333333 0.75471698 0.74509804 0.77777778 0.75471698 0.75471698\n 0.82352941 0.82352941 0.8        0.80769231 0.80769231 0.80769231\n 0.59574468 0.71428571 0.76363636 0.70588235 0.70833333 0.67924528\n 0.74509804 0.75862069 0.80701754 0.82758621 0.58333333 0.69387755\n 0.77966102 0.83636364 0.72413793 0.77192982 0.56521739 0.75471698\n 0.87272727 0.87272727 0.87272727 0.87272727 0.87272727 0.87272727\n 0.87272727 0.87272727 0.87272727 0.71698113 0.78571429 0.67857143\n 0.76923077 0.76923077 0.77777778 0.76923077 0.84210526 0.78688525\n 0.79245283 0.79245283 0.69230769 0.78431373 0.76923077 0.66666667\n 0.8        0.8        0.70833333 0.79245283 0.76923077 0.75471698\n 0.8        0.8        0.82352941 0.80769231 0.83018868 0.80769231\n 0.77777778 0.76       0.83636364 0.79245283 0.77192982 0.84615385\n 0.78571429 0.79310345 0.73076923 0.7037037  0.66666667 0.69387755\n 0.82142857 0.7037037  0.72       0.68085106 0.76923077 0.79310345\n 0.77777778 0.76923077 0.76923077 0.8        0.8        0.8\n 0.80769231 0.80769231 0.83018868 0.70588235 0.76       0.69230769\n 0.78571429 0.83018868 0.74509804 0.77777778 0.7037037  0.76923077\n 0.8        0.67924528 0.74074074 0.79245283 0.74074074 0.75471698\n 0.75471698 0.74074074 0.85185185 0.77777778 0.76923077 0.75471698\n 0.82352941 0.8        0.8        0.83018868 0.80769231 0.80769231]",
+        "split3_test_score": "[0.75555556 0.60606061 0.8        0.85714286 0.8372093  0.79069767\n 0.60606061 0.68571429 0.78947368 0.79069767 0.85       0.82926829\n 0.46666667 0.82926829 0.79069767 0.76923077 0.81081081 0.52631579\n 0.7027027  0.7027027  0.7027027  0.7027027  0.7027027  0.7027027\n 0.7027027  0.7027027  0.7027027  0.84210526 0.8        0.8\n 0.8        0.71428571 0.78947368 0.53333333 0.81081081 0.84210526\n 0.82051282 0.83333333 0.75675676 0.74285714 0.75675676 0.74285714\n 0.87179487 0.75       0.76923077 0.82051282 0.82051282 0.84210526\n 0.75675676 0.77777778 0.75675676 0.73684211 0.73684211 0.73684211\n 0.75       0.76923077 0.68571429 0.78947368 0.78947368 0.72222222\n 0.68571429 0.68571429 0.73684211 0.82051282 0.7027027  0.75675676\n 0.8        0.84210526 0.73684211 0.76923077 0.81081081 0.70588235\n 0.84210526 0.82051282 0.84210526 0.75675676 0.75675676 0.75675676\n 0.75675676 0.73684211 0.73684211 0.8        0.74285714 0.8\n 0.75675676 0.71794872 0.73684211 0.82051282 0.71794872 0.75\n 0.76923077 0.82051282 0.77777778 0.72222222 0.73684211 0.8\n 0.77777778 0.71794872 0.72222222 0.82051282 0.82051282 0.84210526\n 0.75675676 0.75675676 0.75675676 0.73684211 0.73684211 0.73684211\n 0.75       0.72727273 0.7        0.80952381 0.76923077 0.77272727\n 0.81818182 0.53333333 0.73170732 0.72222222 0.58823529 0.8372093\n 0.82051282 0.8        0.75675676 0.75       0.77272727 0.70588235\n 0.7027027  0.7027027  0.7027027  0.7027027  0.7027027  0.7027027\n 0.7027027  0.7027027  0.7027027  0.7804878  0.76923077 0.73684211\n 0.75675676 0.84210526 0.76923077 0.75675676 0.77777778 0.77777778\n 0.76923077 0.84210526 0.7804878  0.82051282 0.82051282 0.81081081\n 0.83333333 0.81081081 0.76923077 0.84210526 0.84210526 0.84210526\n 0.75675676 0.77777778 0.75675676 0.75675676 0.75675676 0.75675676\n 0.8        0.77777778 0.81081081 0.77777778 0.73684211 0.66666667\n 0.7027027  0.75675676 0.82051282 0.83333333 0.64864865 0.75675676\n 0.5        0.8        0.73170732 0.66666667 0.71794872 0.75\n 0.84210526 0.84210526 0.84210526 0.75675676 0.75675676 0.75675676\n 0.75675676 0.75675676 0.75675676 0.82051282 0.82051282 0.82051282\n 0.625      0.7        0.68571429 0.64705882 0.75675676 0.76923077\n 0.8        0.75675676 0.7804878  0.75       0.7027027  0.74285714\n 0.81081081 0.71428571 0.77777778 0.84210526 0.84210526 0.82051282\n 0.75675676 0.77777778 0.77777778 0.75675676 0.75675676 0.75675676\n 0.5        0.77272727 0.61111111 0.82051282 0.82926829 0.77272727\n 0.76470588 0.79069767 0.76923077 0.70588235 0.7027027  0.70967742\n 0.72727273 0.75       0.75       0.68571429 0.74285714 0.74285714\n 0.7027027  0.7027027  0.7027027  0.7027027  0.7027027  0.7027027\n 0.7027027  0.7027027  0.7027027  0.78947368 0.76923077 0.81081081\n 0.73684211 0.72222222 0.68571429 0.75       0.78947368 0.8\n 0.84210526 0.75675676 0.78947368 0.68421053 0.77777778 0.73684211\n 0.78947368 0.7027027  0.8        0.84210526 0.82051282 0.84210526\n 0.75675676 0.77777778 0.75675676 0.75675676 0.75675676 0.75675676\n 0.75675676 0.74285714 0.75675676 0.82926829 0.73684211 0.72222222\n 0.75675676 0.75       0.75675676 0.82051282 0.73170732 0.7027027\n 0.77777778 0.77777778 0.73684211 0.7027027  0.76923077 0.79069767\n 0.82051282 0.84210526 0.84210526 0.75675676 0.75675676 0.75675676\n 0.75675676 0.75675676 0.75675676 0.7804878  0.68571429 0.78947368\n 0.72222222 0.7027027  0.78947368 0.82051282 0.7027027  0.76190476\n 0.82051282 0.74285714 0.73684211 0.72727273 0.81081081 0.72222222\n 0.84210526 0.74285714 0.8        0.84210526 0.84210526 0.84210526\n 0.75675676 0.75675676 0.75675676 0.75675676 0.75675676 0.75675676]",
+        "split4_test_score": "[0.75       0.6        0.72340426 0.65116279 0.73170732 0.69565217\n 0.69565217 0.69565217 0.44444444 0.58536585 0.66666667 0.55555556\n 0.75555556 0.68181818 0.60465116 0.7        0.71111111 0.76595745\n 0.74418605 0.72727273 0.74418605 0.75555556 0.77272727 0.77272727\n 0.76595745 0.76595745 0.7826087  0.81818182 0.74418605 0.77272727\n 0.80952381 0.77272727 0.75555556 0.69565217 0.76595745 0.71428571\n 0.7826087  0.63636364 0.76595745 0.85106383 0.7826087  0.7\n 0.77272727 0.79166667 0.68292683 0.73913043 0.75555556 0.76595745\n 0.79166667 0.79166667 0.79166667 0.8        0.8        0.8\n 0.85106383 0.77272727 0.72727273 0.82608696 0.8        0.82608696\n 0.76595745 0.82608696 0.77272727 0.85106383 0.74418605 0.74418605\n 0.68292683 0.82608696 0.8        0.71428571 0.71428571 0.76595745\n 0.73913043 0.75555556 0.76595745 0.79166667 0.79166667 0.79166667\n 0.8        0.8        0.8        0.80851064 0.82608696 0.80851064\n 0.71428571 0.81818182 0.81632653 0.76190476 0.77272727 0.63414634\n 0.85106383 0.82608696 0.75555556 0.71428571 0.77272727 0.77272727\n 0.69565217 0.7826087  0.7826087  0.75555556 0.75555556 0.76595745\n 0.79166667 0.79166667 0.79166667 0.8        0.8        0.8\n 0.61904762 0.69767442 0.71111111 0.65       0.71428571 0.6\n 0.71428571 0.73170732 0.53658537 0.6        0.68181818 0.76595745\n 0.74509804 0.68292683 0.74418605 0.65306122 0.56410256 0.63636364\n 0.7804878  0.7804878  0.7804878  0.80952381 0.80952381 0.80952381\n 0.84444444 0.84444444 0.84444444 0.8        0.76595745 0.77272727\n 0.81818182 0.7826087  0.81818182 0.77272727 0.73170732 0.68292683\n 0.84444444 0.73170732 0.82608696 0.77272727 0.8        0.79069767\n 0.73170732 0.68292683 0.75555556 0.76595745 0.77272727 0.73913043\n 0.7826087  0.76595745 0.76595745 0.79166667 0.79166667 0.79166667\n 0.82608696 0.71428571 0.75555556 0.75555556 0.7826087  0.82608696\n 0.71428571 0.71428571 0.79069767 0.8        0.77272727 0.82608696\n 0.77272727 0.82608696 0.83333333 0.7826087  0.63636364 0.74418605\n 0.7826087  0.75555556 0.73913043 0.76595745 0.76595745 0.7826087\n 0.79166667 0.79166667 0.79166667 0.81818182 0.84444444 0.7826087\n 0.76595745 0.75       0.7826087  0.71794872 0.82608696 0.76190476\n 0.81818182 0.81818182 0.77272727 0.6        0.86956522 0.73913043\n 0.74509804 0.74418605 0.84444444 0.77272727 0.76595745 0.75555556\n 0.7826087  0.7826087  0.7826087  0.79166667 0.79166667 0.79166667\n 0.6        0.76190476 0.73170732 0.55       0.71111111 0.7826087\n 0.72727273 0.71111111 0.7        0.68292683 0.51428571 0.66666667\n 0.65       0.71111111 0.69767442 0.63636364 0.69767442 0.52380952\n 0.7804878  0.7804878  0.7804878  0.80952381 0.80952381 0.80952381\n 0.84444444 0.84444444 0.84444444 0.83333333 0.82608696 0.79166667\n 0.79069767 0.73913043 0.84444444 0.8        0.79069767 0.84444444\n 0.75555556 0.82608696 0.72727273 0.71111111 0.73913043 0.7804878\n 0.79069767 0.75       0.75555556 0.75555556 0.73913043 0.73913043\n 0.76595745 0.7826087  0.7826087  0.79166667 0.79166667 0.79166667\n 0.76595745 0.75555556 0.80952381 0.76190476 0.81818182 0.71428571\n 0.77272727 0.77272727 0.74418605 0.74418605 0.8        0.77272727\n 0.73913043 0.68292683 0.80952381 0.79069767 0.75555556 0.66666667\n 0.77272727 0.75555556 0.7826087  0.76595745 0.7826087  0.7826087\n 0.79166667 0.79166667 0.79166667 0.79069767 0.76190476 0.75555556\n 0.7826087  0.7755102  0.81818182 0.81818182 0.80952381 0.8\n 0.77272727 0.8        0.79166667 0.72727273 0.68292683 0.73170732\n 0.74418605 0.73170732 0.81818182 0.7826087  0.73913043 0.75555556\n 0.76595745 0.7826087  0.7826087  0.79166667 0.79166667 0.79166667]",
+        "split5_test_score": "[0.71794872 0.76595745 0.63829787 0.77777778 0.67924528 0.6\n 0.79166667 0.60869565 0.64150943 0.67924528 0.66666667 0.4516129\n 0.67924528 0.59459459 0.75675676 0.73170732 0.58536585 0.69387755\n 0.75       0.74418605 0.75       0.74418605 0.75       0.74418605\n 0.76190476 0.76190476 0.76190476 0.65217391 0.71111111 0.68085106\n 0.71111111 0.69767442 0.6122449  0.76923077 0.76190476 0.68421053\n 0.74418605 0.68085106 0.77272727 0.66666667 0.66666667 0.71428571\n 0.76923077 0.71428571 0.74418605 0.65116279 0.63414634 0.63636364\n 0.69767442 0.68181818 0.68292683 0.76190476 0.76190476 0.76190476\n 0.69767442 0.66666667 0.61904762 0.74418605 0.74418605 0.72340426\n 0.76190476 0.73170732 0.75555556 0.66666667 0.72727273 0.66666667\n 0.71428571 0.79069767 0.68292683 0.80952381 0.65116279 0.65217391\n 0.65116279 0.71111111 0.61904762 0.71794872 0.66666667 0.66666667\n 0.76190476 0.76190476 0.76190476 0.71111111 0.69565217 0.7804878\n 0.68292683 0.60465116 0.61538462 0.69767442 0.63636364 0.75555556\n 0.71428571 0.69565217 0.63636364 0.73913043 0.71794872 0.68181818\n 0.76595745 0.66666667 0.73469388 0.69565217 0.69565217 0.65116279\n 0.73170732 0.66666667 0.69767442 0.76190476 0.76190476 0.76190476\n 0.69565217 0.70588235 0.76595745 0.71428571 0.75       0.77272727\n 0.85       0.63157895 0.72727273 0.73076923 0.65217391 0.82926829\n 0.80952381 0.70588235 0.60606061 0.70588235 0.74418605 0.68085106\n 0.76190476 0.76190476 0.74418605 0.75       0.74418605 0.76190476\n 0.76190476 0.76190476 0.76190476 0.69565217 0.74418605 0.69565217\n 0.69565217 0.8        0.66666667 0.69767442 0.8        0.68181818\n 0.69767442 0.69565217 0.66666667 0.76190476 0.66666667 0.72\n 0.73913043 0.74418605 0.76595745 0.69565217 0.61904762 0.62222222\n 0.65217391 0.69767442 0.7        0.76190476 0.74418605 0.74418605\n 0.71428571 0.75       0.71111111 0.72340426 0.6122449  0.66666667\n 0.75555556 0.69767442 0.69767442 0.74418605 0.74418605 0.52380952\n 0.75       0.73913043 0.72340426 0.79069767 0.79069767 0.68085106\n 0.65       0.66666667 0.66666667 0.66666667 0.66666667 0.65116279\n 0.74418605 0.76190476 0.76190476 0.74418605 0.66666667 0.65116279\n 0.7804878  0.76923077 0.60869565 0.8        0.68292683 0.75\n 0.71111111 0.68292683 0.68292683 0.59574468 0.76190476 0.71428571\n 0.76595745 0.71794872 0.73913043 0.71111111 0.71111111 0.62222222\n 0.66666667 0.65116279 0.65217391 0.74418605 0.74418605 0.76190476\n 0.74418605 0.8        0.71794872 0.80952381 0.72727273 0.71428571\n 0.65       0.4516129  0.66666667 0.58823529 0.76923077 0.72\n 0.72727273 0.84210526 0.7826087  0.65384615 0.60465116 0.64285714\n 0.76190476 0.75       0.76190476 0.76190476 0.74418605 0.74418605\n 0.76190476 0.76190476 0.76190476 0.65217391 0.66666667 0.65116279\n 0.72340426 0.65116279 0.8        0.76190476 0.8        0.72340426\n 0.72727273 0.76190476 0.66666667 0.68292683 0.77272727 0.66666667\n 0.69767442 0.66666667 0.66666667 0.69767442 0.63636364 0.60465116\n 0.65116279 0.66666667 0.69767442 0.74418605 0.76190476 0.76190476\n 0.69565217 0.66666667 0.60465116 0.73170732 0.65217391 0.62222222\n 0.8        0.76190476 0.7804878  0.71111111 0.71428571 0.69767442\n 0.71794872 0.69565217 0.75555556 0.79069767 0.76190476 0.71428571\n 0.65116279 0.71111111 0.63636364 0.68181818 0.66666667 0.66666667\n 0.74418605 0.74418605 0.76190476 0.68085106 0.66666667 0.68181818\n 0.69387755 0.82926829 0.59574468 0.71428571 0.77272727 0.71111111\n 0.66666667 0.62222222 0.53061224 0.68181818 0.6        0.69565217\n 0.79069767 0.56410256 0.71794872 0.69767442 0.65116279 0.63636364\n 0.66666667 0.65116279 0.66666667 0.76190476 0.76190476 0.76190476]",
+        "split6_test_score": "[0.69767442 0.60606061 0.65       0.62857143 0.76595745 0.80952381\n 0.61111111 0.61538462 0.69767442 0.62857143 0.75       0.79166667\n 0.71794872 0.5        0.81818182 0.68571429 0.73913043 0.65\n 0.75675676 0.75675676 0.75675676 0.75675676 0.75675676 0.75675676\n 0.72222222 0.72222222 0.72222222 0.73684211 0.72222222 0.76923077\n 0.75       0.64864865 0.76923077 0.65       0.73913043 0.69767442\n 0.76923077 0.73170732 0.76923077 0.73684211 0.76923077 0.69767442\n 0.66666667 0.7        0.74418605 0.8        0.76923077 0.76923077\n 0.82926829 0.8        0.76923077 0.71794872 0.71794872 0.71794872\n 0.71794872 0.80952381 0.71794872 0.82051282 0.58823529 0.71794872\n 0.75       0.66666667 0.69767442 0.80952381 0.68421053 0.8\n 0.7        0.66666667 0.73170732 0.74418605 0.68181818 0.65\n 0.76923077 0.8        0.76923077 0.8        0.82926829 0.82926829\n 0.71794872 0.71794872 0.71794872 0.8        0.75       0.82926829\n 0.72222222 0.8372093  0.75675676 0.73170732 0.7        0.71428571\n 0.7804878  0.73170732 0.76190476 0.71428571 0.77777778 0.75\n 0.69767442 0.84444444 0.8        0.8        0.76923077 0.76923077\n 0.76923077 0.82926829 0.82926829 0.71794872 0.71794872 0.71794872\n 0.65       0.75555556 0.65       0.66666667 0.4        0.75555556\n 0.7027027  0.71794872 0.54545455 0.63414634 0.65116279 0.81632653\n 0.65       0.69767442 0.7826087  0.71111111 0.5625     0.7027027\n 0.75675676 0.75675676 0.75675676 0.75675676 0.75675676 0.75675676\n 0.72222222 0.72222222 0.72222222 0.82051282 0.80952381 0.76923077\n 0.75555556 0.84444444 0.78947368 0.73170732 0.74418605 0.75555556\n 0.80952381 0.8        0.85       0.76190476 0.75       0.73684211\n 0.6        0.71428571 0.73684211 0.76923077 0.8        0.8\n 0.76923077 0.82926829 0.76923077 0.71794872 0.71794872 0.71794872\n 0.73684211 0.75       0.81081081 0.74418605 0.7804878  0.82051282\n 0.71794872 0.76190476 0.58823529 0.79069767 0.73684211 0.85\n 0.75       0.7027027  0.76923077 0.81818182 0.8        0.7826087\n 0.76923077 0.76923077 0.8        0.76923077 0.76923077 0.76923077\n 0.71794872 0.71794872 0.71794872 0.8372093  0.68421053 0.8\n 0.75675676 0.72222222 0.79069767 0.76190476 0.71428571 0.76190476\n 0.75       0.73170732 0.75       0.77272727 0.7        0.76923077\n 0.76190476 0.77272727 0.72727273 0.76923077 0.76923077 0.76923077\n 0.8        0.76923077 0.76923077 0.71794872 0.71794872 0.71794872\n 0.73913043 0.84444444 0.51612903 0.72222222 0.63157895 0.72727273\n 0.68292683 0.7755102  0.69767442 0.64705882 0.76595745 0.46666667\n 0.69767442 0.73170732 0.5625     0.85106383 0.63414634 0.75555556\n 0.75675676 0.75675676 0.75675676 0.75675676 0.75675676 0.75675676\n 0.72222222 0.72222222 0.72222222 0.82926829 0.87179487 0.8\n 0.7        0.69767442 0.7027027  0.80952381 0.8        0.54545455\n 0.76923077 0.71794872 0.82926829 0.80952381 0.71111111 0.62857143\n 0.68571429 0.71794872 0.69767442 0.8        0.8        0.76923077\n 0.8        0.8        0.76923077 0.71794872 0.71794872 0.71794872\n 0.84444444 0.76923077 0.7804878  0.68421053 0.73170732 0.75\n 0.55555556 0.77272727 0.63157895 0.85714286 0.76923077 0.82926829\n 0.72222222 0.68571429 0.8        0.72727273 0.76190476 0.75555556\n 0.76923077 0.73684211 0.76923077 0.76923077 0.8        0.76923077\n 0.71794872 0.71794872 0.71794872 0.85714286 0.82051282 0.7804878\n 0.82608696 0.8        0.64864865 0.75       0.8        0.65\n 0.8        0.76923077 0.79069767 0.66666667 0.68571429 0.75675676\n 0.7826087  0.82926829 0.74418605 0.76923077 0.76923077 0.76923077\n 0.8        0.8        0.82926829 0.71794872 0.71794872 0.71794872]",
+        "split7_test_score": "[0.57142857 0.60465116 0.65217391 0.69565217 0.58536585 0.69387755\n 0.60869565 0.65217391 0.60869565 0.73469388 0.75       0.625\n 0.54545455 0.57142857 0.72340426 0.60465116 0.66666667 0.73469388\n 0.73469388 0.73469388 0.73469388 0.73469388 0.73469388 0.73469388\n 0.73469388 0.73469388 0.73469388 0.64       0.6122449  0.70833333\n 0.58333333 0.71111111 0.66666667 0.73076923 0.68       0.73913043\n 0.61538462 0.65217391 0.53333333 0.54545455 0.71111111 0.59090909\n 0.72       0.73076923 0.75       0.68       0.65306122 0.64\n 0.66666667 0.66666667 0.66666667 0.69387755 0.69387755 0.69387755\n 0.55319149 0.60869565 0.66666667 0.69387755 0.63636364 0.59090909\n 0.69565217 0.58536585 0.57777778 0.58333333 0.68       0.625\n 0.62222222 0.71111111 0.65116279 0.66666667 0.62222222 0.68\n 0.65306122 0.65306122 0.64       0.66666667 0.65217391 0.66666667\n 0.69387755 0.69387755 0.69387755 0.625      0.625      0.66666667\n 0.73913043 0.66666667 0.71111111 0.73913043 0.73913043 0.72340426\n 0.66666667 0.53061224 0.59574468 0.61904762 0.65217391 0.70833333\n 0.72       0.67924528 0.68085106 0.68       0.63829787 0.64\n 0.65217391 0.66666667 0.65217391 0.69387755 0.69387755 0.69387755\n 0.71111111 0.66666667 0.74509804 0.59090909 0.68181818 0.71111111\n 0.75       0.69565217 0.75       0.7755102  0.66666667 0.52631579\n 0.63636364 0.65217391 0.75471698 0.68085106 0.55       0.65116279\n 0.75       0.75       0.75       0.75       0.75       0.75\n 0.75       0.75       0.75       0.625      0.57777778 0.68085106\n 0.72340426 0.66666667 0.57777778 0.62222222 0.68085106 0.53333333\n 0.69565217 0.65217391 0.70833333 0.60465116 0.6122449  0.73469388\n 0.625      0.60869565 0.62222222 0.65306122 0.65306122 0.6122449\n 0.66666667 0.66666667 0.65217391 0.69387755 0.69387755 0.69387755\n 0.625      0.63829787 0.59574468 0.63829787 0.625      0.62222222\n 0.68181818 0.625      0.62222222 0.625      0.65217391 0.65306122\n 0.65384615 0.76       0.63414634 0.65217391 0.68       0.69387755\n 0.65306122 0.65306122 0.6122449  0.65217391 0.65217391 0.65217391\n 0.69387755 0.69387755 0.69387755 0.66666667 0.66666667 0.56521739\n 0.72340426 0.55813953 0.61904762 0.71111111 0.76595745 0.72340426\n 0.58333333 0.63636364 0.65306122 0.66666667 0.69565217 0.68181818\n 0.69565217 0.74509804 0.66666667 0.625      0.65306122 0.64\n 0.65217391 0.66666667 0.65217391 0.69387755 0.69387755 0.69387755\n 0.60465116 0.56410256 0.65116279 0.73076923 0.59090909 0.70833333\n 0.55813953 0.72       0.57777778 0.68085106 0.75       0.59090909\n 0.69387755 0.625      0.54545455 0.69767442 0.70833333 0.57142857\n 0.75       0.75       0.75       0.75       0.75       0.75\n 0.75       0.75       0.75       0.6122449  0.59574468 0.69387755\n 0.65217391 0.6122449  0.60465116 0.66666667 0.66666667 0.72340426\n 0.59574468 0.68085106 0.65306122 0.60869565 0.68181818 0.62222222\n 0.66666667 0.63829787 0.66666667 0.65306122 0.65306122 0.6122449\n 0.66666667 0.65217391 0.66666667 0.69387755 0.69387755 0.69387755\n 0.66666667 0.625      0.57777778 0.66666667 0.69565217 0.73913043\n 0.73469388 0.69387755 0.70833333 0.70833333 0.58333333 0.70833333\n 0.71111111 0.65384615 0.68085106 0.65306122 0.73469388 0.63829787\n 0.65306122 0.625      0.6122449  0.65217391 0.65217391 0.65217391\n 0.69387755 0.69387755 0.69387755 0.68       0.64       0.66666667\n 0.55319149 0.60465116 0.68       0.63829787 0.68181818 0.69565217\n 0.66666667 0.68085106 0.64       0.75       0.69767442 0.65217391\n 0.59574468 0.65306122 0.60869565 0.65306122 0.65306122 0.6122449\n 0.66666667 0.66666667 0.66666667 0.69387755 0.69387755 0.69387755]",
+        "split8_test_score": "[0.57142857 0.60606061 0.63157895 0.56410256 0.58823529 0.58823529\n 0.46666667 0.51612903 0.58823529 0.60606061 0.66666667 0.62857143\n 0.53333333 0.66666667 0.5        0.53333333 0.60606061 0.60606061\n 0.68421053 0.65       0.65       0.65       0.65       0.68421053\n 0.65       0.65       0.65       0.65       0.7        0.59459459\n 0.64864865 0.66666667 0.64864865 0.66666667 0.7027027  0.62857143\n 0.64864865 0.66666667 0.62857143 0.66666667 0.5625     0.64864865\n 0.66666667 0.68421053 0.59090909 0.64864865 0.61538462 0.65\n 0.57894737 0.61111111 0.61111111 0.59459459 0.59459459 0.59459459\n 0.6        0.59459459 0.68571429 0.53333333 0.51428571 0.57894737\n 0.6        0.64864865 0.57894737 0.66666667 0.66666667 0.7027027\n 0.58064516 0.66666667 0.68571429 0.74285714 0.52941176 0.64705882\n 0.65       0.65       0.61538462 0.57894737 0.61111111 0.57894737\n 0.59459459 0.59459459 0.59459459 0.7027027  0.64864865 0.52631579\n 0.66666667 0.61111111 0.75675676 0.60465116 0.64864865 0.64705882\n 0.68292683 0.71794872 0.7027027  0.57894737 0.68571429 0.52380952\n 0.63157895 0.54054054 0.52941176 0.64864865 0.65       0.68421053\n 0.61111111 0.57894737 0.57894737 0.59459459 0.59459459 0.59459459\n 0.52631579 0.62857143 0.62857143 0.55       0.5625     0.5625\n 0.625      0.48275862 0.2962963  0.62857143 0.65       0.43243243\n 0.60606061 0.5625     0.60606061 0.52631579 0.55       0.62857143\n 0.64705882 0.64705882 0.64705882 0.64705882 0.64705882 0.64705882\n 0.63157895 0.63157895 0.63157895 0.7027027  0.54545455 0.61111111\n 0.59459459 0.64864865 0.55555556 0.64705882 0.625      0.62857143\n 0.66666667 0.70588235 0.56410256 0.66666667 0.66666667 0.60606061\n 0.62857143 0.61538462 0.66666667 0.61538462 0.61538462 0.65\n 0.64864865 0.64864865 0.64864865 0.6        0.56410256 0.6\n 0.64864865 0.66666667 0.73684211 0.625      0.62857143 0.66666667\n 0.60606061 0.64864865 0.61538462 0.68421053 0.58823529 0.59459459\n 0.66666667 0.65       0.55       0.66666667 0.58823529 0.59090909\n 0.61538462 0.61538462 0.6        0.64864865 0.64864865 0.66666667\n 0.6        0.6        0.6        0.68421053 0.7027027  0.66666667\n 0.66666667 0.54054054 0.58536585 0.61538462 0.55       0.66666667\n 0.61538462 0.70588235 0.59459459 0.51282051 0.64705882 0.58823529\n 0.64705882 0.58823529 0.70588235 0.65       0.61538462 0.65\n 0.64864865 0.66666667 0.64864865 0.56410256 0.6        0.6\n 0.5625     0.46666667 0.66666667 0.44444444 0.66666667 0.55\n 0.51282051 0.62857143 0.5625     0.62857143 0.54054054 0.55\n 0.4375     0.54545455 0.61538462 0.64705882 0.60465116 0.66666667\n 0.64705882 0.64705882 0.64705882 0.64705882 0.64705882 0.64705882\n 0.63157895 0.63157895 0.63157895 0.61538462 0.61111111 0.62857143\n 0.7027027  0.66666667 0.60606061 0.60606061 0.53333333 0.64864865\n 0.57142857 0.59459459 0.57142857 0.5625     0.64705882 0.6\n 0.625      0.55555556 0.59459459 0.65       0.65       0.61538462\n 0.64864865 0.64864865 0.66666667 0.6        0.56410256 0.6\n 0.63157895 0.56410256 0.66666667 0.63157895 0.63157895 0.7027027\n 0.64705882 0.48648649 0.72222222 0.65       0.65116279 0.55\n 0.64705882 0.66666667 0.66666667 0.57142857 0.57894737 0.58823529\n 0.61538462 0.61538462 0.65       0.64864865 0.64864865 0.64864865\n 0.56410256 0.56410256 0.6        0.7        0.62857143 0.57894737\n 0.68571429 0.52941176 0.7027027  0.61538462 0.68571429 0.52631579\n 0.63414634 0.66666667 0.61538462 0.68571429 0.60606061 0.64864865\n 0.61538462 0.625      0.59459459 0.65       0.61538462 0.63414634\n 0.64864865 0.64864865 0.66666667 0.6        0.56410256 0.56410256]",
+        "split9_test_score": "[0.74418605 0.71794872 0.63414634 0.73684211 0.74418605 0.73170732\n 0.7        0.71794872 0.76190476 0.66666667 0.71794872 0.63157895\n 0.77272727 0.75       0.64864865 0.68292683 0.76923077 0.7804878\n 0.75       0.75       0.75       0.73170732 0.73170732 0.73170732\n 0.73170732 0.73170732 0.73170732 0.73170732 0.7        0.68292683\n 0.7        0.61111111 0.61538462 0.63414634 0.57142857 0.73170732\n 0.69767442 0.75       0.57894737 0.7        0.63157895 0.7027027\n 0.56410256 0.73170732 0.7027027  0.76190476 0.75       0.68421053\n 0.75       0.75       0.75       0.7        0.7        0.7\n 0.69767442 0.68292683 0.65116279 0.68292683 0.71428571 0.75\n 0.71794872 0.66666667 0.68181818 0.76190476 0.66666667 0.65116279\n 0.76923077 0.63414634 0.71794872 0.64864865 0.73170732 0.66666667\n 0.73170732 0.73170732 0.66666667 0.68421053 0.75       0.75\n 0.7        0.7        0.7        0.65217391 0.82051282 0.61538462\n 0.72727273 0.68421053 0.76923077 0.76923077 0.61111111 0.76190476\n 0.7804878  0.57142857 0.71794872 0.66666667 0.68421053 0.68292683\n 0.75       0.68421053 0.75       0.74418605 0.66666667 0.68421053\n 0.68421053 0.68421053 0.75       0.7        0.7        0.7\n 0.73170732 0.63157895 0.73913043 0.68571429 0.71428571 0.7804878\n 0.76923077 0.61538462 0.66666667 0.72222222 0.66666667 0.71428571\n 0.68292683 0.69565217 0.64864865 0.64864865 0.75       0.63157895\n 0.7804878  0.7804878  0.7804878  0.7804878  0.7804878  0.7804878\n 0.7804878  0.7804878  0.7804878  0.68181818 0.7        0.66666667\n 0.71428571 0.64864865 0.73684211 0.71794872 0.68421053 0.68421053\n 0.71428571 0.69767442 0.68421053 0.7027027  0.7027027  0.63414634\n 0.7        0.75       0.69767442 0.65       0.65       0.65\n 0.68421053 0.68421053 0.7027027  0.66666667 0.66666667 0.66666667\n 0.65116279 0.7        0.69767442 0.59459459 0.73684211 0.75\n 0.76190476 0.71794872 0.80952381 0.61904762 0.62857143 0.65\n 0.69767442 0.71794872 0.64864865 0.68421053 0.68181818 0.7804878\n 0.65       0.66666667 0.65       0.68421053 0.7027027  0.7027027\n 0.66666667 0.66666667 0.66666667 0.71111111 0.69767442 0.7\n 0.68571429 0.73170732 0.76923077 0.63636364 0.69767442 0.6\n 0.71428571 0.66666667 0.61904762 0.59459459 0.76190476 0.72340426\n 0.7804878  0.68292683 0.72727273 0.65       0.66666667 0.65\n 0.7027027  0.68421053 0.68421053 0.66666667 0.66666667 0.66666667\n 0.63157895 0.66666667 0.64705882 0.68292683 0.73684211 0.7\n 0.8        0.61538462 0.72727273 0.68421053 0.66666667 0.68085106\n 0.74418605 0.76923077 0.8        0.58536585 0.77272727 0.69767442\n 0.7804878  0.7804878  0.7804878  0.7804878  0.7804878  0.7804878\n 0.7804878  0.7804878  0.7804878  0.7        0.61904762 0.7\n 0.71428571 0.58823529 0.54054054 0.72727273 0.82926829 0.61538462\n 0.69565217 0.61538462 0.71428571 0.68292683 0.76190476 0.47368421\n 0.8        0.63157895 0.68292683 0.63414634 0.65       0.66666667\n 0.7027027  0.68421053 0.68421053 0.66666667 0.66666667 0.66666667\n 0.71428571 0.68292683 0.61904762 0.73684211 0.68292683 0.7027027\n 0.74418605 0.73170732 0.64864865 0.68292683 0.72727273 0.76190476\n 0.75       0.61111111 0.72222222 0.73170732 0.63414634 0.79069767\n 0.63414634 0.66666667 0.66666667 0.68421053 0.7027027  0.68421053\n 0.66666667 0.66666667 0.66666667 0.68181818 0.66666667 0.63636364\n 0.7804878  0.6        0.68571429 0.65       0.8        0.7804878\n 0.71428571 0.63636364 0.7        0.66666667 0.7        0.66666667\n 0.76923077 0.59459459 0.68421053 0.63414634 0.66666667 0.65\n 0.68421053 0.68421053 0.68421053 0.66666667 0.66666667 0.66666667]",
+        "mean_test_score": "[0.7004965  0.68341201 0.70592575 0.71097659 0.71789592 0.70939043\n 0.67545656 0.65286585 0.66801857 0.67147056 0.7056915  0.67058743\n 0.6527598  0.65936191 0.68205633 0.6813875  0.70471064 0.69223054\n 0.74386728 0.73973194 0.74044623 0.74073096 0.74302952 0.74586918\n 0.74008956 0.74008956 0.74175469 0.73635873 0.70683911 0.71069963\n 0.72169821 0.7028022  0.7018339  0.68750012 0.71310461 0.72754653\n 0.71091984 0.70758046 0.69330857 0.70519289 0.70997434 0.69970777\n 0.72325151 0.73041047 0.71577884 0.73875035 0.71548941 0.72678494\n 0.73335034 0.73415636 0.73153718 0.72887726 0.72662762 0.72961765\n 0.7149958  0.70411574 0.69934396 0.73565613 0.70187349 0.72618575\n 0.72443194 0.69082109 0.70349091 0.74779949 0.70933578 0.72490837\n 0.70303662 0.74536828 0.71311718 0.73090943 0.70308271 0.70355694\n 0.72125022 0.73432365 0.72132761 0.72886202 0.73446564 0.73024956\n 0.73086872 0.73104357 0.73186729 0.73300092 0.73079702 0.72024049\n 0.72136189 0.70689199 0.73548206 0.73658646 0.69875945 0.72463555\n 0.74394039 0.70803731 0.72205731 0.70714372 0.70405116 0.72271836\n 0.72495382 0.72077284 0.72068006 0.73754627 0.72172044 0.7331761\n 0.72593803 0.72367061 0.73190106 0.73234227 0.72721613 0.73186729\n 0.64754644 0.70748097 0.71292148 0.68436116 0.68217813 0.70875765\n 0.70836366 0.64431247 0.61910632 0.68234667 0.66956339 0.70580088\n 0.71072203 0.69279208 0.70005058 0.660752   0.67711935 0.67369931\n 0.74109776 0.74109776 0.73932589 0.74281088 0.74222949 0.74400136\n 0.74249198 0.74249198 0.74249198 0.7278901  0.69985233 0.72528775\n 0.70497487 0.75784401 0.70791899 0.72972991 0.73335006 0.70709884\n 0.74621496 0.72876847 0.73856209 0.72910701 0.71990968 0.72881069\n 0.69602498 0.70620452 0.72751844 0.73280304 0.7251229  0.72146058\n 0.71810379 0.72674163 0.71926828 0.72499296 0.71963134 0.72846076\n 0.72578518 0.72455293 0.74687458 0.71700049 0.71013234 0.72085045\n 0.71726372 0.68760933 0.72672101 0.72378893 0.70258433 0.71189216\n 0.7039094  0.73513323 0.7168932  0.72216816 0.70053356 0.73627084\n 0.72399099 0.71963733 0.72235641 0.71643867 0.71593494 0.72020443\n 0.72846076 0.72724259 0.72798299 0.75787113 0.73569646 0.72337109\n 0.7175827  0.70225809 0.70342874 0.71844628 0.71496389 0.71688492\n 0.7353666  0.69844923 0.70020645 0.67388553 0.73449037 0.71664232\n 0.74544908 0.7177204  0.73213243 0.7256424  0.72779757 0.72064244\n 0.72302993 0.72489662 0.71939371 0.71797021 0.72621112 0.72333183\n 0.64819773 0.69551392 0.67003105 0.69801706 0.69969318 0.69297111\n 0.68518162 0.68983974 0.68261955 0.66675447 0.67008804 0.65490501\n 0.69574445 0.72655181 0.68703041 0.65442992 0.65955945 0.68314432\n 0.74109776 0.73990728 0.74109776 0.74400136 0.74222949 0.74222949\n 0.74249198 0.74249198 0.74249198 0.71910367 0.72168557 0.71014756\n 0.70752468 0.68015507 0.7041745  0.73668498 0.74455829 0.70722414\n 0.72115773 0.71875387 0.70831585 0.69245825 0.73311608 0.6598066\n 0.73651082 0.69713969 0.69996908 0.73120086 0.72180405 0.71483168\n 0.71891076 0.72391991 0.72445565 0.72621112 0.72365285 0.72333183\n 0.73084171 0.68992664 0.72384845 0.71308671 0.71805721 0.73269596\n 0.71564524 0.73079887 0.70859098 0.72887694 0.71579753 0.71458701\n 0.73366777 0.69416844 0.72858475 0.71375964 0.72201597 0.71158723\n 0.72667309 0.72102682 0.72726367 0.71560088 0.72067699 0.71874089\n 0.71963134 0.71797021 0.73023263 0.72708193 0.70272492 0.71498024\n 0.72366216 0.70786064 0.71572305 0.72670493 0.7320531  0.7088029\n 0.72393466 0.70222808 0.69952194 0.71512802 0.70211053 0.71158076\n 0.73089604 0.67727072 0.71692627 0.73235178 0.72228859 0.71985495\n 0.7239549  0.71872666 0.72500568 0.7285413  0.71974208 0.72140321]",
+        "std_test_score": "[0.07158163 0.08107766 0.06885395 0.07787104 0.07634071 0.07184313\n 0.09670788 0.05979588 0.09736603 0.06359852 0.08123666 0.11729259\n 0.10006491 0.0881867  0.09395476 0.06775656 0.06996139 0.08291534\n 0.04339777 0.05284515 0.04895791 0.0528869  0.05366132 0.0484486\n 0.05376325 0.05376325 0.05478674 0.08179402 0.04596033 0.06120814\n 0.06807073 0.05462169 0.0645417  0.06870431 0.07040765 0.05278141\n 0.06365355 0.05596863 0.08411982 0.07243419 0.06949543 0.04646554\n 0.07751198 0.03062587 0.04878684 0.05685721 0.06676016 0.06691342\n 0.06832081 0.05985286 0.05811045 0.06083164 0.05736034 0.05741834\n 0.08404752 0.07251643 0.04454575 0.08338255 0.08825523 0.08520576\n 0.05118355 0.08006342 0.08406299 0.08241959 0.0387806  0.05943244\n 0.06661489 0.06836863 0.05297112 0.04805757 0.08551932 0.05046332\n 0.06671942 0.05266004 0.07549249 0.06524853 0.06763772 0.07053732\n 0.06138327 0.06466584 0.06077576 0.0590869  0.06113149 0.09966784\n 0.04232405 0.07708956 0.05307019 0.06582512 0.05061549 0.04984058\n 0.05579869 0.08963471 0.06305586 0.07022416 0.05874153 0.08634471\n 0.0524159  0.08195572 0.07218407 0.05054803 0.05584995 0.06212311\n 0.05685733 0.07145055 0.06985645 0.06444628 0.06143126 0.06077576\n 0.13566569 0.04950745 0.05228221 0.07287254 0.11239108 0.07031109\n 0.09875973 0.09189155 0.14368361 0.06839164 0.06164039 0.13132097\n 0.07091026 0.05616752 0.06317145 0.10235897 0.10064657 0.05480595\n 0.06609831 0.06609831 0.06575339 0.06814498 0.06810596 0.06836381\n 0.07487424 0.07487424 0.07487424 0.05859079 0.08129712 0.05702504\n 0.06520027 0.07348392 0.08263257 0.05767334 0.05908686 0.07820465\n 0.05200656 0.06399774 0.08666164 0.06262158 0.0637578  0.0652565\n 0.06479029 0.08639701 0.04705709 0.07138532 0.07907858 0.07798476\n 0.05796616 0.05870032 0.04907048 0.05832108 0.06557011 0.06113903\n 0.06979255 0.04361784 0.06704084 0.06645548 0.06428816 0.07094938\n 0.0444439  0.04686461 0.08815372 0.07171838 0.06251614 0.10400218\n 0.0804532  0.05018108 0.08157823 0.0619757  0.06313133 0.0654395\n 0.07176806 0.06538471 0.08048875 0.05630464 0.05134557 0.05683498\n 0.06113903 0.06179792 0.05846179 0.06385554 0.0603168  0.07501341\n 0.04778224 0.0836112  0.07372377 0.06178861 0.07023446 0.05075477\n 0.07964713 0.06076675 0.07112757 0.09376266 0.05918732 0.06257621\n 0.0635788  0.04928666 0.05191834 0.06531085 0.0634354  0.06909218\n 0.06044795 0.05816191 0.05797427 0.0658941  0.05766998 0.05883668\n 0.0870342  0.10729803 0.08339118 0.11178166 0.06930758 0.06463794\n 0.08705412 0.09631877 0.08421542 0.06967004 0.08808192 0.08707083\n 0.09332041 0.08435495 0.08276425 0.10424244 0.09181546 0.0810454\n 0.06609831 0.06581946 0.06609831 0.06836381 0.06810596 0.06810596\n 0.07487424 0.07487424 0.07487424 0.07943137 0.09054259 0.06327704\n 0.05417872 0.05639398 0.0918958  0.05863317 0.09087642 0.08608204\n 0.07910835 0.06920165 0.07160775 0.06989309 0.04368026 0.08187535\n 0.06116765 0.07194427 0.05246816 0.06828734 0.06510371 0.08020461\n 0.0553458  0.05973322 0.05204774 0.05766998 0.06963114 0.05883668\n 0.05750181 0.06370913 0.09360721 0.06580911 0.05418458 0.05572\n 0.07279646 0.08799708 0.04520386 0.06236383 0.06259981 0.06879996\n 0.05452751 0.0448153  0.05009229 0.06323912 0.06426783 0.07125095\n 0.07410424 0.06552361 0.07515643 0.050922   0.05684051 0.05463958\n 0.06557011 0.0658941  0.06182203 0.05920363 0.05788368 0.07210915\n 0.07662114 0.10323192 0.06637354 0.0709953  0.05355643 0.07560513\n 0.0647792  0.06414849 0.08187246 0.03839103 0.06864287 0.04064407\n 0.07326035 0.08524351 0.08217919 0.06609163 0.06814979 0.07593724\n 0.05869007 0.05780716 0.05880578 0.06164827 0.06680711 0.06644329]",
+        "rank_test_score": "[263 293 239 213 182 220 303 319 311 306 241 307 320 316 298 299 244 284\n  13  35  31  30  14   6  32  32  25  43 237 216 148 254 261 289 207  96\n 214 230 280 242 219 268 138  78 194  37 198 102  55  53  69  84 107  82\n 200 246 271  46 260 111 125 285 250   3 221 120 253   8 206  72 252 249\n 154  52 153  86  51  79  74  71  67  59  77 162 152 236  47  41 272 122\n  12 227 144 234 247 140 119 158 159  39 147  57 112 132  66  63 100  67\n 322 232 209 292 297 223 225 323 324 296 310 240 215 282 265 313 302 305\n  26  26  36  15  22  10  16  16  16  94 267 115 243   2 228  81  56 235\n   5  88  38  83 164  87 276 238  97  60 116 150 178 103 171 118 168  91\n 113 123   4 186 218 157 185 288 104 131 256 210 248  49 188 143 262  44\n 126 167 141 191 192 163  91  99  93   1  45 135 184 257 251 177 202 189\n  48 273 264 304  50 190   7 183  64 114  95 161 139 121 170 180 109 136\n 321 278 309 274 269 281 291 287 295 312 308 317 277 108 290 318 315 294\n  26  34  26  10  22  22  16  16  16 172 149 217 231 300 245  40   9 233\n 155 174 226 283  58 314  42 275 266  70 146 203 173 129 124 109 134 136\n  75 286 130 208 179  61 196  76 224  85 193 204  54 279  89 205 145 211\n 106 156  98 197 160 175 168 180  80 101 255 201 133 229 195 105  65 222\n 128 258 270 199 259 212  73 301 187  62 142 165 127 176 117  90 166 151]"
+    },
+    "n_splits_": 10
+}
