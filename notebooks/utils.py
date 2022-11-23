@@ -8,6 +8,7 @@ import pandas as pd
 from sklearn.model_selection import GridSearchCV
 from typing import Union
 
+
 def retrieve_latest_train_test() -> Union[pd.DataFrame, pd.DataFrame]:
     dir = f"../data"
     
@@ -19,7 +20,14 @@ def retrieve_latest_train_test() -> Union[pd.DataFrame, pd.DataFrame]:
     return read_data_of_type("train_data"), read_data_of_type("test_data")
 
 def run_grid_search_cv(gscv_dct, X_train, y_train):
-    gscv = GridSearchCV(estimator=gscv_dct.estimator, param_grid=gscv_dct.param_grid, scoring="f1", cv=gscv_dct.k_fold, verbose=2)
+    gscv = GridSearchCV(
+        estimator=gscv_dct.estimator,
+        param_grid=gscv_dct.param_grid,
+        scoring="f1",
+        error_score=0,
+        cv=gscv_dct.k_fold,
+        verbose=2
+        )
     gscv.fit(X_train, y_train)
     return gscv
 

@@ -1,10 +1,10 @@
 from dataclasses import dataclass
-
-import numpy as np
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.model_selection import StratifiedKFold
 from sklearn.neural_network import MLPClassifier
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
 
 
 @dataclass
@@ -21,26 +21,26 @@ gscv_cfg_dt = GSCVConfig(
     {
         "criterion": ["gini", "entropy", "log_loss"],
         "max_depth": [5, 25, 50, None],
-        "min_samples_split": np.arange(2, 5, 1),
-        "min_samples_leaf": np.arange(1, 4, 1),
+        "min_samples_split": [2, 3, 4, 5],
+        "min_samples_leaf": [1, 2, 3, 4],
         "max_features": ["sqrt", "log2", None],
     },
-    StratifiedKFold(n_splits=10, shuffle=True),
+    StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
 
 gscv_cfg_rf = GSCVConfig(
     "random_forest",
     RandomForestClassifier(),
     {
-        "n_estimators": [10, 100, 500, 1000],
+        "n_estimators": [10, 100, 200],
         "criterion": ["gini", "entropy", "log_loss"],
         "max_depth": [5, 25, 50, None],
-        "min_samples_split": np.arange(2, 5, 1),
-        "min_samples_leaf": np.arange(1, 4, 1),
+        "min_samples_split": [2, 3, 4, 5],
+        "min_samples_leaf": [1, 2, 3, 4],
         "max_features": ["sqrt", "log2", None],
         "bootstrap": [True, False],
     },
-    StratifiedKFold(n_splits=10, shuffle=True),
+    StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
 
 gscv_cfg_gb = GSCVConfig(
@@ -52,7 +52,7 @@ gscv_cfg_gb = GSCVConfig(
         "max_depth": [1, 3, 7],
         "max_features": ['sqrt', 'log2'],
     },
-    StratifiedKFold(n_splits=10, shuffle=True),
+    StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
 
 gscv_cfg_mlp = GSCVConfig(
@@ -64,6 +64,29 @@ gscv_cfg_mlp = GSCVConfig(
         "solver": ["lbfgs", "sgd", "adam"],
         "batch_size": ["auto"],
         "learning_rate": ["constant", "invscaling", "adaptive"],
+        "max_iter": [1000],
     },
-    StratifiedKFold(n_splits=10, shuffle=True),
+    StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
+)
+
+gscv_cfg_knn = GSCVConfig(
+    "knearest_neighbor",
+    KNeighborsClassifier(),
+    {
+        "n_neighbors": [3, 5, 10],
+        "weights": ["uniform", "distance"],
+        "algorithm": ["auto", "ball_tree", "kd_tree", "brute"]
+    },
+    StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
+)
+
+gscv_cfg_sv = GSCVConfig(
+    "support_vector",
+    SVC(),
+    {
+        "gamma": ["scale", "auto"],
+        "shrinking": [True, False],
+        "class_weight": ["balanced", None]
+    },
+    StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )
