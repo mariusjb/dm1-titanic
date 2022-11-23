@@ -1,0 +1,145 @@
+{
+    "scoring": "f1",
+    "estimator": "MLPClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "hidden_layer_sizes": [
+            [
+                5
+            ],
+            [
+                10
+            ],
+            [
+                15
+            ]
+        ],
+        "activation": [
+            "relu"
+        ],
+        "solver": [
+            "adam"
+        ],
+        "batch_size": [
+            "auto"
+        ],
+        "learning_rate": [
+            "invscaling"
+        ],
+        "max_iter": [
+            1000,
+            500
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "3",
+    "best_score_": 0.7647846376996876,
+    "best_params_": {
+        "activation": "relu",
+        "batch_size": "auto",
+        "hidden_layer_sizes": [
+            10
+        ],
+        "learning_rate": "invscaling",
+        "max_iter": 500,
+        "solver": "adam"
+    },
+    "best_estimator_": "MLPClassifier(hidden_layer_sizes=(10,), learning_rate='invscaling',\n              max_iter=500)",
+    "refit_time_": 0.16883492469787598,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.1436362  0.14689374 0.19294295 0.18758771 0.36652169 0.210289  ]",
+        "std_fit_time": "[0.03299366 0.02278106 0.05197744 0.01501194 0.07095293 0.00270571]",
+        "mean_score_time": "[0.00116417 0.00114634 0.00118277 0.00120275 0.0012325  0.00129488]",
+        "std_score_time": "[8.65477471e-05 5.93667480e-05 8.70726358e-05 1.15867213e-04\n 1.99544451e-04 1.17385670e-04]",
+        "param_activation": "['relu' 'relu' 'relu' 'relu' 'relu' 'relu']",
+        "param_batch_size": "['auto' 'auto' 'auto' 'auto' 'auto' 'auto']",
+        "param_hidden_layer_sizes": "[(5,) (5,) (10,) (10,) (15,) (15,)]",
+        "param_learning_rate": "['invscaling' 'invscaling' 'invscaling' 'invscaling' 'invscaling'\n 'invscaling']",
+        "param_max_iter": "[1000 500 1000 500 1000 500]",
+        "param_solver": "['adam' 'adam' 'adam' 'adam' 'adam' 'adam']",
+        "params": [
+            {
+                "activation": "relu",
+                "batch_size": "auto",
+                "hidden_layer_sizes": [
+                    5
+                ],
+                "learning_rate": "invscaling",
+                "max_iter": 1000,
+                "solver": "adam"
+            },
+            {
+                "activation": "relu",
+                "batch_size": "auto",
+                "hidden_layer_sizes": [
+                    5
+                ],
+                "learning_rate": "invscaling",
+                "max_iter": 500,
+                "solver": "adam"
+            },
+            {
+                "activation": "relu",
+                "batch_size": "auto",
+                "hidden_layer_sizes": [
+                    10
+                ],
+                "learning_rate": "invscaling",
+                "max_iter": 1000,
+                "solver": "adam"
+            },
+            {
+                "activation": "relu",
+                "batch_size": "auto",
+                "hidden_layer_sizes": [
+                    10
+                ],
+                "learning_rate": "invscaling",
+                "max_iter": 500,
+                "solver": "adam"
+            },
+            {
+                "activation": "relu",
+                "batch_size": "auto",
+                "hidden_layer_sizes": [
+                    15
+                ],
+                "learning_rate": "invscaling",
+                "max_iter": 1000,
+                "solver": "adam"
+            },
+            {
+                "activation": "relu",
+                "batch_size": "auto",
+                "hidden_layer_sizes": [
+                    15
+                ],
+                "learning_rate": "invscaling",
+                "max_iter": 500,
+                "solver": "adam"
+            }
+        ],
+        "split0_test_score": "[0.63829787 0.70833333 0.70833333 0.72340426 0.68181818 0.72340426]",
+        "split1_test_score": "[0.84       0.80851064 0.83333333 0.80851064 0.79166667 0.80851064]",
+        "split2_test_score": "[0.75       0.7755102  0.76595745 0.75       0.76595745 0.69387755]",
+        "split3_test_score": "[0.93333333 0.91304348 0.91304348 0.93333333 0.95454545 0.91304348]",
+        "split4_test_score": "[0.61904762 0.63636364 0.58536585 0.65116279 0.68292683 0.69767442]",
+        "split5_test_score": "[0.68292683 0.66666667 0.71428571 0.68181818 0.71428571 0.68181818]",
+        "split6_test_score": "[0.7826087  0.73913043 0.77272727 0.76595745 0.71428571 0.77272727]",
+        "split7_test_score": "[0.77272727 0.77272727 0.79069767 0.74418605 0.74418605 0.77272727]",
+        "split8_test_score": "[0.7027027  0.7027027  0.78947368 0.78947368 0.66666667 0.66666667]",
+        "split9_test_score": "[0.82608696 0.84444444 0.76190476 0.8        0.71428571 0.76190476]",
+        "mean_test_score": "[0.75477313 0.75674328 0.76351226 0.76478464 0.74306244 0.74923545]",
+        "std_test_score": "[0.09231148 0.07974206 0.08120665 0.07370227 0.0795617  0.07025941]",
+        "rank_test_score": "[4 3 2 1 6 5]"
+    },
+    "n_splits_": 10
+}
