@@ -35,13 +35,13 @@ gscv_cfg_rf = GSCVConfig(
     "random_forest",
     RandomForestClassifier(),
     {
-        "n_estimators": [18, 20, 22],
-        "criterion": ["entropy"],
-        "max_depth": [None],
-        "min_samples_split": [5, 7],
-        "min_samples_leaf": [2],
-        "max_features": ["log2"],
-        "bootstrap": [False],
+        "n_estimators": [32, 64, 128],
+        "criterion": ["gini", "entropy", "log_loss"],
+        "max_depth": [2, 3, 4],
+        "min_samples_split": [0.1, 0.2, 0.3, 0.4],
+        "min_samples_leaf": [0.05, 0.1, 0.15],
+        "max_features": ["sqrt", "log2", None],
+        "bootstrap": [True, False]
     },
     StratifiedKFold(n_splits=10, shuffle=True, random_state=0),
 )

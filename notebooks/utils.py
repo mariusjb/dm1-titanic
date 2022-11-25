@@ -20,12 +20,14 @@ def retrieve_latest_train_test() -> Union[pd.DataFrame, pd.DataFrame]:
     return read_data_of_type("train_data"), read_data_of_type("test_data")
 
 
-def run_grid_search_cv(gscv_dct, X_train, y_train):
+def run_grid_search_cv(gscv_dct, X_train, y_train, X_test):
     gscv = GridSearchCV(
         estimator=gscv_dct.estimator, param_grid=gscv_dct.param_grid, scoring="f1", error_score=0, cv=gscv_dct.k_fold, verbose=2
     )
     gscv.fit(X_train, y_train)
-    return gscv
+    pred = gscv.best_estimator_.predict(X_test) 
+    return gscv, pred
+
 
 
 def save_results_and_session(estimator_name: str, gscv: dict):
