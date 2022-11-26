@@ -1,0 +1,82 @@
+{
+    "scoring": "f1",
+    "estimator": "XGBClassifier(base_score=None, booster=None, callbacks=None,\n              colsample_bylevel=None, colsample_bynode=None,\n              colsample_bytree=None, early_stopping_rounds=None,\n              enable_categorical=False, eval_metric=None, feature_types=None,\n              gamma=None, gpu_id=None, grow_policy=None, importance_type=None,\n              interaction_constraints=None, learning_rate=None, max_bin=None,\n              max_cat_threshold=None, max_cat_to_onehot=None,\n              max_delta_step=None, max_depth=None, max_leaves=None,\n              min_child_weight=None, missing=nan, monotone_constraints=None,\n              n_estimators=100, n_jobs=None, num_parallel_tree=None,\n              predictor=None, random_state=None, ...)",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "learning_rate": [
+            0.15
+        ],
+        "subsample": [
+            0.7
+        ],
+        "max_depth": [
+            1
+        ],
+        "colsample_bylevel": [
+            0.4
+        ],
+        "colsample_bytree": [
+            0.5
+        ],
+        "n_estimators": [
+            100
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "0",
+    "best_score_": 0.7453738859264167,
+    "best_params_": {
+        "colsample_bylevel": 0.4,
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.15,
+        "max_depth": 1,
+        "n_estimators": 100,
+        "subsample": 0.7
+    },
+    "best_estimator_": "XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,\n              colsample_bylevel=0.4, colsample_bynode=1, colsample_bytree=0.5,\n              early_stopping_rounds=None, enable_categorical=False,\n              eval_metric=None, feature_types=None, gamma=0, gpu_id=-1,\n              grow_policy='depthwise', importance_type=None,\n              interaction_constraints='', learning_rate=0.15, max_bin=256,\n              max_cat_threshold=64, max_cat_to_onehot=4, max_delta_step=0,\n              max_depth=1, max_leaves=0, min_child_weight=1, missing=nan,\n              monotone_constraints='()', n_estimators=100, n_jobs=0,\n              num_parallel_tree=1, predictor='auto', random_state=0, ...)",
+    "refit_time_": 0.1175680160522461,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.1138799]",
+        "std_fit_time": "[0.02794175]",
+        "mean_score_time": "[0.0021713]",
+        "std_score_time": "[0.00021255]",
+        "param_colsample_bylevel": "[0.4]",
+        "param_colsample_bytree": "[0.5]",
+        "param_learning_rate": "[0.15]",
+        "param_max_depth": "[1]",
+        "param_n_estimators": "[100]",
+        "param_subsample": "[0.7]",
+        "params": [
+            {
+                "colsample_bylevel": 0.4,
+                "colsample_bytree": 0.5,
+                "learning_rate": 0.15,
+                "max_depth": 1,
+                "n_estimators": 100,
+                "subsample": 0.7
+            }
+        ],
+        "split0_test_score": "[0.68085106]",
+        "split1_test_score": "[0.81632653]",
+        "split2_test_score": "[0.72]",
+        "split3_test_score": "[0.91304348]",
+        "split4_test_score": "[0.68181818]",
+        "split5_test_score": "[0.63636364]",
+        "split6_test_score": "[0.7826087]",
+        "split7_test_score": "[0.75]",
+        "split8_test_score": "[0.7]",
+        "split9_test_score": "[0.77272727]",
+        "mean_test_score": "[0.74537389]",
+        "std_test_score": "[0.07621797]",
+        "rank_test_score": "[1]"
+    },
+    "n_splits_": 10
+}

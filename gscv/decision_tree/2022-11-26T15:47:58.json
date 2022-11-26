@@ -1,0 +1,88 @@
+{
+    "scoring": "f1",
+    "estimator": "DecisionTreeClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "class_weight": [
+            "balanced"
+        ],
+        "criterion": [
+            "entropy"
+        ],
+        "max_features": [
+            14
+        ],
+        "min_impurity_decrease": [
+            0.001
+        ],
+        "min_samples_leaf": [
+            6
+        ],
+        "min_samples_split": [
+            6
+        ],
+        "splitter": [
+            "best"
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "0",
+    "best_score_": 0.7625003850281064,
+    "best_params_": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_features": 14,
+        "min_impurity_decrease": 0.001,
+        "min_samples_leaf": 6,
+        "min_samples_split": 6,
+        "splitter": "best"
+    },
+    "best_estimator_": "DecisionTreeClassifier(class_weight='balanced', criterion='entropy',\n                       max_features=14, min_impurity_decrease=0.001,\n                       min_samples_leaf=6, min_samples_split=6)",
+    "refit_time_": 0.0012149810791015625,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.00136805]",
+        "std_fit_time": "[0.00017725]",
+        "mean_score_time": "[0.00078895]",
+        "std_score_time": "[8.01471954e-05]",
+        "param_class_weight": "['balanced']",
+        "param_criterion": "['entropy']",
+        "param_max_features": "[14]",
+        "param_min_impurity_decrease": "[0.001]",
+        "param_min_samples_leaf": "[6]",
+        "param_min_samples_split": "[6]",
+        "param_splitter": "['best']",
+        "params": [
+            {
+                "class_weight": "balanced",
+                "criterion": "entropy",
+                "max_features": 14,
+                "min_impurity_decrease": 0.001,
+                "min_samples_leaf": 6,
+                "min_samples_split": 6,
+                "splitter": "best"
+            }
+        ],
+        "split0_test_score": "[0.70833333]",
+        "split1_test_score": "[0.80851064]",
+        "split2_test_score": "[0.7755102]",
+        "split3_test_score": "[0.86956522]",
+        "split4_test_score": "[0.74418605]",
+        "split5_test_score": "[0.61538462]",
+        "split6_test_score": "[0.71428571]",
+        "split7_test_score": "[0.7826087]",
+        "split8_test_score": "[0.75555556]",
+        "split9_test_score": "[0.85106383]",
+        "mean_test_score": "[0.76250039]",
+        "std_test_score": "[0.07020137]",
+        "rank_test_score": "[1]"
+    },
+    "n_splits_": 10
+}

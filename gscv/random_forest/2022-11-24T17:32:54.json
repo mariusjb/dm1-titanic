@@ -1,1 +1,136 @@
-{"scoring": "f1", "estimator": "RandomForestClassifier()", "n_jobs": null, "refit": true, "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)", "verbose": 2, "pre_dispatch": "2*n_jobs", "error_score": 0, "return_train_score": false, "param_grid": {"n_estimators": [18, 20, 22], "criterion": ["entropy"], "max_depth": [null], "min_samples_split": [5, 7], "min_samples_leaf": [2], "max_features": ["log2"], "bootstrap": [false]}, "multimetric_": false, "best_index_": "2", "best_score_": 0.7848368976840703, "best_params_": {"bootstrap": false, "criterion": "entropy", "max_depth": null, "max_features": "log2", "min_samples_leaf": 2, "min_samples_split": 5, "n_estimators": 22}, "best_estimator_": "RandomForestClassifier(bootstrap=False, criterion='entropy',\n                       max_features='log2', min_samples_leaf=2,\n                       min_samples_split=5, n_estimators=22)", "refit_time_": 0.011964082717895508, "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']", "scorer_": "make_scorer(f1_score, average=binary)", "cv_results_": {"mean_fit_time": "[0.00975037 0.01094127 0.0118408  0.0098583  0.01103215 0.01113205]", "std_fit_time": "[0.00038239 0.00056008 0.00071355 0.00046458 0.00055014 0.00044612]", "mean_score_time": "[0.00159621 0.00183277 0.00179992 0.00181689 0.00180926 0.00166981]", "std_score_time": "[0.00016306 0.00014782 0.00012326 0.00027999 0.00010105 0.00014185]", "param_bootstrap": "[False False False False False False]", "param_criterion": "['entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy']", "param_max_depth": "[None None None None None None]", "param_max_features": "['log2' 'log2' 'log2' 'log2' 'log2' 'log2']", "param_min_samples_leaf": "[2 2 2 2 2 2]", "param_min_samples_split": "[5 5 5 7 7 7]", "param_n_estimators": "[18 20 22 18 20 22]", "params": [{"bootstrap": false, "criterion": "entropy", "max_depth": null, "max_features": "log2", "min_samples_leaf": 2, "min_samples_split": 5, "n_estimators": 18}, {"bootstrap": false, "criterion": "entropy", "max_depth": null, "max_features": "log2", "min_samples_leaf": 2, "min_samples_split": 5, "n_estimators": 20}, {"bootstrap": false, "criterion": "entropy", "max_depth": null, "max_features": "log2", "min_samples_leaf": 2, "min_samples_split": 5, "n_estimators": 22}, {"bootstrap": false, "criterion": "entropy", "max_depth": null, "max_features": "log2", "min_samples_leaf": 2, "min_samples_split": 7, "n_estimators": 18}, {"bootstrap": false, "criterion": "entropy", "max_depth": null, "max_features": "log2", "min_samples_leaf": 2, "min_samples_split": 7, "n_estimators": 20}, {"bootstrap": false, "criterion": "entropy", "max_depth": null, "max_features": "log2", "min_samples_leaf": 2, "min_samples_split": 7, "n_estimators": 22}], "split0_test_score": "[0.72727273 0.70833333 0.75555556 0.71111111 0.69767442 0.73913043]", "split1_test_score": "[0.75555556 0.7826087  0.75555556 0.7826087  0.7826087  0.7826087 ]", "split2_test_score": "[0.83333333 0.83333333 0.86956522 0.84444444 0.79166667 0.84444444]", "split3_test_score": "[0.91304348 0.89361702 0.91304348 0.91304348 0.88888889 0.86956522]", "split4_test_score": "[0.73170732 0.71794872 0.73170732 0.76190476 0.66666667 0.68421053]", "split5_test_score": "[0.63414634 0.65       0.68292683 0.68292683 0.63414634 0.65      ]", "split6_test_score": "[0.71428571 0.71428571 0.76190476 0.68292683 0.76190476 0.71428571]", "split7_test_score": "[0.74418605 0.79069767 0.79069767 0.79069767 0.77272727 0.79069767]", "split8_test_score": "[0.8        0.8        0.76923077 0.73684211 0.78947368 0.82051282]", "split9_test_score": "[0.8        0.8        0.81818182 0.7826087  0.81818182 0.8       ]", "mean_test_score": "[0.76535305 0.76908245 0.7848369  0.76891146 0.76039392 0.76954555]", "std_test_score": "[0.071961   0.06759248 0.063604   0.06821603 0.0713995  0.06731189]", "rank_test_score": "[5 3 1 4 6 2]"}, "n_splits_": 10}
+{
+    "scoring": "f1",
+    "estimator": "RandomForestClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "n_estimators": [
+            18,
+            20,
+            22
+        ],
+        "criterion": [
+            "entropy"
+        ],
+        "max_depth": [
+            null
+        ],
+        "min_samples_split": [
+            5,
+            7
+        ],
+        "min_samples_leaf": [
+            2
+        ],
+        "max_features": [
+            "log2"
+        ],
+        "bootstrap": [
+            false
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "2",
+    "best_score_": 0.7848368976840703,
+    "best_params_": {
+        "bootstrap": false,
+        "criterion": "entropy",
+        "max_depth": null,
+        "max_features": "log2",
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_estimators": 22
+    },
+    "best_estimator_": "RandomForestClassifier(bootstrap=False, criterion='entropy',\n                       max_features='log2', min_samples_leaf=2,\n                       min_samples_split=5, n_estimators=22)",
+    "refit_time_": 0.011964082717895508,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.00975037 0.01094127 0.0118408  0.0098583  0.01103215 0.01113205]",
+        "std_fit_time": "[0.00038239 0.00056008 0.00071355 0.00046458 0.00055014 0.00044612]",
+        "mean_score_time": "[0.00159621 0.00183277 0.00179992 0.00181689 0.00180926 0.00166981]",
+        "std_score_time": "[0.00016306 0.00014782 0.00012326 0.00027999 0.00010105 0.00014185]",
+        "param_bootstrap": "[False False False False False False]",
+        "param_criterion": "['entropy' 'entropy' 'entropy' 'entropy' 'entropy' 'entropy']",
+        "param_max_depth": "[None None None None None None]",
+        "param_max_features": "['log2' 'log2' 'log2' 'log2' 'log2' 'log2']",
+        "param_min_samples_leaf": "[2 2 2 2 2 2]",
+        "param_min_samples_split": "[5 5 5 7 7 7]",
+        "param_n_estimators": "[18 20 22 18 20 22]",
+        "params": [
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 5,
+                "n_estimators": 18
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 5,
+                "n_estimators": 20
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 5,
+                "n_estimators": 22
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 7,
+                "n_estimators": 18
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 7,
+                "n_estimators": 20
+            },
+            {
+                "bootstrap": false,
+                "criterion": "entropy",
+                "max_depth": null,
+                "max_features": "log2",
+                "min_samples_leaf": 2,
+                "min_samples_split": 7,
+                "n_estimators": 22
+            }
+        ],
+        "split0_test_score": "[0.72727273 0.70833333 0.75555556 0.71111111 0.69767442 0.73913043]",
+        "split1_test_score": "[0.75555556 0.7826087  0.75555556 0.7826087  0.7826087  0.7826087 ]",
+        "split2_test_score": "[0.83333333 0.83333333 0.86956522 0.84444444 0.79166667 0.84444444]",
+        "split3_test_score": "[0.91304348 0.89361702 0.91304348 0.91304348 0.88888889 0.86956522]",
+        "split4_test_score": "[0.73170732 0.71794872 0.73170732 0.76190476 0.66666667 0.68421053]",
+        "split5_test_score": "[0.63414634 0.65       0.68292683 0.68292683 0.63414634 0.65      ]",
+        "split6_test_score": "[0.71428571 0.71428571 0.76190476 0.68292683 0.76190476 0.71428571]",
+        "split7_test_score": "[0.74418605 0.79069767 0.79069767 0.79069767 0.77272727 0.79069767]",
+        "split8_test_score": "[0.8        0.8        0.76923077 0.73684211 0.78947368 0.82051282]",
+        "split9_test_score": "[0.8        0.8        0.81818182 0.7826087  0.81818182 0.8       ]",
+        "mean_test_score": "[0.76535305 0.76908245 0.7848369  0.76891146 0.76039392 0.76954555]",
+        "std_test_score": "[0.071961   0.06759248 0.063604   0.06821603 0.0713995  0.06731189]",
+        "rank_test_score": "[5 3 1 4 6 2]"
+    },
+    "n_splits_": 10
+}
