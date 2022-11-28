@@ -1,0 +1,88 @@
+{
+    "scoring": "f1",
+    "estimator": "DecisionTreeClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "class_weight": [
+            null
+        ],
+        "criterion": [
+            "log_loss"
+        ],
+        "max_features": [
+            10
+        ],
+        "min_impurity_decrease": [
+            0.01
+        ],
+        "min_samples_leaf": [
+            9
+        ],
+        "min_samples_split": [
+            15
+        ],
+        "splitter": [
+            "best"
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "0",
+    "best_score_": 0.7672183616752701,
+    "best_params_": {
+        "class_weight": null,
+        "criterion": "log_loss",
+        "max_features": 10,
+        "min_impurity_decrease": 0.01,
+        "min_samples_leaf": 9,
+        "min_samples_split": 15,
+        "splitter": "best"
+    },
+    "best_estimator_": "DecisionTreeClassifier(criterion='log_loss', max_features=10,\n                       min_impurity_decrease=0.01, min_samples_leaf=9,\n                       min_samples_split=15)",
+    "refit_time_": 0.0010569095611572266,
+    "feature_names_in_": "['Fare' 'Pclass_3' 'Sex_male' 'Cabin_C' 'Cabin_E' 'Cabin_Z' 'Title_Mr'\n 'Title_Mrs']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.0013]",
+        "std_fit_time": "[0.00028648]",
+        "mean_score_time": "[0.00108759]",
+        "std_score_time": "[0.00020018]",
+        "param_class_weight": "[None]",
+        "param_criterion": "['log_loss']",
+        "param_max_features": "[10]",
+        "param_min_impurity_decrease": "[0.01]",
+        "param_min_samples_leaf": "[9]",
+        "param_min_samples_split": "[15]",
+        "param_splitter": "['best']",
+        "params": [
+            {
+                "class_weight": null,
+                "criterion": "log_loss",
+                "max_features": 10,
+                "min_impurity_decrease": 0.01,
+                "min_samples_leaf": 9,
+                "min_samples_split": 15,
+                "splitter": "best"
+            }
+        ],
+        "split0_test_score": "[0.75555556]",
+        "split1_test_score": "[0.79166667]",
+        "split2_test_score": "[0.80851064]",
+        "split3_test_score": "[0.91304348]",
+        "split4_test_score": "[0.63414634]",
+        "split5_test_score": "[0.66666667]",
+        "split6_test_score": "[0.73469388]",
+        "split7_test_score": "[0.7804878]",
+        "split8_test_score": "[0.76923077]",
+        "split9_test_score": "[0.81818182]",
+        "mean_test_score": "[0.76721836]",
+        "std_test_score": "[0.07440283]",
+        "rank_test_score": "[1]"
+    },
+    "n_splits_": 10
+}
