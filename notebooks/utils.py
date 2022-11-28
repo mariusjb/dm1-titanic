@@ -2,20 +2,20 @@ import json
 import logging
 import os
 from datetime import datetime
-from typing import Union
+from typing import List, Union
 
 import dill
 import pandas as pd
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, train_test_split
 
-
-def retrieve_latest_train_test() -> Union[pd.DataFrame, pd.DataFrame]:
+def retrieve_latest_train_test(drop_col: List[str] = []) -> Union[pd.DataFrame, pd.DataFrame]:
     dir = f"../data"
 
     def read_data_of_type(type_data: str):
         files = sorted([f for f in os.listdir(dir) if (f.endswith(".csv") and (f.startswith(type_data)))], reverse=True)
         latest = files[0]
-        return pd.read_csv(f"{dir}/{latest}", index_col=0)
+        df = pd.read_csv(f"{dir}/{latest}", index_col=0)
+        return df.drop(drop_col, axis=1)
 
     return read_data_of_type("train_data"), read_data_of_type("test_data")
 
