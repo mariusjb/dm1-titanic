@@ -1,0 +1,118 @@
+{
+    "scoring": "f1",
+    "estimator": "RandomForestClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "bootstrap": [
+            true
+        ],
+        "criterion": [
+            "gini"
+        ],
+        "max_depth": [
+            null
+        ],
+        "max_features": [
+            null
+        ],
+        "min_samples_leaf": [
+            3
+        ],
+        "min_samples_split": [
+            2
+        ],
+        "n_estimators": [
+            8,
+            10,
+            12,
+            14
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "2",
+    "best_score_": 0.7541854430280107,
+    "best_params_": {
+        "bootstrap": true,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": null,
+        "min_samples_leaf": 3,
+        "min_samples_split": 2,
+        "n_estimators": 12
+    },
+    "best_estimator_": "RandomForestClassifier(max_features=None, min_samples_leaf=3, n_estimators=12)",
+    "refit_time_": 0.01048898696899414,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.008477   0.00798225 0.01043744 0.01176081]",
+        "std_fit_time": "[0.00358018 0.00023859 0.00144339 0.0008108 ]",
+        "mean_score_time": "[0.00157721 0.00137722 0.00153515 0.00159905]",
+        "std_score_time": "[6.52574117e-04 4.48564456e-05 1.62545613e-04 1.74728922e-04]",
+        "param_bootstrap": "[True True True True]",
+        "param_criterion": "['gini' 'gini' 'gini' 'gini']",
+        "param_max_depth": "[None None None None]",
+        "param_max_features": "[None None None None]",
+        "param_min_samples_leaf": "[3 3 3 3]",
+        "param_min_samples_split": "[2 2 2 2]",
+        "param_n_estimators": "[8 10 12 14]",
+        "params": [
+            {
+                "bootstrap": true,
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": 3,
+                "min_samples_split": 2,
+                "n_estimators": 8
+            },
+            {
+                "bootstrap": true,
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": 3,
+                "min_samples_split": 2,
+                "n_estimators": 10
+            },
+            {
+                "bootstrap": true,
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": 3,
+                "min_samples_split": 2,
+                "n_estimators": 12
+            },
+            {
+                "bootstrap": true,
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "min_samples_leaf": 3,
+                "min_samples_split": 2,
+                "n_estimators": 14
+            }
+        ],
+        "split0_test_score": "[0.68       0.73913043 0.70833333 0.70833333]",
+        "split1_test_score": "[0.7826087  0.76595745 0.80851064 0.77272727]",
+        "split2_test_score": "[0.84444444 0.79166667 0.83333333 0.80851064]",
+        "split3_test_score": "[0.89361702 0.86956522 0.91304348 0.86956522]",
+        "split4_test_score": "[0.61538462 0.65       0.61538462 0.65      ]",
+        "split5_test_score": "[0.65       0.66666667 0.66666667 0.65      ]",
+        "split6_test_score": "[0.69767442 0.74418605 0.71428571 0.74418605]",
+        "split7_test_score": "[0.79069767 0.79069767 0.77272727 0.75555556]",
+        "split8_test_score": "[0.73684211 0.7027027  0.73684211 0.7027027 ]",
+        "split9_test_score": "[0.8        0.77272727 0.77272727 0.81818182]",
+        "mean_test_score": "[0.7491269  0.74933001 0.75418544 0.74797626]",
+        "std_test_score": "[0.08407735 0.06147224 0.08127699 0.06847005]",
+        "rank_test_score": "[3 2 1 4]"
+    },
+    "n_splits_": 10
+}

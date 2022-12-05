@@ -1,1 +1,76 @@
-{"scoring": "f1", "estimator": "KNeighborsClassifier()", "n_jobs": null, "refit": true, "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)", "verbose": 2, "pre_dispatch": "2*n_jobs", "error_score": 0, "return_train_score": false, "param_grid": {"n_neighbors": [9, 10, 11], "weights": ["distance"], "algorithm": ["ball_tree"]}, "multimetric_": false, "best_index_": "1", "best_score_": 0.7525102820410783, "best_params_": {"algorithm": "ball_tree", "n_neighbors": 10, "weights": "distance"}, "best_estimator_": "KNeighborsClassifier(algorithm='ball_tree', n_neighbors=10, weights='distance')", "refit_time_": 0.0008471012115478516, "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']", "scorer_": "make_scorer(f1_score, average=binary)", "cv_results_": {"mean_fit_time": "[0.00163736 0.00135734 0.00111535]", "std_fit_time": "[0.00112774 0.00118503 0.00017725]", "mean_score_time": "[0.0022402  0.00160174 0.00189848]", "std_score_time": "[8.50411596e-04 6.25505853e-05 5.33248849e-04]", "param_algorithm": "['ball_tree' 'ball_tree' 'ball_tree']", "param_n_neighbors": "[9 10 11]", "param_weights": "['distance' 'distance' 'distance']", "params": [{"algorithm": "ball_tree", "n_neighbors": 9, "weights": "distance"}, {"algorithm": "ball_tree", "n_neighbors": 10, "weights": "distance"}, {"algorithm": "ball_tree", "n_neighbors": 11, "weights": "distance"}], "split0_test_score": "[0.69565217 0.63636364 0.69565217]", "split1_test_score": "[0.80851064 0.80851064 0.80851064]", "split2_test_score": "[0.7826087  0.7826087  0.73913043]", "split3_test_score": "[0.86956522 0.86956522 0.85106383]", "split4_test_score": "[0.73170732 0.76190476 0.79069767]", "split5_test_score": "[0.65116279 0.66666667 0.66666667]", "split6_test_score": "[0.74418605 0.79069767 0.75555556]", "split7_test_score": "[0.66666667 0.69767442 0.66666667]", "split8_test_score": "[0.68421053 0.66666667 0.61538462]", "split9_test_score": "[0.84444444 0.84444444 0.84444444]", "mean_test_score": "[0.74787145 0.75251028 0.74337727]", "std_test_score": "[0.07212539 0.07679681 0.07673834]", "rank_test_score": "[2 1 3]"}, "n_splits_": 10}
+{
+    "scoring": "f1",
+    "estimator": "KNeighborsClassifier()",
+    "n_jobs": null,
+    "refit": true,
+    "cv": "StratifiedKFold(n_splits=10, random_state=0, shuffle=True)",
+    "verbose": 2,
+    "pre_dispatch": "2*n_jobs",
+    "error_score": 0,
+    "return_train_score": false,
+    "param_grid": {
+        "n_neighbors": [
+            9,
+            10,
+            11
+        ],
+        "weights": [
+            "distance"
+        ],
+        "algorithm": [
+            "ball_tree"
+        ]
+    },
+    "multimetric_": false,
+    "best_index_": "1",
+    "best_score_": 0.7525102820410783,
+    "best_params_": {
+        "algorithm": "ball_tree",
+        "n_neighbors": 10,
+        "weights": "distance"
+    },
+    "best_estimator_": "KNeighborsClassifier(algorithm='ball_tree', n_neighbors=10, weights='distance')",
+    "refit_time_": 0.0008471012115478516,
+    "feature_names_in_": "['Pclass' 'SibSp' 'Parch' 'Age_true' 'AgeGroup' 'FareGroup' 'CabinLvl'\n 'Embarked_C' 'Embarked_Q' 'Embarked_S' 'Title_Master' 'Title_Mr'\n 'Title_Mrs' 'Title_Ms' 'Title_Noble']",
+    "scorer_": "make_scorer(f1_score, average=binary)",
+    "cv_results_": {
+        "mean_fit_time": "[0.00163736 0.00135734 0.00111535]",
+        "std_fit_time": "[0.00112774 0.00118503 0.00017725]",
+        "mean_score_time": "[0.0022402  0.00160174 0.00189848]",
+        "std_score_time": "[8.50411596e-04 6.25505853e-05 5.33248849e-04]",
+        "param_algorithm": "['ball_tree' 'ball_tree' 'ball_tree']",
+        "param_n_neighbors": "[9 10 11]",
+        "param_weights": "['distance' 'distance' 'distance']",
+        "params": [
+            {
+                "algorithm": "ball_tree",
+                "n_neighbors": 9,
+                "weights": "distance"
+            },
+            {
+                "algorithm": "ball_tree",
+                "n_neighbors": 10,
+                "weights": "distance"
+            },
+            {
+                "algorithm": "ball_tree",
+                "n_neighbors": 11,
+                "weights": "distance"
+            }
+        ],
+        "split0_test_score": "[0.69565217 0.63636364 0.69565217]",
+        "split1_test_score": "[0.80851064 0.80851064 0.80851064]",
+        "split2_test_score": "[0.7826087  0.7826087  0.73913043]",
+        "split3_test_score": "[0.86956522 0.86956522 0.85106383]",
+        "split4_test_score": "[0.73170732 0.76190476 0.79069767]",
+        "split5_test_score": "[0.65116279 0.66666667 0.66666667]",
+        "split6_test_score": "[0.74418605 0.79069767 0.75555556]",
+        "split7_test_score": "[0.66666667 0.69767442 0.66666667]",
+        "split8_test_score": "[0.68421053 0.66666667 0.61538462]",
+        "split9_test_score": "[0.84444444 0.84444444 0.84444444]",
+        "mean_test_score": "[0.74787145 0.75251028 0.74337727]",
+        "std_test_score": "[0.07212539 0.07679681 0.07673834]",
+        "rank_test_score": "[2 1 3]"
+    },
+    "n_splits_": 10
+}
